@@ -1,0 +1,71 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "2 · La sospecha · inicio, pasos 6 a 10",
+    "nivel": "conjeturar",
+    "lo_que_pide": "Conjetura. Dice qué espera antes de ver y lo compara con lo que obtuvo, en casos que cambian. Separa los casos donde aparece la idea de los que solo se le parecen, y zanja una discusión con un dato a la vista.",
+    "al_salir": "Sale con una sospecha que acierta en los casos sencillos y con la pregunta que recoge el desarrollo: ¿pasa siempre, y cómo se dice para todos los casos?",
+    "arista": "Antes de la k.ª hay k − 1 camisas y hasta la k.ª, contándola, hay k: antes de la de Jonathan (5.ª) hay cuatro; hasta ella, cinco.",
+    "acto": "calcular",
+    "pieza": "tramo-del-riel",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "n": 6,
+      "modo": "antes",
+      "casos": 3
+    },
+    "maestro_pregunta": "Antes de la sexta hay cinco, y en el riel hay seis: ¿cuál es la que falta en esa cuenta?",
+    "registro": "El registro de tres renglones (camisa · lugar · antes · hasta); se vuelve a mirar en el desarrollo 3 (la regla) y en el cierre 4 (la ronda).",
+    "impreso": "no"
+  },
+  "id": "p6",
+  "casa": "00014",
+  "paso": 6,
+  "total": 10,
+  "nombre": "las_que_van_antes",
+  "pieza": "tramo-del-riel",
+  "disposicion": "E",
+  "zonas": {
+    "experimento": "riel",
+    "leyenda": {"casa": "leyenda", "texto": "Antes de la 5.ª: 1.ª, 2.ª, 3.ª y 4.ª.", "objeto": "camisa"},
+    "control": "caso",
+    "evidencia": "registro"
+  },
+  "titulo": "las que van antes",
+  "instruccion": "Escribe cuántas van antes de la camisa y hasta ella, y pulsa Comprobar.",
+  "ayuda": [
+    "La tarjeta dice qué camisa nombra Papo y su lugar desde la ventana",
+    "En un campo van las de antes de ella; en el otro, las de hasta ella, contándola",
+    "Pulsa Comprobar: el riel enciende primero las de antes y después también la nombrada"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "n": 6,
+    "nombres": ["Dariel", "Luisa", "Kendry", "Marielys", "Jonathan", "Yeimi"],
+    "modo": "antes",
+    "columnas": ["camisa", "lugar", "antes", "hasta"],
+    "rotulo_riel": "El riel del martes",
+    "rotulo_caso": "Lo que se lleva Papo",
+    "rotulo_registro": "El registro",
+    "rotulo_ventana": "ventana",
+    "rotulo_puerta": "puerta",
+    "plantilla_orden": "{{n}}.ª",
+    "etiqueta_cuenta": "encendidas",
+    "etiqueta_antes": "antes de ella",
+    "etiqueta_hasta": "hasta ella, contándola",
+    "boton_comprobar": "Comprobar",
+    "msg_vacio": "Escribe los dos números antes de comprobar.",
+    "msg_bien": "Dijiste <b>{{dicho}}</b> y el riel cuenta <b>{{riel}}</b>: lo mismo.",
+    "msg_mal": "Dijiste <b>{{dicho}}</b> y el riel cuenta <b>{{riel}}</b>. {{pista}}",
+    "msg_completar": "Las tres camisas tienen anotadas las de antes y las de hasta.",
+    "casos": [
+      {"texto": "Se lleva las de antes de la de Jonathan, la 5.ª.", "k": 5, "pista": "Antes de ella no entra la suya; hasta ella, sí."},
+      {"texto": "Otra vez con seis: antes de la de Yeimi, la 6.ª.", "k": 6, "pista": "Las de antes se cuentan sin la de Yeimi."},
+      {"texto": "Otra vez con seis: antes de la de Luisa, la 2.ª.", "k": 2, "pista": "Desde la ventana hasta la de Luisa: ¿cuáles quedan antes?"}
+    ]
+  },
+  "limites": {"n": 9, "casos": 4, "renglones": 4},
+  "emite": ["terminó"],
+  "escucha": []
+}

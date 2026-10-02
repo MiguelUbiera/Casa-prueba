@@ -1,0 +1,71 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "3 · La regla · desarrollo, pasos 1 a 5",
+    "nivel": "verificar",
+    "lo_que_pide": "Verifica. Usa una máquina que pregunta antes de actuar: predice, comprueba y cambia una sola cosa cada vez, y todo queda anotado. Con las pruebas delante ve lo que se repite y escribe la regla con sus palabras.",
+    "al_salir": "Sale con la regla escrita por él, las pruebas que la sostienen a la vista y la pregunta del inicio contestada.",
+    "arista": "Contar el tramo una por una y hacer la resta y una más dan lo mismo: de la 3.ª a la 9.ª, siete camisas y 9 − 3 + 1 = 7.",
+    "acto": "calcular",
+    "pieza": "tramo-del-riel",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "n": 9,
+      "modo": "dos_cuentas",
+      "casos": 3
+    },
+    "maestro_pregunta": "De la primera a la sexta la resta da cinco y hay seis: ¿cuál camisa no entró en la resta?",
+    "registro": "El registro de las dos cuentas (de · a · contando · con la cuenta); se vuelve a mirar en el desarrollo 3 y en el cierre 2, y la zona 2 del imprimible lleva dos tramos.",
+    "impreso": "sí"
+  },
+  "id": "p2",
+  "casa": "00014",
+  "paso": 2,
+  "total": 5,
+  "nombre": "dos_cuentas_para_lo_mismo",
+  "pieza": "tramo-del-riel",
+  "disposicion": "E",
+  "zonas": {
+    "experimento": "riel",
+    "leyenda": {"casa": "leyenda", "texto": "La resta deja fuera a la primera del tramo: por eso se suma una más.", "objeto": "camisa"},
+    "control": "caso",
+    "evidencia": "registro"
+  },
+  "titulo": "dos cuentas para lo mismo",
+  "instruccion": "Escribe cuántas hay contando y con la resta y una más, y comprueba.",
+  "ayuda": [
+    "La tarjeta dice de cuál camisa a cuál va el tramo, con las dos puntas",
+    "En un campo va lo que cuentas camisa por camisa; en el otro, la resta de los lugares y una más",
+    "Pulsa Comprobar: el riel enciende el tramo, lo cuenta y pone las dos cifras juntas"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "n": 9,
+    "nombres": ["Dariel", "Luisa", "Kendry", "Marielys", "Jonathan", "Yeimi", "Brayan", "Sofía", "Enmanuel"],
+    "modo": "dos_cuentas",
+    "columnas": ["de", "a", "contando", "con la cuenta"],
+    "rotulo_riel": "El riel del jueves",
+    "rotulo_caso": "El tramo",
+    "rotulo_registro": "Las dos cuentas",
+    "rotulo_ventana": "ventana",
+    "rotulo_puerta": "puerta",
+    "plantilla_orden": "{{n}}.ª",
+    "etiqueta_cuenta": "encendidas",
+    "etiqueta_contando": "contando",
+    "etiqueta_resta": "con la cuenta",
+    "boton_comprobar": "Comprobar",
+    "msg_vacio": "Escribe las dos cuentas antes de comprobar.",
+    "msg_bien": "Dijiste <b>{{dicho}}</b> y el riel cuenta <b>{{riel}}</b>: lo mismo.",
+    "msg_mal": "Dijiste <b>{{dicho}}</b> y el riel cuenta <b>{{riel}}</b>. {{pista}}",
+    "msg_completar": "Los tres tramos dan lo mismo contando y con la cuenta.",
+    "casos": [
+      {"texto": "De la 3.ª a la 9.ª.", "de": 3, "a": 9, "pista": "Contando, la 3.ª también entra; en la resta, súmala con una más."},
+      {"texto": "Otro tramo: de la 5.ª a la 9.ª.", "de": 5, "a": 9, "pista": "Cuenta desde la 5.ª, contándola, hasta la 9.ª."},
+      {"texto": "Otro tramo: de la 1.ª a la 6.ª.", "de": 1, "a": 6, "pista": "Seis menos uno se queda corta: la 1.ª también va."}
+    ]
+  },
+  "limites": {"n": 9, "casos": 4, "renglones": 4},
+  "emite": ["terminó"],
+  "escucha": []
+}

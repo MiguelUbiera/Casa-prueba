@@ -1,0 +1,74 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "1 · Lo que ya sé · inicio, pasos 1 a 5",
+    "nivel": "explorar",
+    "lo_que_pide": "Explora. Se encuentra con el problema de la historia y lo tantea con lo que ya sabía hacer. Al final ve la idea nueva funcionar en una máquina y dice qué va a salir antes de verlo.",
+    "al_salir": "Sale sabiendo qué parte del problema resuelve con lo que ya sabía y qué parte no. Ya vio la idea nueva en acción, pero todavía no sabe cuándo ni por qué pasa.",
+    "arista": "Una camisa, dos lugares: contada desde la ventana la de Marielys es la 4.ª y desde la puerta la 3.ª, sin moverse.",
+    "acto": "contar",
+    "pieza": "tabla-de-dos-columnas",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "filas": 6
+    },
+    "maestro_pregunta": "¿Por qué la de Marielys hace la cuarta por un lado y la tercera por el otro, si no se movió?",
+    "registro": "La tabla de las dos cuentas completa (seis camisas, cuatro huecos de la puerta llenados); se vuelve a mirar en el inicio 5 y en el inicio 8.",
+    "impreso": "no"
+  },
+  "id": "p3",
+  "casa": "00014",
+  "paso": 3,
+  "total": 10,
+  "nombre": "desde_la_ventana_y_la_puerta",
+  "pieza": "tabla-de-dos-columnas",
+  "disposicion": "E",
+  "zonas": {
+    "experimento": "fila",
+    "leyenda": "voz",
+    "control": "teclado",
+    "evidencia": "tabla"
+  },
+  "titulo": "desde la ventana y la puerta",
+  "instruccion": "Completa la columna de la puerta: toca un hueco, pon el número y anota.",
+  "ayuda": [
+    "Toca un hueco de la tabla: la pantalla dice a qué camisa le toca",
+    "Cuenta desde la bandera de la puerta y pon el número con Una más y Una menos",
+    "Pulsa Anotar; si el número es otro, la pantalla te orienta"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "voz": {"quien": "Yarisa", "texto": "Ventana y puerta: las dos puntas del riel."},
+    "rotulo_fila": "El riel del martes",
+    "rotulo_ida": "ventana",
+    "rotulo_vuelta": "puerta",
+    "rotulo_teclado": "El lugar",
+    "rotulo_tabla": "Las dos cuentas",
+    "columna_nombre": "camisa",
+    "columna_a": "ventana",
+    "columna_b": "puerta",
+    "plantilla_orden": "{{n}}.ª",
+    "plantilla_turno": "Le toca a la de {{nombre}}",
+    "texto_espera": "Toca un hueco de la tabla",
+    "texto_hueco": "?",
+    "etiqueta_menos": "Una menos",
+    "etiqueta_mas": "Una más",
+    "boton_anotar": "Anotar",
+    "filas": [
+      {"nombre": "Dariel", "a": 1, "b": 6},
+      {"nombre": "Luisa", "a": 2, "b": 5, "oculta": "b", "pista": "Empieza en la puerta, con la de Yeimi, y cuenta hasta la de Luisa."},
+      {"nombre": "Kendry", "a": 3, "b": 4, "oculta": "b", "pista": "Empieza en la puerta, con la de Yeimi, y cuenta hasta la de Kendry."},
+      {"nombre": "Marielys", "a": 4, "b": 3, "oculta": "b", "pista": "Empieza en la puerta, con la de Yeimi, y cuenta hasta la de Marielys."},
+      {"nombre": "Jonathan", "a": 5, "b": 2, "oculta": "b", "pista": "Empieza en la puerta, con la de Yeimi, y cuenta hasta la de Jonathan."},
+      {"nombre": "Yeimi", "a": 6, "b": 1}
+    ],
+    "msg_elige": "Toca un hueco de la tabla y después pon el número.",
+    "msg_mal": "La de {{nombre}} queda en otro lugar. {{pista}}",
+    "msg_bien": "La de {{nombre}}: {{valor}} desde la puerta. Anotado.",
+    "msg_completar": "La tabla está completa: cada camisa tiene su lugar desde las dos puntas."
+  },
+  "limites": {"filas": 9, "valor_max": 9},
+  "emite": ["terminó"],
+  "escucha": []
+}

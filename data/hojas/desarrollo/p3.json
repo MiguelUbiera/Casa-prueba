@@ -1,0 +1,71 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "3 · La regla · desarrollo, pasos 1 a 5",
+    "nivel": "verificar",
+    "lo_que_pide": "Verifica. Usa una máquina que pregunta antes de actuar: predice, comprueba y cambia una sola cosa cada vez, y todo queda anotado. Con las pruebas delante ve lo que se repite y escribe la regla con sus palabras.",
+    "al_salir": "Sale con la regla escrita por él, las pruebas que la sostienen a la vista y la pregunta del inicio contestada.",
+    "arista": "La regla dicha para todos los rieles: el número de la última dice cuántas hay; antes de una camisa hay una menos que su número; los dos lugares de una camisa suman una más que las camisas.",
+    "acto": "generalizar",
+    "pieza": "regla-que-se-completa",
+    "esquemas": [],
+    "numeros": {
+      "oraciones": 3,
+      "fichas": 7,
+      "pruebas": 3
+    },
+    "maestro_pregunta": "¿Qué fichas sobraron, y en cuál hueco intentaron ponerlas?",
+    "registro": "La regla completa como regla de oro; se vuelve a mirar en la pantalla final del desarrollo y en el cierre 5 y 6, y la zona 3 del imprimible la copia a mano.",
+    "impreso": "sí"
+  },
+  "id": "p3",
+  "casa": "00014",
+  "paso": 3,
+  "total": 5,
+  "nombre": "la_regla_del_riel",
+  "pieza": "regla-que-se-completa",
+  "disposicion": "G",
+  "zonas": {"experimento": "regla", "voz": "voz", "control": "fichas", "evidencia": "pruebas"},
+  "titulo": "la regla del riel",
+  "instruccion": "Completa la regla con las fichas para que cuadre con las tres pruebas.",
+  "ayuda": [
+    "Toca una ficha y después el hueco donde va; si no va, el hueco tiembla",
+    "Lee las pruebas: la regla tiene que valer para las tres a la vez",
+    "Con los tres huecos llenos, la regla se vuelve regla de oro: cópiala en la zona 3"
+  ],
+  "datos": {
+    "rotulo_regla": "La regla del riel",
+    "rotulo_fichas": "Las fichas",
+    "rotulo_pruebas": "Las pruebas de Yarisa",
+    "rotulo_regla_de_oro": "La regla de oro",
+    "texto_hueco": "___",
+    "columnas": ["camisa", "lugar", "lo que se sabe"],
+    "voz": {"quien": "Yarisa", "texto": "Con esta regla lleno la libreta sin contar camisa por camisa."},
+    "oraciones": [
+      {"inicio": "El número de la última camisa dice", "clave": "cuantas", "fin": "hay en el riel", "pista": "La primera prueba: la última es la 6.ª y en el riel hay 6."},
+      {"inicio": "Antes de una camisa hay", "clave": "una_menos", "fin": "que su número", "pista": "La segunda prueba: la de Jonathan es la 5.ª y antes hay 4."},
+      {"inicio": "Los dos lugares de una camisa suman", "clave": "una_mas", "fin": "que las camisas del riel", "pista": "La tercera prueba: 4 + 3 = 7 en un riel de 6."}
+    ],
+    "fichas": [
+      {"clave": "cuantas", "t": "cuántas"},
+      {"clave": "cual", "t": "cuál"},
+      {"clave": "una_menos", "t": "una menos"},
+      {"clave": "una_mas", "t": "una más"},
+      {"clave": "las_mismas", "t": "las mismas"},
+      {"clave": "el_doble", "t": "el doble"},
+      {"clave": "la_mitad", "t": "la mitad"}
+    ],
+    "pruebas": [
+      {"a": "la última", "b": "6.ª", "c": "hay 6"},
+      {"a": "la de Jonathan", "b": "5.ª", "c": "antes hay 4"},
+      {"a": "la de Marielys", "b": "4.ª y 3.ª", "c": "riel de 6: 4 + 3 = 7"}
+    ],
+    "msg_elige": "Toca una ficha y después el hueco donde va.",
+    "msg_mal": "Esa ficha va en otro sitio. {{pista}}",
+    "msg_bien": "Queda «{{ficha}}». Sigue con otro hueco.",
+    "msg_completar": "La regla está completa y cuadra con las tres pruebas."
+  },
+  "limites": {"oraciones": 3, "fichas": 8, "pruebas": 4},
+  "emite": ["terminó"],
+  "escucha": []
+}

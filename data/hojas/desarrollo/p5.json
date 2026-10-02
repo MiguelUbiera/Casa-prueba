@@ -1,0 +1,73 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "3 · La regla · desarrollo, pasos 1 a 5",
+    "nivel": "verificar",
+    "lo_que_pide": "Verifica. Usa una máquina que pregunta antes de actuar: predice, comprueba y cambia una sola cosa cada vez, y todo queda anotado. Con las pruebas delante ve lo que se repite y escribe la regla con sus palabras.",
+    "al_salir": "Sale con la regla escrita por él, las pruebas que la sostienen a la vista y la pregunta del inicio contestada.",
+    "arista": "Los casos en fila de la libreta: la última es la 9.ª y hay nueve; de la 1.ª a la 5.ª son cinco; de la 6.ª a la 9.ª, cuatro; y 5 + 4 = 9.",
+    "acto": "calcular",
+    "pieza": "libreta-que-se-cuadra",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "n": 9,
+      "renglones": 4
+    },
+    "maestro_pregunta": "De la sexta a la novena escribiste cuatro: ¿qué cuenta hiciste, y por qué no nueve menos seis?",
+    "registro": "La libreta del jueves, llena y firmada; se vuelve a mirar en el cierre 8, la boleta de entrega, y la zona 5 del imprimible pide la libreta de un riel de ocho.",
+    "impreso": "sí"
+  },
+  "id": "p5",
+  "casa": "00014",
+  "paso": 5,
+  "total": 5,
+  "nombre": "la_libreta_del_jueves",
+  "pieza": "libreta-que-se-cuadra",
+  "disposicion": "G",
+  "zonas": {
+    "experimento": "riel",
+    "voz": {"casa": "voz", "quien": "Yarisa", "texto": "Esta libreta la escribo yo, y tiene que cuadrar con el riel."},
+    "control": "libreta",
+    "evidencia": "cuadre"
+  },
+  "titulo": "la libreta del jueves",
+  "instruccion": "Escribe el número de cada renglón, anótalo y firma la libreta.",
+  "ayuda": [
+    "Cada renglón trae los lugares y le falta la cantidad: escríbela y pulsa Anotar",
+    "El riel enciende lo que el renglón nombra; si no cuadra, te orienta y lo vuelves a intentar",
+    "Con todos los renglones escritos, escribe tu nombre, pulsa Firmar y pasa a la zona 5"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "n": 9,
+    "nombres": ["Dariel", "Luisa", "Kendry", "Marielys", "Jonathan", "Yeimi", "Brayan", "Sofía", "Enmanuel"],
+    "firma": true,
+    "rotulo_riel": "El riel del jueves",
+    "rotulo_libreta": "La libreta de pedidos",
+    "rotulo_cuadre": "Lo escrito",
+    "rotulo_ventana": "ventana",
+    "rotulo_puerta": "puerta",
+    "plantilla_orden": "{{n}}.ª",
+    "etiqueta_campo": "el número",
+    "boton_anotar": "Anotar",
+    "etiqueta_firma": "Tu nombre",
+    "boton_firmar": "Firmar",
+    "texto_firmado": "Firmado:",
+    "msg_vacio": "Escribe el número del renglón antes de anotar.",
+    "msg_mal": "Ese número descuadra la libreta. {{pista}}",
+    "msg_bien": "{{texto}}: {{numero}}. Anotado.",
+    "msg_firma": "La libreta está cuadrada: ahora firma con tu nombre.",
+    "msg_firma_vacia": "Escribe tu nombre para firmar.",
+    "msg_completar": "La libreta cuadra con el riel y lleva firma.",
+    "renglones": [
+      {"tipo": "hay", "texto": "Listas: la última es la 9.ª, así que hay", "corto": "hay", "pista": "La última lleva el número de todas."},
+      {"tipo": "tramo", "de": 1, "a": 5, "texto": "Papo se lleva de la 1.ª a la 5.ª: se lleva", "corto": "se lleva", "pista": "Cuenta las dos puntas: la primera también se va."},
+      {"tipo": "quedan", "texto": "Quedan en el riel, de la 6.ª a la 9.ª", "corto": "quedan", "pista": "Nueve menos las que se lleva Papo."},
+      {"tipo": "cuadre", "texto": "Cuadre: se lleva más quedan son", "corto": "cuadre", "pista": "Suma las que se lleva y las que quedan: vuelve a dar el riel entero."}
+    ]
+  },
+  "limites": {"n": 9, "renglones": 4},
+  "emite": ["terminó"],
+  "escucha": []
+}

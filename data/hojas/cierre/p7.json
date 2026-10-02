@@ -1,0 +1,83 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "5 · El porqué · cierre, pasos 5 a 8",
+    "nivel": "justificar",
+    "lo_que_pide": "Justifica. Resuelve él mismo el problema de la historia y sostiene cada decisión con la regla y con algo que se puede señalar. Termina entregando un producto con nombre que lleva su porqué.",
+    "al_salir": "Sale con el problema resuelto por él y una respuesta que otro puede revisar y que se sostiene sola.",
+    "arista": "Quitar varias, una tras otra: cada camisa que se va de delante baja en uno el lugar de la de Dayana y en uno la cantidad; tres que se van la llevan de 8.ª a 5.ª.",
+    "acto": "predecir y comprobar",
+    "pieza": "fila-que-se-mueve",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "n_inicial": 8,
+      "marcado": 8,
+      "mudanzas": 3,
+      "pruebas_libres": 0,
+      "vueltas": 3
+    },
+    "maestro_pregunta": "La de Dayana era la octava y quedó de quinta: ¿de dónde sale ese tres?",
+    "registro": "El registro de la máquina (mudanza · cuántas · Dayana · predije); se vuelve a mirar en el cierre 8, donde la boleta lo escribe.",
+    "impreso": "no"
+  },
+  "id": "p7",
+  "casa": "00014",
+  "paso": 7,
+  "total": 8,
+  "nombre": "las_que_quedan_corren",
+  "pieza": "fila-que-se-mueve",
+  "disposicion": "B",
+  "zonas": {
+    "experimento": "fila",
+    "control": ["mudanzas", "pregunta"],
+    "evidencia": "registro",
+    "voz": {"casa": "voz", "quien": "Papo", "texto": "Me llevo tres, una detrás de otra; la de Dayana se queda."},
+    "leyenda": {"casa": "leyenda", "texto": "Se van tres de antes de la de Dayana: su lugar baja tres.", "objeto": "camisa"}
+  },
+  "titulo": "las que quedan corren",
+  "instruccion": "Escribe cuántas quedan y de qué queda la de Dayana, y comprueba.",
+  "ayuda": [
+    "El riel pregunta antes de moverse: lee qué pasa y cuántas hay ahora",
+    "Escribe cuántas habrá y de qué quedará la de Dayana, y pulsa Comprobar",
+    "Cada vuelta sigue desde lo que quedó en la anterior"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "n_inicial": 8,
+    "marcado": 8,
+    "pruebas_libres": 0,
+    "rotulo_fila": "El riel de la banda",
+    "rotulo_mudanzas": "Lo que pasa",
+    "rotulo_pregunta": "El riel pregunta",
+    "rotulo_registro": "El registro",
+    "etiqueta_hay": "camisas",
+    "etiqueta_lugar": "Dayana va de",
+    "boton_comprobar": "Comprobar",
+    "etiqueta_cuantos": "cuántas habrá",
+    "etiqueta_lugar_pregunta": "Dayana quedará de",
+    "columna_mudanza": "lo que pasa",
+    "columna_cuantos": "cuántas",
+    "columna_lugar": "Dayana",
+    "columna_predije": "predije",
+    "msg_pregunta": "Hay {{n}} y Dayana va de {{lugar}}. Si {{mudanza}}: ¿cuántas, y de qué queda?",
+    "msg_prediccion_invalida": "Escribe los dos números: cuántas habrá y de qué quedará la de Dayana.",
+    "msg_mudanza": "Hecho: {{mudanza}}. Hay {{quedan}} y la de Dayana va de {{lugar}}.",
+    "msg_dos_pruebas": "Ahora el riel te pregunta a ti antes de moverse.",
+    "msg_compara": "Dijiste <b>{{dicho}}</b> · hay <b>{{quedan}}</b>; Dayana, de <b>{{lugar}}</b>.",
+    "msg_cierre": "Con cada una que se fue de delante, una menos y Dayana un lugar menos.",
+    "mudanzas": [
+      {"clave": "llama_al_que_sigue", "t": "se va la 2.ª", "d_cuantos": -1, "d_lugar": -1},
+      {"clave": "se_cuela_delante", "t": "cuelgan una delante de Dayana", "d_cuantos": 1, "d_lugar": 1},
+      {"clave": "delante_al_final", "t": "la 1.ª pasa al final", "d_cuantos": 0, "d_lugar": -1}
+    ],
+    "vueltas": [
+      {"mud": "llama_al_que_sigue", "frase": "Papo se lleva la de Génesis, la 2.ª"},
+      {"mud": "llama_al_que_sigue", "frase": "Ahora la de Adriel, que quedó de 2.ª"},
+      {"mud": "llama_al_que_sigue", "frase": "Y la de Yulissa, que quedó de 2.ª"}
+    ]
+  },
+  "limites": {"n_maximo": 12, "mudanzas": 6, "vueltas": 4, "renglones": 6},
+  "emite": ["terminó"],
+  "escucha": []
+}

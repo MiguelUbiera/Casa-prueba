@@ -1,0 +1,101 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "4 · La regla en otra parte · cierre, pasos 1 a 4",
+    "nivel": "generalizar",
+    "lo_que_pide": "Generaliza. Usa la regla donde no la probó: en otra forma de presentar lo mismo, en lo que otro dejó escrito, o al revés, del resultado a lo que lo produjo. Cada desafío le cambia el gesto y lo que varía.",
+    "al_salir": "Sale sabiendo que la regla vale fuera de los casos donde nació, y dónde deja de valer.",
+    "arista": "La regla vale en otro riel, con otros nombres y otro pedido: la última de la banda es la 8.ª, hay ocho, y la boleta de Papo pide un tramo.",
+    "acto": "comparar",
+    "pieza": "vinetas-esquema-voz",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "vinetas": 3
+    },
+    "maestro_pregunta": "¿Qué va a mirar Yarisa en el riel para llenar la boleta?",
+    "registro": "El esquema con los dos «?» (de la 2.ª a la 4.ª: restando → ?; contando → ?); se vuelve a mirar en el cierre 2 y en el cierre 8.",
+    "impreso": "no"
+  },
+  "id": "p1",
+  "casa": "00014",
+  "paso": 1,
+  "total": 8,
+  "nombre": "el_riel_de_la_banda",
+  "pieza": "vinetas-esquema-voz",
+  "disposicion": "F",
+  "zonas": {
+    "experimento": "vinetas",
+    "evidencia": "esquema",
+    "voz": "voz",
+    "leyenda": "palabra"
+  },
+  "titulo": "el riel de la banda",
+  "instruccion": "Toca las tres viñetas del viernes, en orden.",
+  "ayuda": [
+    "Toca la viñeta del riel, después la de Papo y después la de Yarisa",
+    "Con cada viñeta se enciende una parte del esquema",
+    "Los dos signos de pregunta quedan encendidos: esa es la cuenta de la boleta"
+  ],
+  "datos": {
+    "palabra": "boleta",
+    "palabra_nota": "La hoja de la entrega, con sus cuentas y su firma",
+    "objeto": "camisa",
+    "piso": {
+      "cols": 6,
+      "filas": 4,
+      "semilla": 7
+    },
+    "vinetas": [
+      {
+        "dia": "Viernes temprano",
+        "texto": "Ocho camisas de la banda cuelgan del riel.",
+        "forma": "fila",
+        "n": 8,
+        "burbuja": "La última es la octava: la banda está completa."
+      },
+      {
+        "dia": "Papo, en la puerta",
+        "texto": "«Me llevo de la 2.ª a la 4.ª para el ensayo».",
+        "forma": "fila",
+        "n": 3,
+        "burbuja": "Las demás, en la otra vuelta del motor."
+      },
+      {
+        "dia": "Yarisa, con la libreta",
+        "texto": "«¿Cuántas se lleva, y cuántas quedan?»",
+        "forma": "fila",
+        "n": 5,
+        "burbuja": "La boleta pide los dos números."
+      }
+    ],
+    "respuesta": "las viñetas se tocan en el orden en que están: 1, 2, 3; de la 2.ª a la 4.ª son tres, y quedan cinco",
+    "esquema": {
+      "rotulo": "El esquema de la boleta",
+      "aria": "De la 2.ª a la 4.ª: si se restan los lugares, signo de pregunta; si se cuentan en el riel, signo de pregunta",
+      "raiz": "De la 2.ª a la 4.ª",
+      "arriba": {
+        "si": "se restan los lugares",
+        "entonces": "?"
+      },
+      "abajo": {
+        "si": "se cuentan en el riel",
+        "entonces": "?"
+      }
+    },
+    "voz": {
+      "quien": "Doña Minerva",
+      "texto": "La boleta dice cuántas; el riel dice cuáles. Tienen que cuadrar."
+    }
+  },
+  "limites": {
+    "vinetas": 3,
+    "objetos_fila": 24,
+    "objetos_torre": 19,
+    "esquema_raiz": 30,
+    "esquema_si": 35,
+    "esquema_entonces": 23
+  },
+  "emite": ["terminó"],
+  "escucha": []
+}

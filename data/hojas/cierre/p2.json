@@ -1,0 +1,70 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "4 · La regla en otra parte · cierre, pasos 1 a 4",
+    "nivel": "generalizar",
+    "lo_que_pide": "Generaliza. Usa la regla donde no la probó: en otra forma de presentar lo mismo, en lo que otro dejó escrito, o al revés, del resultado a lo que lo produjo. Cada desafío le cambia el gesto y lo que varía.",
+    "al_salir": "Sale sabiendo que la regla vale fuera de los casos donde nació, y dónde deja de valer.",
+    "arista": "De la cantidad al lugar donde termina el tramo: tres camisas desde la 2.ª llegan hasta la 4.ª, porque la 2.ª ya es una de las tres.",
+    "acto": "calcular",
+    "pieza": "tramo-del-riel",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "n": 8,
+      "modo": "hasta_cual",
+      "casos": 3
+    },
+    "maestro_pregunta": "Tres desde la segunda y llegaste a la cuarta: ¿por qué no a la quinta?",
+    "registro": "El registro de tramos (desde · cuántas · dije · el riel); se vuelve a mirar en el cierre 8 (la boleta).",
+    "impreso": "no"
+  },
+  "id": "p2",
+  "casa": "00014",
+  "paso": 2,
+  "total": 8,
+  "nombre": "hasta_cual_se_lleva",
+  "pieza": "tramo-del-riel",
+  "disposicion": "E",
+  "zonas": {
+    "experimento": "riel",
+    "leyenda": {"casa": "leyenda", "texto": "Tres desde la 2.ª: la 2.ª ya es una.", "objeto": "camisa"},
+    "control": "caso",
+    "evidencia": "registro"
+  },
+  "titulo": "hasta cuál se lleva",
+  "instruccion": "Escribe hasta cuál camisa llega lo que se lleva Papo y pulsa Comprobar.",
+  "ayuda": [
+    "La tarjeta dice cuántas se lleva Papo y desde cuál camisa empieza",
+    "Escribe el lugar de la última que se lleva antes de que el riel las encienda",
+    "Pulsa Comprobar: el riel enciende tantas como dice la boleta y marca dónde termina"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "n": 8,
+    "nombres": ["Tomás", "Génesis", "Adriel", "Yulissa", "Mateo", "Paola", "Isaac", "Dayana"],
+    "modo": "hasta_cual",
+    "columnas": ["desde", "cuántas", "dije", "el riel"],
+    "rotulo_riel": "El riel de la banda",
+    "rotulo_caso": "Lo que dice la boleta",
+    "rotulo_registro": "El registro",
+    "rotulo_ventana": "ventana",
+    "rotulo_puerta": "puerta",
+    "plantilla_orden": "{{n}}.ª",
+    "etiqueta_cuenta": "encendidas",
+    "etiqueta_cuantas": "hasta cuál",
+    "boton_comprobar": "Comprobar",
+    "msg_vacio": "Escribe hasta cuál antes de comprobar.",
+    "msg_bien": "Dijiste <b>{{dicho}}</b> y el riel llega a <b>{{riel}}</b>: lo mismo.",
+    "msg_mal": "Dijiste <b>{{dicho}}</b> y el riel llega a <b>{{riel}}</b>. {{pista}}",
+    "msg_completar": "Los tres tramos de la boleta están encendidos y anotados.",
+    "casos": [
+      {"texto": "Papo se lleva tres, desde la 2.ª.", "desde": 2, "cuantas": 3, "pista": "La 2.ª ya es una de las tres: corre dos más."},
+      {"texto": "Con las ocho otra vez: cuatro, desde la 5.ª.", "desde": 5, "cuantas": 4, "pista": "La 5.ª ya es una de las cuatro."},
+      {"texto": "Con las ocho otra vez: cinco, desde la 3.ª.", "desde": 3, "cuantas": 5, "pista": "La 3.ª ya es una de las cinco."}
+    ]
+  },
+  "limites": {"n": 9, "casos": 4, "renglones": 4},
+  "emite": ["terminó"],
+  "escucha": []
+}

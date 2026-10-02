@@ -1,0 +1,70 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "1 · Lo que ya sé · inicio, pasos 1 a 5",
+    "nivel": "explorar",
+    "lo_que_pide": "Explora. Se encuentra con el problema de la historia y lo tantea con lo que ya sabía hacer. Al final ve la idea nueva funcionar en una máquina y dice qué va a salir antes de verlo.",
+    "al_salir": "Sale sabiendo qué parte del problema resuelve con lo que ya sabía y qué parte no. Ya vio la idea nueva en acción, pero todavía no sabe cuándo ni por qué pasa.",
+    "arista": "El lugar de la última es cuántas hay, en las dos direcciones: si la última es la 4.ª hay cuatro; si hay seis, la última es la 6.ª.",
+    "acto": "predecir y comprobar",
+    "pieza": "riel-tapado",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "modo": "ultima",
+      "casos": 3
+    },
+    "maestro_pregunta": "Si la última es la cuarta, ¿para qué contarlas? ¿Y si la primera no estuviera pegada a la ventana?",
+    "registro": "El registro de tres renglones (dijeron · dije · el riel); se vuelve a mirar en el inicio 10 (lo que falta) y en el desarrollo 3 (la regla).",
+    "impreso": "no"
+  },
+  "id": "p4",
+  "casa": "00014",
+  "paso": 4,
+  "total": 10,
+  "nombre": "la_ultima_dice_cuantas",
+  "pieza": "riel-tapado",
+  "disposicion": "C",
+  "zonas": {
+    "experimento": "riel",
+    "control": "dato",
+    "evidencia": "registro",
+    "voz": {"casa": "voz", "quien": "Doña Minerva", "texto": "Yo no cuento el riel: miro la última y ya sé cuántas."}
+  },
+  "titulo": "la última dice cuántas",
+  "instruccion": "Lee lo que dijeron, escribe el número y pulsa Destapar.",
+  "ayuda": [
+    "La tarjeta dice lo que alguien sabe del riel y lo que se pregunta",
+    "Escribe tu número en el campo antes de destapar",
+    "Pulsa Destapar: la tela se corre y el riel se cuenta solo, desde la ventana"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "modo": "ultima",
+    "rotulo_riel": "El riel del taller",
+    "rotulo_dato": "Lo que dijeron",
+    "rotulo_registro": "El registro",
+    "rotulo_ventana": "ventana",
+    "rotulo_puerta": "puerta",
+    "texto_tela": "tapado con una tela",
+    "plantilla_orden": "{{n}}.ª",
+    "etiqueta_cuenta": "el riel dice",
+    "etiqueta_campo": "tu número",
+    "boton_destapar": "Destapar",
+    "columna_dijeron": "dijeron",
+    "columna_dije": "dije",
+    "columna_riel": "el riel",
+    "msg_vacio": "Escribe el número antes de destapar.",
+    "msg_bien": "Dijiste <b>{{dicho}}</b> y el riel dice <b>{{riel}}</b>: lo mismo.",
+    "msg_mal": "Dijiste <b>{{dicho}}</b> y el riel dice <b>{{riel}}</b>. {{pista}}",
+    "msg_completar": "Los tres rieles quedaron destapados y anotados.",
+    "casos": [
+      {"dato": "Doña Minerva dice: la última camisa es la cuarta.", "pregunta": "¿Cuántas camisas hay en el riel?", "resumen": "la última es la 4.ª", "n": 4, "pide": "cuantas", "pista": "La última lleva el número de todas: si es la cuarta, hay cuatro."},
+      {"dato": "Yarisa contó seis camisas.", "pregunta": "¿Qué lugar hace la última?", "resumen": "hay 6", "n": 6, "pide": "lugar", "pista": "Si hay seis, la última hace la sexta."},
+      {"dato": "Papo dice: la última que me llevé era la quinta.", "pregunta": "¿Cuántas camisas se llevó Papo?", "resumen": "la última fue la 5.ª", "n": 5, "pide": "cuantas", "pista": "Hasta la quinta, contándola, van cinco."}
+    ]
+  },
+  "limites": {"n": 9, "casos": 4, "renglones": 4},
+  "emite": ["terminó"],
+  "escucha": []
+}

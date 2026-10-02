@@ -1,0 +1,81 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "4 · La regla en otra parte · cierre, pasos 1 a 4",
+    "nivel": "generalizar",
+    "lo_que_pide": "Generaliza. Usa la regla donde no la probó: en otra forma de presentar lo mismo, en lo que otro dejó escrito, o al revés, del resultado a lo que lo produjo. Cada desafío le cambia el gesto y lo que varía.",
+    "al_salir": "Sale sabiendo que la regla vale fuera de los casos donde nació, y dónde deja de valer.",
+    "arista": "Las tres cuentas de un vistazo: antes de la k.ª hay k − 1, hasta ella k, y desde la otra punta hace la (n + 1 − k).ª.",
+    "acto": "calcular",
+    "pieza": "ronda-del-riel",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "rondas": 8,
+      "n_max": 9
+    },
+    "maestro_pregunta": "¿Cuáles tarjetas te salieron más rápido, las de “antes” o las de “la otra punta”?",
+    "registro": "El marcador de la ronda (aciertos y segundos); se vuelve a mirar en la pantalla final del cierre.",
+    "impreso": "no"
+  },
+  "id": "p4",
+  "casa": "00014",
+  "paso": 4,
+  "total": 8,
+  "nombre": "la_ronda_del_riel",
+  "pieza": "ronda-del-riel",
+  "disposicion": "D",
+  "zonas": {
+    "experimento": "fila",
+    "control": "mandos",
+    "evidencia": "marcas",
+    "leyenda": "leyenda",
+    "voz": {"casa": "voz", "quien": "Papo", "texto": "Con el motor prendido no se cuenta con el dedo: dilo rápido."}
+  },
+  "titulo": "la ronda del riel",
+  "instruccion": "Pulsa Arrancar y toca el número que contesta cada tarjeta.",
+  "ayuda": [
+    "Pulsa Arrancar: se enciende una camisa y la tarjeta hace una pregunta",
+    "Toca el número en la banda; el reloj sube y no pasa nada si fallas",
+    "Al terminar, Jugar otra vez sigue con más tarjetas"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "rondas": 8,
+    "n_max": 9,
+    "pool": [
+      {"n": 6, "k": 4, "q": "antes"},
+      {"n": 8, "k": 3, "q": "otra"},
+      {"n": 9, "k": 5, "q": "hasta"},
+      {"n": 6, "k": 2, "q": "otra"},
+      {"n": 8, "k": 7, "q": "antes"},
+      {"n": 4, "k": 4, "q": "hasta"},
+      {"n": 9, "k": 1, "q": "otra"},
+      {"n": 7, "k": 5, "q": "antes"},
+      {"n": 9, "k": 6, "q": "otra"},
+      {"n": 5, "k": 3, "q": "hasta"},
+      {"n": 8, "k": 8, "q": "antes"},
+      {"n": 6, "k": 6, "q": "otra"}
+    ],
+    "leyenda": "Antes: una menos. Hasta: su número. La otra punta: lo que falta para una más que todas.",
+    "rotulo_fila": "El riel",
+    "rotulo_mandos": "¿Cuántas?",
+    "rotulo_marcas": "La ronda",
+    "rotulo_ventana": "ventana",
+    "rotulo_puerta": "puerta",
+    "plantilla_orden": "{{n}}.ª",
+    "texto_espera": "…",
+    "pregunta_antes": "¿Cuántas van antes de esta?",
+    "pregunta_hasta": "¿Cuántas hay hasta esta, contándola?",
+    "pregunta_otra": "De {{n}} camisas: ¿qué lugar hace desde la puerta?",
+    "boton_arrancar": "Arrancar",
+    "boton_otra_vez": "Jugar otra vez",
+    "rotulo_aciertos": "aciertos",
+    "rotulo_segundos": "segundos",
+    "msg_espera": "Pulsa Arrancar: se enciende una camisa y sale una pregunta; toca el número.",
+    "msg_fin": "{{aciertos}} de {{rondas}} en {{segundos}} segundos. Otra con Jugar otra vez."
+  },
+  "limites": {"n_max": 9, "rondas": 12},
+  "emite": ["terminó"],
+  "escucha": []
+}

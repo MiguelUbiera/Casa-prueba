@@ -1,0 +1,70 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "4 · La regla en otra parte · cierre, pasos 1 a 4",
+    "nivel": "generalizar",
+    "lo_que_pide": "Generaliza. Usa la regla donde no la probó: en otra forma de presentar lo mismo, en lo que otro dejó escrito, o al revés, del resultado a lo que lo produjo. Cada desafío le cambia el gesto y lo que varía.",
+    "al_salir": "Sale sabiendo que la regla vale fuera de los casos donde nació, y dónde deja de valer.",
+    "arista": "De la puerta a la ventana con otro riel: con ocho camisas los dos lugares suman nueve, así que la 3.ª desde la puerta es la 6.ª desde la ventana.",
+    "acto": "calcular",
+    "pieza": "riel-tapado",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "modo": "otra_punta",
+      "casos": 3
+    },
+    "maestro_pregunta": "Con ocho camisas, ¿cuánto suman los dos lugares de la de Paola? ¿Y con seis sumaban cuánto?",
+    "registro": "El registro de tres renglones (dijeron · dije · el riel); se vuelve a mirar en el cierre 6.",
+    "impreso": "no"
+  },
+  "id": "p3",
+  "casa": "00014",
+  "paso": 3,
+  "total": 8,
+  "nombre": "desde_la_puerta",
+  "pieza": "riel-tapado",
+  "disposicion": "C",
+  "zonas": {
+    "experimento": "riel",
+    "control": "dato",
+    "evidencia": "registro",
+    "voz": {"casa": "voz", "quien": "Papo", "texto": "Desde la puerta la de Paola es la tercera. Tradúcemelo a ventana."}
+  },
+  "titulo": "desde la puerta",
+  "instruccion": "Lee lo que dijo Papo, escribe el lugar desde la ventana y pulsa Destapar.",
+  "ayuda": [
+    "La tarjeta dice el lugar de una camisa desde la puerta y cuántas hay en el riel",
+    "Escribe su lugar desde la ventana antes de destapar",
+    "Pulsa Destapar: el riel se cuenta desde la ventana hasta esa camisa"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "modo": "otra_punta",
+    "rotulo_riel": "El riel de la banda",
+    "rotulo_dato": "Lo que dijo Papo",
+    "rotulo_registro": "El registro",
+    "rotulo_ventana": "ventana",
+    "rotulo_puerta": "puerta",
+    "texto_tela": "tapado con una tela",
+    "plantilla_orden": "{{n}}.ª",
+    "etiqueta_cuenta": "el riel dice",
+    "etiqueta_campo": "tu número",
+    "boton_destapar": "Destapar",
+    "columna_dijeron": "dijeron",
+    "columna_dije": "dije",
+    "columna_riel": "el riel",
+    "msg_vacio": "Escribe el número antes de destapar.",
+    "msg_bien": "Dijiste <b>{{dicho}}</b> y el riel dice <b>{{riel}}</b>: lo mismo.",
+    "msg_mal": "Dijiste <b>{{dicho}}</b> y el riel dice <b>{{riel}}</b>. {{pista}}",
+    "msg_completar": "Las tres camisas quedaron destapadas y anotadas.",
+    "casos": [
+      {"dato": "Papo: la de Paola es la 3.ª desde la puerta. En el riel hay ocho.", "pregunta": "¿Qué lugar hace desde la ventana?", "resumen": "Paola, 3.ª desde la puerta", "n": 8, "puerta": 3, "pide": "ventana", "pista": "Con ocho, los dos lugares de una camisa suman nueve."},
+      {"dato": "Papo: la de Dayana es la 1.ª desde la puerta. En el riel hay ocho.", "pregunta": "¿Qué lugar hace desde la ventana?", "resumen": "Dayana, 1.ª desde la puerta", "n": 8, "puerta": 1, "pide": "ventana", "pista": "La primera desde la puerta es la última desde la ventana."},
+      {"dato": "Papo: la de Yulissa es la 5.ª desde la puerta. En el riel hay ocho.", "pregunta": "¿Qué lugar hace desde la ventana?", "resumen": "Yulissa, 5.ª desde la puerta", "n": 8, "puerta": 5, "pide": "ventana", "pista": "Los dos lugares suman nueve: ¿cuánto le falta al cinco?"}
+    ]
+  },
+  "limites": {"n": 9, "casos": 4, "renglones": 4},
+  "emite": ["terminó"],
+  "escucha": []
+}

@@ -1,0 +1,70 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "2 · La sospecha · inicio, pasos 6 a 10",
+    "nivel": "conjeturar",
+    "lo_que_pide": "Conjetura. Dice qué espera antes de ver y lo compara con lo que obtuvo, en casos que cambian. Separa los casos donde aparece la idea de los que solo se le parecen, y zanja una discusión con un dato a la vista.",
+    "al_salir": "Sale con una sospecha que acierta en los casos sencillos y con la pregunta que recoge el desarrollo: ¿pasa siempre, y cómo se dice para todos los casos?",
+    "arista": "De la k.ª a la m.ª, contando las dos, hay m − k + 1 camisas: de la 3.ª a la 6.ª son cuatro, no tres, porque la primera del tramo también cuenta.",
+    "acto": "calcular",
+    "pieza": "tramo-del-riel",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "n": 6,
+      "modo": "tramo",
+      "casos": 3
+    },
+    "maestro_pregunta": "Papo restó y le dio tres; el riel contó cuatro: ¿cuál camisa no restó Papo?",
+    "registro": "El registro de tramos (de · a · dije · el riel); se vuelve a mirar en el desarrollo 2, donde a la cuenta del riel se le pone al lado la resta y una más.",
+    "impreso": "no"
+  },
+  "id": "p7",
+  "casa": "00014",
+  "paso": 7,
+  "total": 10,
+  "nombre": "de_una_camisa_a_otra",
+  "pieza": "tramo-del-riel",
+  "disposicion": "C",
+  "zonas": {
+    "experimento": "riel",
+    "control": "caso",
+    "evidencia": "registro",
+    "voz": {"casa": "voz", "quien": "Papo", "texto": "De la tercera a la sexta: seis menos tres, tres. Me llevo tres."}
+  },
+  "titulo": "de una camisa a otra",
+  "instruccion": "Escribe cuántas camisas se lleva Papo y pulsa Comprobar.",
+  "ayuda": [
+    "La tarjeta dice de cuál camisa a cuál se lleva Papo, con las dos puntas",
+    "Escribe cuántas son antes de que el riel las encienda",
+    "Pulsa Comprobar: el riel enciende el tramo una por una y lo cuenta"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "n": 6,
+    "nombres": ["Dariel", "Luisa", "Kendry", "Marielys", "Jonathan", "Yeimi"],
+    "modo": "tramo",
+    "columnas": ["de", "a", "dije", "el riel"],
+    "rotulo_riel": "El riel del martes",
+    "rotulo_caso": "Lo que se lleva Papo",
+    "rotulo_registro": "El registro de tramos",
+    "rotulo_ventana": "ventana",
+    "rotulo_puerta": "puerta",
+    "plantilla_orden": "{{n}}.ª",
+    "etiqueta_cuenta": "encendidas",
+    "etiqueta_cuantas": "cuántas se lleva",
+    "boton_comprobar": "Comprobar",
+    "msg_vacio": "Escribe cuántas antes de comprobar.",
+    "msg_bien": "Dijiste <b>{{dicho}}</b> y el riel cuenta <b>{{riel}}</b>: lo mismo.",
+    "msg_mal": "Dijiste <b>{{dicho}}</b> y el riel cuenta <b>{{riel}}</b>. {{pista}}",
+    "msg_completar": "Los tres tramos están contados y anotados.",
+    "casos": [
+      {"texto": "Papo se lleva de la 3.ª a la 6.ª.", "de": 3, "a": 6, "pista": "La tercera también se va: cuéntala."},
+      {"texto": "Con las seis otra vez: de la 2.ª a la 6.ª.", "de": 2, "a": 6, "pista": "Desde la segunda hasta la sexta, con las dos."},
+      {"texto": "Con las seis otra vez: de la 1.ª a la 3.ª.", "de": 1, "a": 3, "pista": "La primera también se va: cuéntala."}
+    ]
+  },
+  "limites": {"n": 9, "casos": 4, "renglones": 4},
+  "emite": ["terminó"],
+  "escucha": []
+}

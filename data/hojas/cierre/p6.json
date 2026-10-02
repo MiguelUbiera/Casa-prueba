@@ -1,0 +1,71 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "5 · El porqué · cierre, pasos 5 a 8",
+    "nivel": "justificar",
+    "lo_que_pide": "Justifica. Resuelve él mismo el problema de la historia y sostiene cada decisión con la regla y con algo que se puede señalar. Termina entregando un producto con nombre que lleva su porqué.",
+    "al_salir": "Sale con el problema resuelto por él y una respuesta que otro puede revisar y que se sostiene sola.",
+    "arista": "De los dos lugares a la cantidad: suman una más que las camisas, así que la 5.ª desde la ventana y 4.ª desde la puerta están en un riel de ocho.",
+    "acto": "calcular",
+    "pieza": "riel-tapado",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "modo": "dos_puntas",
+      "casos": 3
+    },
+    "maestro_pregunta": "Cinco y cuatro suman nueve y hay ocho: ¿cuál camisa se contó dos veces?",
+    "registro": "El registro de tres renglones (dijeron · dije · el riel); se vuelve a mirar en la pantalla final del cierre.",
+    "impreso": "no"
+  },
+  "id": "p6",
+  "casa": "00014",
+  "paso": 6,
+  "total": 8,
+  "nombre": "cuantas_hay_sin_contar",
+  "pieza": "riel-tapado",
+  "disposicion": "D",
+  "zonas": {
+    "experimento": "riel",
+    "control": "dato",
+    "evidencia": "registro",
+    "leyenda": {"casa": "leyenda", "texto": "Los dos lugares suman una más que las camisas.", "objeto": "camisa"},
+    "voz": {"casa": "voz", "quien": "Doña Minerva", "texto": "Si me dan los dos lugares de una camisa, no necesito ver el riel."}
+  },
+  "titulo": "cuántas hay sin contar",
+  "instruccion": "Lee los dos lugares, escribe cuántas camisas hay y pulsa Destapar.",
+  "ayuda": [
+    "La tarjeta dice el lugar de una camisa desde la ventana y desde la puerta",
+    "Escribe cuántas camisas hay en el riel antes de destapar",
+    "Pulsa Destapar: el riel se cuenta desde las dos puntas hasta esa camisa y después entero"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "modo": "dos_puntas",
+    "rotulo_riel": "El riel del taller",
+    "rotulo_dato": "Lo que dijeron",
+    "rotulo_registro": "El registro",
+    "rotulo_ventana": "ventana",
+    "rotulo_puerta": "puerta",
+    "texto_tela": "tapado con una tela",
+    "plantilla_orden": "{{n}}.ª",
+    "etiqueta_cuenta": "el riel dice",
+    "etiqueta_campo": "tu número",
+    "boton_destapar": "Destapar",
+    "columna_dijeron": "dijeron",
+    "columna_dije": "dije",
+    "columna_riel": "el riel",
+    "msg_vacio": "Escribe el número antes de destapar.",
+    "msg_bien": "Dijiste <b>{{dicho}}</b> y el riel dice <b>{{riel}}</b>: lo mismo.",
+    "msg_mal": "Dijiste <b>{{dicho}}</b> y el riel dice <b>{{riel}}</b>. {{pista}}",
+    "msg_completar": "Los tres rieles quedaron destapados y anotados.",
+    "casos": [
+      {"dato": "Viernes, Mateo: 5.ª desde la ventana y 4.ª desde la puerta.", "pregunta": "¿Cuántas camisas hay en el riel?", "resumen": "Mateo: 5.ª y 4.ª", "n": 8, "ventana": 5, "puerta": 4, "pide": "cuantas", "pista": "Cinco y cuatro cuentan dos veces la de Mateo."},
+      {"dato": "El jueves, la de Luisa era la 2.ª desde la ventana y la 8.ª desde la puerta.", "pregunta": "¿Cuántas camisas había en el riel?", "resumen": "Luisa: 2.ª y 8.ª", "n": 9, "ventana": 2, "puerta": 8, "pide": "cuantas", "pista": "Dos y ocho cuentan dos veces la de Luisa."},
+      {"dato": "El martes, la de Marielys era la 4.ª desde la ventana y la 3.ª desde la puerta.", "pregunta": "¿Cuántas camisas había en el riel?", "resumen": "Marielys: 4.ª y 3.ª", "n": 6, "ventana": 4, "puerta": 3, "pide": "cuantas", "pista": "Cuatro y tres cuentan dos veces la de Marielys."}
+    ]
+  },
+  "limites": {"n": 9, "casos": 4, "renglones": 4},
+  "emite": ["terminó"],
+  "escucha": []
+}

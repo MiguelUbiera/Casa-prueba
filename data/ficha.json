@@ -1,0 +1,172 @@
+{
+  "identidad": {
+    "codigo": "S321-00022",
+    "ruta": "1.1.2.10",
+    "slug": "/na/conteo-y-numeracion/cardinalidad-y-ordinalidad/relacion-entre-cardinalidad-y-ordinalidad/la-ultima-dice-cuantas",
+    "titulo": "La última dice cuántas",
+    "version": "1.0",
+    "fecha": "2026-10-01"
+  },
+  "ubicacion": {
+    "area": {
+      "ruta": "1",
+      "nombre": "Números y Aritmética"
+    },
+    "dominio": {
+      "ruta": "1.1",
+      "nombre": "Conteo y Numeración"
+    },
+    "nucleo": {
+      "ruta": "1.1.2",
+      "nombre": "Cardinalidad y Ordinalidad"
+    },
+    "unidad": {
+      "ruta": "1.1.2.10",
+      "nombre": "Relación entre Cardinalidad y Ordinalidad"
+    }
+  },
+  "descripcion_breve": "En un taller de costura de Baní, el estudiante relaciona el lugar de cada camisa en el riel con cuántas hay, y con esa relación cuadra y firma la boleta de entrega.",
+  "esencial": {
+    "concepto_central": "La relación entre ordinal y cardinal: el lugar de la última dice cuántas hay.",
+    "nivel_profundidad": "Análisis",
+    "gam": [
+      3,
+      3
+    ],
+    "carga_lectura": 1,
+    "tipo_secuencia": "híbrida",
+    "momento_de_uso": [
+      "Introducir",
+      "Construir"
+    ],
+    "duracion_minutos": [
+      45,
+      60
+    ],
+    "organizacion": [
+      "Grupo completo",
+      "Parejas",
+      "Individual"
+    ],
+    "tecnologia": "Navegador, computadora y pantalla o PDI",
+    "material_complementario": "Lápiz, el imprimible y nueve tarjetas con nombres sobre una cuerda.",
+    "requiere_impresion": true,
+    "idioma": "español",
+    "ambientacion": "Hispanoamérica · República Dominicana"
+  },
+  "conocimientos_previos": [
+    {
+      "ruta": "1.1.2.9",
+      "nombre": "Comparación de Posiciones Ordinales"
+    }
+  ],
+  "aprendizajes_esperados": [
+    "Dice cuántas hay en una fila con el lugar de la última, y al revés.",
+    "Calcula cuántas hay antes de un lugar y hasta él sin contarlas.",
+    "Encuentra el lugar desde la otra punta con cuántas hay en la fila.",
+    "Cuenta un tramo de un lugar a otro con la resta y una más.",
+    "Predice cuántas quedan y qué lugar hacen las demás al quitar o añadir una.",
+    "Distingue qué pregunta contesta una cantidad y cuál contesta un lugar."
+  ],
+  "errores_previsibles": [
+    {
+      "error": "Cree que «la octava» quiere decir ocho camisas.",
+      "respuesta": "El veredicto del cierre 5 enfrenta «la octava» y «ocho» ante la pregunta de doña Milagros, y el porqué dice qué contesta cada número."
+    },
+    {
+      "error": "Resta los lugares para contar un tramo y le falta una.",
+      "respuesta": "El tramo del riel del inicio 7 enciende y cuenta el tramo; en el desarrollo 2 la cuenta del riel queda al lado de la resta y una más."
+    },
+    {
+      "error": "Cuenta la camisa nombrada entre las que van antes de ella.",
+      "respuesta": "En el inicio 6 se escriben antes y hasta para la misma camisa, y el riel enciende primero las de antes y después la nombrada."
+    },
+    {
+      "error": "Cree que el lugar desde la otra punta es el mismo, o el total menos el lugar.",
+      "respuesta": "El riel de dos puntas pregunta antes de dar la vuelta, y las oraciones del inicio 8 dejan a la vista que los dos lugares suman una más."
+    },
+    {
+      "error": "Cree que al quitar una camisa cambian todas de número, o ninguna.",
+      "respuesta": "La camisa que se descuelga del desarrollo 4 enseña que solo corren las de después; el cierre 7 lo repite con tres camisas seguidas."
+    }
+  ],
+  "estructura": [
+    {
+      "archivo": "inicio.html",
+      "nombre": "La camisa de Marielys",
+      "funcion": "Recuperación diagnóstica"
+    },
+    {
+      "archivo": "desarrollo.html",
+      "nombre": "El riel que crece",
+      "funcion": "Construcción guiada"
+    },
+    {
+      "archivo": "cierre.html",
+      "nombre": "La entrega de la banda",
+      "funcion": "Evaluación gamificada"
+    }
+  ],
+  "evidencia_observable": [
+    "El imprimible con la regla copiada y la libreta de un riel de ocho escrita y firmada, con su «lo sé porque».",
+    "El registro de cada máquina, con la predicción al lado de lo que salió.",
+    "La boleta de entrega de la banda, llena y firmada, en el último desafío del cierre."
+  ],
+  "repertorio_dinamicas": {
+    "acto": "Contar",
+    "nivel": "Justificar",
+    "estructura_de_juego": "Una ronda de agilidad contra el reloj en el cierre."
+  },
+  "red": {
+    "continua_en": [],
+    "refuerza": [
+      {
+        "ruta": "1.1.2.9",
+        "nombre": "Comparación de Posiciones Ordinales"
+      }
+    ],
+    "se_relaciona_con": []
+  },
+  "etiquetas": {
+    "contexto_narrativo": [
+      "taller de costura",
+      "Baní",
+      "uniformes escolares",
+      "riel de camisas",
+      "boleta de entrega"
+    ],
+    "objetos_matematicos": [
+      "cardinal",
+      "ordinal",
+      "relación entre lugar y cantidad",
+      "conteo de un tramo"
+    ],
+    "representaciones": [
+      "concreta",
+      "pictórica",
+      "simbólica",
+      "tabular"
+    ],
+    "habilidades": [
+      "contar",
+      "calcular",
+      "predecir",
+      "generalizar",
+      "justificar"
+    ],
+    "juegos": [
+      "ronda de agilidad"
+    ],
+    "herramientas": []
+  },
+  "estado": {
+    "ilustraciones": 0,
+    "accesibilidad": [
+      "contraste_alto",
+      "movimiento_reducido",
+      "navegable_por_teclado",
+      "sonido_desactivable"
+    ]
+  },
+  "nota": "Ubicación orientativa. La secuencia se sitúa por el contenido que trabaja: el GAM dice cuánta abstracción exige, no a quién va dirigida. Cada facilitador conoce su grupo y la sitúa donde le corresponda."
+}

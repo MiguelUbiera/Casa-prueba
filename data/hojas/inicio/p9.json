@@ -1,0 +1,80 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "2 · La sospecha · inicio, pasos 6 a 10",
+    "nivel": "conjeturar",
+    "lo_que_pide": "Conjetura. Dice qué espera antes de ver y lo compara con lo que obtuvo, en casos que cambian. Separa los casos donde aparece la idea de los que solo se le parecen, y zanja una discusión con un dato a la vista.",
+    "al_salir": "Sale con una sospecha que acierta en los casos sencillos y con la pregunta que recoge el desarrollo: ¿pasa siempre, y cómo se dice para todos los casos?",
+    "arista": "Los dos tienen razón: Papo y Yarisa contaron la misma camisa desde puntas distintas, y 4 + 3 = 7 con un riel de seis.",
+    "acto": "justificar",
+    "pieza": "veredicto-con-porque",
+    "esquemas": [],
+    "numeros": {
+      "dichos": 2,
+      "casos": 1,
+      "veredictos": 3,
+      "porques": 3,
+      "datos_a_la_vista": 3
+    },
+    "maestro_pregunta": "Si el riel tuviera nueve camisas, ¿qué número le daría Papo a la de Marielys?",
+    "registro": "El veredicto («los dos») con su porqué; se vuelve a mirar en el cierre 5, donde Papo discute otra vez con otro número.",
+    "impreso": "no"
+  },
+  "id": "p9",
+  "casa": "00014",
+  "paso": 9,
+  "total": 10,
+  "nombre": "papo_o_yarisa",
+  "pieza": "veredicto-con-porque",
+  "disposicion": "C",
+  "zonas": {"experimento": "dichos", "control": "veredicto", "evidencia": "acta", "voz": "voz"},
+  "titulo": "papo o yarisa",
+  "instruccion": "Elige quién tiene razón y por qué, y sella el veredicto.",
+  "ayuda": [
+    "Lee los dos dichos y los datos que están a la vista",
+    "Toca un veredicto y un porqué; si uno no va, tiembla y te orienta",
+    "Pulsa Sellar: el acta guarda la pregunta, el veredicto y el porqué"
+  ],
+  "datos": {
+    "rotulo_dichos": "Los dichos",
+    "rotulo_datos": "A la vista",
+    "rotulo_veredicto": "El veredicto",
+    "rotulo_porque": "Porque",
+    "rotulo_acta": "El acta",
+    "boton_sellar": "Sellar",
+    "columna_pregunta": "pregunta",
+    "columna_veredicto": "veredicto",
+    "columna_porque": "porque",
+    "voz": {"quien": "Doña Minerva", "texto": "En este taller una camisa se nombra con su lugar y con su punta."},
+    "dichos": [
+      {"quien": "Papo", "t": "La de Marielys es la tercera."},
+      {"quien": "Yarisa", "t": "La de Marielys es la cuarta."}
+    ],
+    "datos_a_la_vista": [
+      "La de Marielys desde la ventana: 4.ª",
+      "La de Marielys desde la puerta: 3.ª",
+      "4 + 3 = 7, y el riel tiene 6 camisas"
+    ],
+    "veredictos": [
+      {"clave": "papo", "t": "Papo"},
+      {"clave": "yarisa", "t": "Yarisa"},
+      {"clave": "ambos", "t": "Los dos"}
+    ],
+    "porques": [
+      {"clave": "punta", "t": "cada uno contó desde una punta"},
+      {"clave": "mal", "t": "Papo contó mal desde la ventana"},
+      {"clave": "movio", "t": "la camisa cambió de lugar"}
+    ],
+    "casos": [
+      {"rotulo": "¿quién tiene razón?", "pregunta": "¿Quién tiene razón sobre la camisa de Marielys?", "veredicto": "ambos", "porque": "punta",
+       "pista_veredicto": "Busca cada número en los datos: ¿desde qué punta sale cada uno?",
+       "pista_porque": "El porqué tiene que explicar cómo la misma camisa es la 3.ª y la 4.ª."}
+    ],
+    "msg_elige": "Elige un veredicto y un porqué antes de sellar.",
+    "msg_bien": "Sellado: {{veredicto}}, porque {{porque}}.",
+    "msg_completar": "El acta está sellada: los dos tienen razón, cada uno desde su punta."
+  },
+  "limites": {"casos": 3, "veredictos": 3, "porques": 4, "datos": 4, "porque_palabras": 7},
+  "emite": ["terminó"],
+  "escucha": []
+}

@@ -1,0 +1,79 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "5 · El porqué · cierre, pasos 5 a 8",
+    "nivel": "justificar",
+    "lo_que_pide": "Justifica. Resuelve él mismo el problema de la historia y sostiene cada decisión con la regla y con algo que se puede señalar. Termina entregando un producto con nombre que lleva su porqué.",
+    "al_salir": "Sale con el problema resuelto por él y una respuesta que otro puede revisar y que se sostiene sola.",
+    "arista": "Cuántas no es cuál: «ocho» contesta cuántas (todas); «la octava» contesta cuál (una sola); el mismo número sirve a las dos preguntas solo para la última.",
+    "acto": "justificar",
+    "pieza": "veredicto-con-porque",
+    "esquemas": [],
+    "numeros": {
+      "dichos": 2,
+      "casos": 1,
+      "veredictos": 2,
+      "porques": 3,
+      "datos_a_la_vista": 3
+    },
+    "maestro_pregunta": "¿Cuándo sí sirve el mismo número para contestar las dos preguntas?",
+    "registro": "El veredicto (Yarisa) con su porqué; se vuelve a mirar en la pantalla final del cierre.",
+    "impreso": "no"
+  },
+  "id": "p5",
+  "casa": "00014",
+  "paso": 5,
+  "total": 8,
+  "nombre": "ocho_o_la_octava",
+  "pieza": "veredicto-con-porque",
+  "disposicion": "C",
+  "zonas": {"experimento": "dichos", "control": "veredicto", "evidencia": "acta", "voz": "voz"},
+  "titulo": "ocho o la octava",
+  "instruccion": "Elige quién contesta lo que preguntó doña Milagros y por qué, y sella.",
+  "ayuda": [
+    "Lee la pregunta de doña Milagros, los dos dichos y los datos a la vista",
+    "Toca un veredicto y un porqué; si uno no va, tiembla y te orienta",
+    "Pulsa Sellar: el acta guarda la pregunta, el veredicto y el porqué"
+  ],
+  "datos": {
+    "rotulo_dichos": "Los dichos",
+    "rotulo_datos": "A la vista",
+    "rotulo_veredicto": "El veredicto",
+    "rotulo_porque": "Porque",
+    "rotulo_acta": "El acta",
+    "boton_sellar": "Sellar",
+    "columna_pregunta": "pregunta",
+    "columna_veredicto": "veredicto",
+    "columna_porque": "porque",
+    "voz": {"quien": "Doña Milagros", "texto": "¿La octava? Yo pregunté cuántas, no cuál."},
+    "dichos": [
+      {"quien": "Papo", "t": "La octava."},
+      {"quien": "Yarisa", "t": "Ocho."}
+    ],
+    "datos_a_la_vista": [
+      "La de Dayana es la 8.ª, la última",
+      "En el riel hay 8 camisas",
+      "La boleta: pedido de 8"
+    ],
+    "veredictos": [
+      {"clave": "papo", "t": "Papo"},
+      {"clave": "yarisa", "t": "Yarisa"}
+    ],
+    "porques": [
+      {"clave": "una_todas", "t": "la octava es una; ocho son todas"},
+      {"clave": "lo_mismo", "t": "octava y ocho es lo mismo"},
+      {"clave": "puerta", "t": "Papo contó desde la puerta"}
+    ],
+    "casos": [
+      {"rotulo": "¿quién contesta?", "pregunta": "Doña Milagros: ¿cuántas camisas de la banda hay listas?", "veredicto": "yarisa", "porque": "una_todas",
+       "pista_veredicto": "Doña Milagros preguntó cuántas: ¿cuál de los dos dijo una cantidad?",
+       "pista_porque": "El porqué tiene que decir qué contesta «la octava» y qué contesta «ocho»."}
+    ],
+    "msg_elige": "Elige un veredicto y un porqué antes de sellar.",
+    "msg_bien": "Sellado: {{veredicto}}, porque {{porque}}.",
+    "msg_completar": "El acta está sellada: ocho contesta cuántas; la octava, cuál."
+  },
+  "limites": {"casos": 3, "veredictos": 3, "porques": 4, "datos": 4, "porque_palabras": 7},
+  "emite": ["terminó"],
+  "escucha": []
+}

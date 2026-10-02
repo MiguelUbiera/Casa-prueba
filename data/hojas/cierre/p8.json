@@ -1,0 +1,74 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "5 · El porqué · cierre, pasos 5 a 8",
+    "nivel": "justificar",
+    "lo_que_pide": "Justifica. Resuelve él mismo el problema de la historia y sostiene cada decisión con la regla y con algo que se puede señalar. Termina entregando un producto con nombre que lleva su porqué.",
+    "al_salir": "Sale con el problema resuelto por él y una respuesta que otro puede revisar y que se sostiene sola.",
+    "arista": "La boleta cuadra con el riel: la última es la 8.ª y hay ocho; de la 2.ª a la 4.ª son tres; quedan cinco; y la de Dayana pasa de 8.ª a 5.ª.",
+    "acto": "calcular",
+    "pieza": "libreta-que-se-cuadra",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "n": 8,
+      "renglones": 4
+    },
+    "maestro_pregunta": "¿Qué renglón de la boleta se puede llenar sin mirar el riel, y cuál no?",
+    "registro": "La boleta de entrega de la banda, llena y firmada: el producto de la secuencia y el eco del artefacto en la pantalla final.",
+    "impreso": "no"
+  },
+  "id": "p8",
+  "casa": "00014",
+  "paso": 8,
+  "total": 8,
+  "nombre": "la_boleta_de_entrega",
+  "pieza": "libreta-que-se-cuadra",
+  "disposicion": "D",
+  "zonas": {
+    "experimento": "riel",
+    "control": "libreta",
+    "evidencia": "cuadre",
+    "leyenda": {"casa": "leyenda", "texto": "Tres se van, cinco quedan, ocho había.", "objeto": "camisa"},
+    "voz": {"casa": "voz", "quien": "Doña Minerva", "texto": "Con la boleta firmada, Papo arranca."}
+  },
+  "titulo": "la boleta de entrega",
+  "instruccion": "Escribe el número de cada renglón, anótalo y firma la boleta.",
+  "ayuda": [
+    "Cada renglón trae los lugares y le falta el número: escríbelo y pulsa Anotar",
+    "El riel enciende lo que el renglón nombra; si no cuadra, te orienta",
+    "Con los cuatro renglones escritos, escribe tu nombre y pulsa Firmar"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "n": 8,
+    "nombres": ["Tomás", "Génesis", "Adriel", "Yulissa", "Mateo", "Paola", "Isaac", "Dayana"],
+    "firma": true,
+    "rotulo_riel": "El riel de la banda",
+    "rotulo_libreta": "La boleta de entrega",
+    "rotulo_cuadre": "Lo escrito",
+    "rotulo_ventana": "ventana",
+    "rotulo_puerta": "puerta",
+    "plantilla_orden": "{{n}}.ª",
+    "etiqueta_campo": "el número",
+    "boton_anotar": "Anotar",
+    "etiqueta_firma": "Tu nombre",
+    "boton_firmar": "Firmar",
+    "texto_firmado": "Firmado:",
+    "msg_vacio": "Escribe el número del renglón antes de anotar.",
+    "msg_mal": "Ese número descuadra la boleta. {{pista}}",
+    "msg_bien": "{{texto}}: {{numero}}. Anotado.",
+    "msg_firma": "La boleta está cuadrada: ahora firma con tu nombre.",
+    "msg_firma_vacia": "Escribe tu nombre para firmar.",
+    "msg_completar": "La boleta cuadra con el riel y lleva firma.",
+    "renglones": [
+      {"tipo": "hay", "texto": "Listas: la última es la 8.ª, así que hay", "corto": "hay", "pista": "La última lleva el número de todas."},
+      {"tipo": "tramo", "de": 2, "a": 4, "texto": "Se lleva Papo, de la 2.ª a la 4.ª", "corto": "se lleva", "pista": "Cuenta las dos puntas: la segunda también se va."},
+      {"tipo": "quedan", "texto": "Quedan en el riel", "corto": "quedan", "pista": "Ocho menos las que se lleva Papo."},
+      {"tipo": "lugar", "pieza": 8, "texto": "La de Dayana, que era la 8.ª, queda de", "corto": "la de Dayana", "pista": "Se van tres de delante de ella: su lugar baja tres."}
+    ]
+  },
+  "limites": {"n": 9, "renglones": 4},
+  "emite": ["terminó"],
+  "escucha": []
+}

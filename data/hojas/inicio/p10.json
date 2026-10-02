@@ -1,0 +1,71 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "2 · La sospecha · inicio, pasos 6 a 10",
+    "nivel": "conjeturar",
+    "lo_que_pide": "Conjetura. Dice qué espera antes de ver y lo compara con lo que obtuvo, en casos que cambian. Separa los casos donde aparece la idea de los que solo se le parecen, y zanja una discusión con un dato a la vista.",
+    "al_salir": "Sale con una sospecha que acierta en los casos sencillos y con la pregunta que recoge el desarrollo: ¿pasa siempre, y cómo se dice para todos los casos?",
+    "arista": "Con el tamaño del pedido y el lugar de la última se sabe cuántas faltan sin contar el riel: pedido de nueve, última 6.ª, faltan tres.",
+    "acto": "calcular",
+    "pieza": "riel-tapado",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "modo": "faltan",
+      "casos": 3
+    },
+    "maestro_pregunta": "Doña Minerva dijo “la sexta” y doña Milagros quería un número de camisas: ¿qué cuenta hiciste tú en el medio?",
+    "registro": "El registro de tres renglones (pedido · la última · dije · faltan); se vuelve a mirar en la pantalla final del inicio y en el desarrollo 1, cuando se cuelgan las tres que faltan.",
+    "impreso": "no"
+  },
+  "id": "p10",
+  "casa": "00014",
+  "paso": 10,
+  "total": 10,
+  "nombre": "lo_que_falta_para_nueve",
+  "pieza": "riel-tapado",
+  "disposicion": "B",
+  "zonas": {
+    "experimento": "riel",
+    "control": "dato",
+    "evidencia": "registro",
+    "voz": {"casa": "voz", "quien": "Doña Milagros", "texto": "Dígame cuántas faltan, no cuál es la última."},
+    "leyenda": {"casa": "leyenda", "texto": "El pedido dice cuántas tienen que colgar al final.", "objeto": "camisa"}
+  },
+  "titulo": "lo que falta para nueve",
+  "instruccion": "Lee el pedido y la última, escribe cuántas faltan y pulsa Destapar.",
+  "ayuda": [
+    "La tarjeta dice de cuántas es el pedido y qué lugar hace la última del riel",
+    "Escribe cuántas faltan antes de destapar",
+    "Pulsa Destapar: el riel se cuenta solo y los ganchos vacíos llegan hasta el pedido"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "modo": "faltan",
+    "rotulo_riel": "El riel del taller",
+    "rotulo_dato": "Lo que dijeron",
+    "rotulo_registro": "El registro",
+    "rotulo_ventana": "ventana",
+    "rotulo_puerta": "puerta",
+    "texto_tela": "tapado con una tela",
+    "plantilla_orden": "{{n}}.ª",
+    "etiqueta_cuenta": "faltan",
+    "etiqueta_campo": "tu número",
+    "boton_destapar": "Destapar",
+    "columna_dijeron": "dijeron",
+    "columna_dije": "dije",
+    "columna_riel": "faltan",
+    "msg_vacio": "Escribe el número antes de destapar.",
+    "msg_bien": "Dijiste <b>{{dicho}}</b> y faltan <b>{{riel}}</b>: lo mismo.",
+    "msg_mal": "Dijiste <b>{{dicho}}</b> y faltan <b>{{riel}}</b>. {{pista}}",
+    "msg_completar": "Los tres pedidos quedaron destapados y anotados.",
+    "casos": [
+      {"dato": "Doña Milagros pide nueve. Doña Minerva: la última es la sexta.", "pregunta": "¿Cuántas faltan para el pedido?", "resumen": "pedido 9 · la última 6.ª", "n": 6, "pedido": 9, "pide": "faltan", "pista": "La última dice cuántas hay; falta lo que no llega al pedido."},
+      {"dato": "La banda del liceo pide ocho. La última es la séptima.", "pregunta": "¿Cuántas faltan para el pedido?", "resumen": "pedido 8 · la última 7.ª", "n": 7, "pedido": 8, "pide": "faltan", "pista": "Si la última es la séptima, hay siete: ¿cuántas para ocho?"},
+      {"dato": "El colegio pide nueve. La última es la novena.", "pregunta": "¿Cuántas faltan para el pedido?", "resumen": "pedido 9 · la última 9.ª", "n": 9, "pedido": 9, "pide": "faltan", "pista": "Si la última es la novena, hay nueve: el pedido está completo."}
+    ]
+  },
+  "limites": {"n": 9, "casos": 4, "renglones": 4},
+  "emite": ["terminó"],
+  "escucha": []
+}

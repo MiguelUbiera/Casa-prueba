@@ -1,0 +1,101 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "1 · Lo que ya sé · inicio, pasos 1 a 5",
+    "nivel": "explorar",
+    "lo_que_pide": "Explora. Se encuentra con el problema de la historia y lo tantea con lo que ya sabía hacer. Al final ve la idea nueva funcionar en una máquina y dice qué va a salir antes de verlo.",
+    "al_salir": "Sale sabiendo qué parte del problema resuelve con lo que ya sabía y qué parte no. Ya vio la idea nueva en acción, pero todavía no sabe cuándo ni por qué pasa.",
+    "arista": "Una misma camisa tiene dos lugares, uno por punta: la de Marielys es la 4.ª desde la ventana y Papo la cuenta desde la puerta.",
+    "acto": "comparar",
+    "pieza": "vinetas-esquema-voz",
+    "esquemas": [],
+    "numeros": {
+      "objeto": "camisa",
+      "vinetas": 3
+    },
+    "maestro_pregunta": "¿Desde dónde contó Yarisa y desde dónde contó Papo?",
+    "registro": "El esquema con el «?» (desde la ventana → la 4.ª; desde la puerta → ?); se vuelve a mirar en el inicio 3, que lo contesta, y en el inicio 9.",
+    "impreso": "no"
+  },
+  "id": "p1",
+  "casa": "00014",
+  "paso": 1,
+  "total": 10,
+  "nombre": "la_camisa_de_marielys",
+  "pieza": "vinetas-esquema-voz",
+  "disposicion": "F",
+  "zonas": {
+    "experimento": "vinetas",
+    "evidencia": "esquema",
+    "voz": "voz",
+    "leyenda": "palabra"
+  },
+  "titulo": "la camisa de marielys",
+  "instruccion": "Toca las tres viñetas del martes, en orden.",
+  "ayuda": [
+    "Toca la viñeta del riel, después la de Papo y después la de Yarisa",
+    "Con cada viñeta se enciende una parte del esquema",
+    "La última deja el signo de pregunta encendido: esa es la duda del riel"
+  ],
+  "datos": {
+    "palabra": "lugar",
+    "palabra_nota": "El número de una camisa contado desde una punta",
+    "objeto": "camisa",
+    "piso": {
+      "cols": 6,
+      "filas": 4,
+      "semilla": 7
+    },
+    "vinetas": [
+      {
+        "dia": "El martes",
+        "texto": "Seis camisas cuelgan del riel, desde la ventana.",
+        "forma": "fila",
+        "n": 6,
+        "burbuja": "Yarisa las cuenta con el dedo desde la ventana."
+      },
+      {
+        "dia": "Papo, en la puerta",
+        "texto": "Papo: «Me llevo la de Marielys, la cuarta».",
+        "forma": "fila",
+        "n": 2,
+        "burbuja": "Papo cuenta desde la puerta y descuelga la cuarta."
+      },
+      {
+        "dia": "Yarisa, con la libreta",
+        "texto": "Yarisa: «Esa que agarraste es la de Kendry».",
+        "forma": "fila",
+        "n": 1,
+        "burbuja": "Desde la ventana, la de Marielys es la cuarta."
+      }
+    ],
+    "respuesta": "las viñetas se tocan en el orden en que están: 1, 2, 3; desde la puerta, la de Marielys es la 3.ª",
+    "esquema": {
+      "rotulo": "El esquema de la camisa",
+      "aria": "La camisa de Marielys: si se cuenta desde la ventana, la 4.ª; si se cuenta desde la puerta, signo de pregunta",
+      "raiz": "La camisa de Marielys",
+      "arriba": {
+        "si": "se cuenta desde la ventana",
+        "entonces": "la 4.ª"
+      },
+      "abajo": {
+        "si": "se cuenta desde la puerta",
+        "entonces": "?"
+      }
+    },
+    "voz": {
+      "quien": "Yarisa",
+      "texto": "Es la misma camisa y Papo le da otro número. ¿Cuál está bien?"
+    }
+  },
+  "limites": {
+    "vinetas": 3,
+    "objetos_fila": 24,
+    "objetos_torre": 19,
+    "esquema_raiz": 30,
+    "esquema_si": 35,
+    "esquema_entonces": 23
+  },
+  "emite": ["terminó"],
+  "escucha": []
+}

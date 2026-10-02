@@ -1,0 +1,88 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "1 · Lo que ya sé · inicio, pasos 1 a 5",
+    "nivel": "explorar",
+    "lo_que_pide": "Explora. Se encuentra con el problema de la historia y lo tantea con lo que ya sabía hacer. Al final ve la idea nueva funcionar en una máquina y dice qué va a salir antes de verlo.",
+    "al_salir": "Sale sabiendo qué parte del problema resuelve con lo que ya sabía y qué parte no. Ya vio la idea nueva en acción, pero todavía no sabe cuándo ni por qué pasa.",
+    "arista": "La última dice cuántas: cuando la marcada es la última, el lugar y la cantidad llevan el mismo número; cuántas habla de todas y el lugar, de una.",
+    "acto": "contar",
+    "pieza": "fila-de-dos-preguntas",
+    "esquemas": [
+      "dos-preguntas"
+    ],
+    "numeros": {
+      "objeto": "camisa",
+      "casos": 3
+    },
+    "maestro_pregunta": "En el riel del martes la última es la sexta y hay seis: ¿es casualidad o pasa siempre?",
+    "registro": "El registro de tres renglones (riel · cuántas · lugar: 4 · 4.ª, 6 · 6.ª, 6 · 4.ª); se vuelve a mirar en el inicio 4, que lo usa sin contar, y en el desarrollo 3 como prueba.",
+    "impreso": "no"
+  },
+  "id": "p2",
+  "casa": "00014",
+  "paso": 2,
+  "total": 10,
+  "nombre": "cuantas_hay_en_el_riel",
+  "pieza": "fila-de-dos-preguntas",
+  "disposicion": "C",
+  "zonas": {
+    "experimento": "fila",
+    "control": "preguntas",
+    "evidencia": "registro",
+    "voz": [
+      "voz",
+      {
+        "esquema": "dos-preguntas",
+        "rotulo": "Las dos preguntas",
+        "pregunta_1": "¿Cuántas hay?",
+        "numero_1": "",
+        "habla_1": "de todas",
+        "pregunta_2": "¿En qué lugar?",
+        "numero_2": "",
+        "habla_2": "de una sola"
+      }
+    ]
+  },
+  "titulo": "cuántas hay en el riel",
+  "instruccion": "Escribe cuántas camisas hay y en qué lugar va la marcada.",
+  "ayuda": [
+    "Cuenta todas las camisas del riel y escribe el número en el primer campo",
+    "Cuenta desde la ventana, a la izquierda, hasta la camisa marcada y escribe ese lugar en el segundo",
+    "Pulsa Comprobar: la llave abraza a todas y el lugar aparece debajo de una; después viene otro riel"
+  ],
+  "datos": {
+    "objeto": "camisa",
+    "rotulo_fila": "El riel",
+    "rotulo_preguntas": "Las dos preguntas",
+    "rotulo_registro": "El registro del riel",
+    "pregunta_cuantos": "¿Cuántas camisas hay?",
+    "pregunta_lugar": "¿En qué lugar va la marcada?",
+    "etiqueta_todos": "de todas",
+    "etiqueta_uno": "de una sola",
+    "columna_caso": "riel",
+    "columna_cuantos": "cuántas",
+    "columna_lugar": "lugar",
+    "boton_comprobar": "Comprobar",
+    "voz": {
+      "quien": "Yarisa",
+      "texto": "¿Cuántas hay, y en qué lugar va la de Marielys?"
+    },
+    "casos": [
+      {"n": 4, "marcado": 4, "momento": "El lunes · la última"},
+      {"n": 6, "marcado": 6, "momento": "El martes · la última"},
+      {"n": 6, "marcado": 4, "momento": "El martes · la de Marielys"}
+    ],
+    "msg_vacio": "Escribe los dos números: cuántas camisas hay y en qué lugar va la marcada.",
+    "msg_cuantos_mal": "Cuántas habla de todas: cuenta el riel entero, de la ventana a la puerta.",
+    "msg_lugar_mal": "El lugar se cuenta desde la ventana, una por una, hasta la marcada.",
+    "msg_bien": "Hay {{cuantos}}; la marcada va de {{lugar}}. Uno es de todas; el otro, de una.",
+    "msg_completar": "Tres rieles, dos números cada uno: cuántas habla de todas; el lugar, de una."
+  },
+  "limites": {
+    "casos": 3,
+    "n_maximo": 12
+  },
+  "emite": ["terminó"],
+  "escucha": []
+}

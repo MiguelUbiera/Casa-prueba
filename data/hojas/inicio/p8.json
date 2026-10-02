@@ -1,0 +1,74 @@
+{
+  "_": "Hoja de muestra de un paso. Debajo de la mitad de arriba se escribe encima de cada valor: titulo, en minúsculas, hasta seis palabras (va en la insignia); instruccion, una oración con mayúscula al empezar, hasta el techo de su CL (CL 1: 14 palabras); ayuda, de dos a cuatro renglones de hasta 110 caracteres, sin la respuesta. Los demás campos, de la hoja de muestra de la pieza.",
+  "_diseno": {
+    "etapa": "2 · La sospecha · inicio, pasos 6 a 10",
+    "nivel": "conjeturar",
+    "lo_que_pide": "Conjetura. Dice qué espera antes de ver y lo compara con lo que obtuvo, en casos que cambian. Separa los casos donde aparece la idea de los que solo se le parecen, y zanja una discusión con un dato a la vista.",
+    "al_salir": "Sale con una sospecha que acierta en los casos sencillos y con la pregunta que recoge el desarrollo: ¿pasa siempre, y cómo se dice para todos los casos?",
+    "arista": "Los dos lugares de una camisa suman una más que las camisas del riel: con seis, 3 + 4 = 7 y 5 + 2 = 7; con cuatro, 3 + 2 = 5.",
+    "acto": "calcular",
+    "pieza": "oracion-con-huecos",
+    "esquemas": [],
+    "numeros": {
+      "casos": 3,
+      "apoyo": 4
+    },
+    "maestro_pregunta": "Con seis suman siete y con cuatro suman cinco: ¿qué le pasa a la suma cuando el riel crece en una?",
+    "registro": "Las tres oraciones con sus números, firmadas; se vuelven a mirar en el inicio 9 (los datos a la vista) y en el desarrollo 3 (la regla).",
+    "impreso": "no"
+  },
+  "id": "p8",
+  "casa": "00014",
+  "paso": 8,
+  "total": 10,
+  "nombre": "dos_numeros_una_camisa",
+  "pieza": "oracion-con-huecos",
+  "disposicion": "D",
+  "zonas": {
+    "experimento": "apoyo",
+    "control": "oracion",
+    "evidencia": "registro",
+    "leyenda": {"casa": "leyenda", "texto": "Una camisa, dos lugares: uno desde cada punta.", "objeto": "camisa"},
+    "voz": "voz"
+  },
+  "titulo": "dos números, una camisa",
+  "instruccion": "Completa cada oración con los números que faltan y comprueba.",
+  "ayuda": [
+    "Lee lo que anotó Yarisa: cuántas camisas hay y qué lugar hace cada una desde la puerta",
+    "Escribe los números que faltan en la oración y pulsa Comprobar",
+    "Al final, escribe tu nombre y pulsa Firmar"
+  ],
+  "datos": {
+    "firma": true,
+    "rotulo_apoyo": "Lo que anotó Yarisa",
+    "rotulo_oracion": "La oración",
+    "rotulo_registro": "Lo escrito",
+    "rotulo_firma": "La firma",
+    "etiqueta_firma": "Tu nombre",
+    "columna_escrito": "lo escrito",
+    "texto_firmado": "Firmado:",
+    "boton_comprobar": "Comprobar",
+    "boton_firmar": "Firmar",
+    "voz": {"quien": "Yarisa", "texto": "¿Con seis camisas suman siempre lo mismo? ¿Y con cuatro?"},
+    "apoyo": [
+      "El martes el riel tiene 6 camisas",
+      "Desde la puerta: la de Kendry quedó 4.ª",
+      "Desde la puerta: la de Jonathan quedó 2.ª",
+      "El lunes había 4 camisas y la de Kendry quedó 2.ª desde la puerta"
+    ],
+    "casos": [
+      {"frase": "La de Kendry es la {{1}}.ª desde la ventana y la 4.ª desde la puerta: suman {{2}}.", "r1": 3, "r2": 7, "pista": "Dibuja las 6, cuenta 4 desde la puerta y cuenta esa misma desde la ventana."},
+      {"frase": "La de Jonathan es la {{1}}.ª desde la ventana y la 2.ª desde la puerta: suman {{2}}.", "r1": 5, "r2": 7, "pista": "Dibuja las 6, cuenta 2 desde la puerta y cuenta esa misma desde la ventana."},
+      {"frase": "El lunes, Kendry era la {{1}}.ª desde la ventana y la 2.ª desde la puerta: suman {{2}}.", "r1": 3, "r2": 5, "pista": "Dibuja las 4 del lunes, cuenta 2 desde la puerta y cuéntala desde la ventana."}
+    ],
+    "msg_vacio": "Escribe todos los números de la oración antes de comprobar.",
+    "msg_mal": "Revisa un número. {{pista}}",
+    "msg_bien": "La oración queda escrita. Sigue con la siguiente.",
+    "msg_firma_vacia": "Escribe tu nombre para firmar.",
+    "msg_firma": "Las tres oraciones están escritas: ahora firma con tu nombre.",
+    "msg_completar": "Lo escrito queda con sus números y con nombre."
+  },
+  "limites": {"casos": 3, "huecos": 3, "apoyo": 6, "frase_max": 90},
+  "emite": ["terminó"],
+  "escucha": []
+}

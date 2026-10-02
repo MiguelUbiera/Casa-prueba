@@ -1,9 +1,10 @@
 {
+  "_": "Hoja de muestra de la salida (casa/disposiciones/salida.html). Se escribe encima de cada valor, con mayúscula al empezar salvo el destino; la ceja, el rótulo del recuadro y la imagen se dejan como están. El recuadro, en una o dos oraciones. Los botones los pone la casa; el principal dice «Continuar» y el destino, el sitio adonde se va en dos palabras, artículo y sitio («el multiuso» da «Continuar al multiuso»). El cierre no lleva ni destino ni ese botón (R-15).",
   "rotulo": "Exploración completada",
-  "titulo": "La última dice cuántas, y una misma camisa tiene dos lugares, uno por punta.",
+  "titulo": "Ocho en la torre y ocho en la fila",
   "rotulo_recuadro": "Se queda rondando",
-  "texto": "Con seis camisas los dos lugares suman siete. ¿Qué pasará cuando el riel llegue a nueve, y por qué?",
-  "destino": "el riel",
+  "texto": "¿Cuándo cambia la cantidad y cuándo no, y cómo se dice para que valga siempre?",
+  "destino": "el mostrador",
   "imagen": "final-inicio.webp",
-  "imagen_alt": "Yarisa, sentada en un banquito frente al riel, con la libreta abierta y el lápiz, piensa en la cuarta camisa."
+  "imagen_alt": "La torre y la fila de cuadernos sobre el mostrador, con la misma cantidad"
 }

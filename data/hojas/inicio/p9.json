@@ -5,76 +5,55 @@
     "nivel": "conjeturar",
     "lo_que_pide": "Conjetura. Dice qué espera antes de ver y lo compara con lo que obtuvo, en casos que cambian. Separa los casos donde aparece la idea de los que solo se le parecen, y zanja una discusión con un dato a la vista.",
     "al_salir": "Sale con una sospecha que acierta en los casos sencillos y con la pregunta que recoge el desarrollo: ¿pasa siempre, y cómo se dice para todos los casos?",
-    "arista": "Los dos tienen razón: Papo y Yarisa contaron la misma camisa desde puntas distintas, y 4 + 3 = 7 con un riel de seis.",
-    "acto": "justificar",
-    "pieza": "veredicto-con-porque",
+    "arista": "Con acomodo y venta a la vez, la cantidad cambia solo por lo vendido y lo recibido.",
+    "acto": "calcular",
+    "escena": "La escalera del martes: la cuenta arranca en 8 y don Rafa quiere que al final queden 6 en el estante, los de la profesora Yineth; el banco trae seis mudanzas: vende 1, vende 2, llega 1, los apila, los riega, en rueda. El estudiante toca mudanzas del banco; cada una sube a la escalera y la cuenta se recalcula; cuando marca 6 anota el camino, y el registro guarda los caminos distintos: vende 2 solo; vende 2 con los apila y los riega; llega 1 con vende 1 y vende 2. Decide qué mudanzas cambian la cuenta y cuáles solo la acompañan. Habla Kenia: «yo probaría con los acomodos primero, a ver si bajan algo». Los aparatos, en orden: la cuenta con la escalera, el banco, el registro de caminos, la voz.",
+    "pieza": "escalera-de-mudanzas",
     "esquemas": [],
     "numeros": {
-      "dichos": 2,
-      "casos": 1,
-      "veredictos": 3,
-      "porques": 3,
-      "datos_a_la_vista": 3
+      "inicio": 8,
+      "meta": 6,
+      "mud": 6
     },
-    "maestro_pregunta": "Si el riel tuviera nueve camisas, ¿qué número le daría Papo a la de Marielys?",
-    "registro": "El veredicto («los dos») con su porqué; se vuelve a mirar en el cierre 5, donde Papo discute otra vez con otro número.",
+    "disposicion": "C",
+    "maestro_pregunta": "¿Qué mudanzas puedes meter en cualquier camino sin que la cuenta cambie?",
+    "registro": "Los caminos anotados de 8 a 6; se vuelven a mirar en el cierre 6, cuando la escalera vuelve del revés.",
     "impreso": "no"
   },
   "id": "p9",
   "casa": "00014",
   "paso": 9,
   "total": 10,
-  "nombre": "papo_o_yarisa",
-  "pieza": "veredicto-con-porque",
+  "nombre": "la_escalera_del_martes",
+  "pieza": "escalera-de-mudanzas",
   "disposicion": "C",
-  "zonas": {"experimento": "dichos", "control": "veredicto", "evidencia": "acta", "voz": "voz"},
-  "titulo": "papo o yarisa",
-  "instruccion": "Elige quién tiene razón y por qué, y sella el veredicto.",
+  "zonas": { "experimento": "escalera", "control": "banco", "voz": "voz", "evidencia": "registro" },
+  "titulo": "la escalera del martes",
+  "instruccion": "Toca mudanzas del banco hasta que la cuenta marque 6.",
   "ayuda": [
-    "Lee los dos dichos y los datos que están a la vista",
-    "Toca un veredicto y un porqué; si uno no va, tiembla y te orienta",
-    "Pulsa Sellar: el acta guarda la pregunta, el veredicto y el porqué"
+    "La cuenta arranca en 8 y Kenia quiere que queden 6 en el estante, los de la profesora Yineth",
+    "Toca una mudanza del banco: sube a la escalera y la cuenta se recalcula; tócala otra vez para quitarla",
+    "Cuando la cuenta marque 6 pulsa Anotar el camino; hay más de un camino y el registro los guarda"
   ],
   "datos": {
-    "rotulo_dichos": "Los dichos",
-    "rotulo_datos": "A la vista",
-    "rotulo_veredicto": "El veredicto",
-    "rotulo_porque": "Porque",
-    "rotulo_acta": "El acta",
-    "boton_sellar": "Sellar",
-    "columna_pregunta": "pregunta",
-    "columna_veredicto": "veredicto",
-    "columna_porque": "porque",
-    "voz": {"quien": "Doña Minerva", "texto": "En este taller una camisa se nombra con su lugar y con su punta."},
-    "dichos": [
-      {"quien": "Papo", "t": "La de Marielys es la tercera."},
-      {"quien": "Yarisa", "t": "La de Marielys es la cuarta."}
+    "inicio": 8,
+    "meta": 6,
+    "mud": [
+      { "t": "vende 1", "ic": [ "puerta", "-1" ], "v": -1 },
+      { "t": "vende 2", "ic": [ "puerta", "-2" ], "v": -2 },
+      { "t": "llega 1", "ic": [ "puerta", "+1" ], "v": 1 },
+      { "t": "los apila", "ic": [ "torre" ], "v": 0 },
+      { "t": "los riega", "ic": [ "regadas" ], "v": 0 },
+      { "t": "en rueda", "ic": [ "rueda" ], "v": 0 }
     ],
-    "datos_a_la_vista": [
-      "La de Marielys desde la ventana: 4.ª",
-      "La de Marielys desde la puerta: 3.ª",
-      "4 + 3 = 7, y el riel tiene 6 camisas"
-    ],
-    "veredictos": [
-      {"clave": "papo", "t": "Papo"},
-      {"clave": "yarisa", "t": "Yarisa"},
-      {"clave": "ambos", "t": "Los dos"}
-    ],
-    "porques": [
-      {"clave": "punta", "t": "cada uno contó desde una punta"},
-      {"clave": "mal", "t": "Papo contó mal desde la ventana"},
-      {"clave": "movio", "t": "la camisa cambió de lugar"}
-    ],
-    "casos": [
-      {"rotulo": "¿quién tiene razón?", "pregunta": "¿Quién tiene razón sobre la camisa de Marielys?", "veredicto": "ambos", "porque": "punta",
-       "pista_veredicto": "Busca cada número en los datos: ¿desde qué punta sale cada uno?",
-       "pista_porque": "El porqué tiene que explicar cómo la misma camisa es la 3.ª y la 4.ª."}
-    ],
-    "msg_elige": "Elige un veredicto y un porqué antes de sellar.",
-    "msg_bien": "Sellado: {{veredicto}}, porque {{porque}}.",
-    "msg_completar": "El acta está sellada: los dos tienen razón, cada uno desde su punta."
+    "voz": { "quien": "Yariel", "texto": "Yo probaría con los acomodos primero, a ver si bajan algo." },
+    "rotulo_cuenta": "La cuenta y la escalera",
+    "rotulo_banco": "El banco de mudanzas",
+    "rotulo_registro": "Los caminos encontrados",
+    "destino_rotulo": "Kenia quiere que queden",
+    "etiqueta_origen": "cuenta corriente"
   },
-  "limites": {"casos": 3, "veredictos": 3, "porques": 4, "datos": 4, "porque_palabras": 7},
-  "emite": ["terminó"],
+  "limites": { "camino_texto_max": 50 },
+  "emite": [],
   "escucha": []
 }

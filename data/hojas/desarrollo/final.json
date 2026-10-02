@@ -1,9 +1,10 @@
 {
+  "_": "Hoja de muestra de la salida (casa/disposiciones/salida.html). Se escribe encima de cada valor, con mayúscula al empezar salvo el destino; la ceja, el rótulo del recuadro y la imagen se dejan como están. El recuadro, en una o dos oraciones. Los botones los pone la casa; el principal dice «Continuar» y el destino, el sitio adonde se va en dos palabras, artículo y sitio («el multiuso» da «Continuar al multiuso»). El cierre no lleva ni destino ni ese botón (R-15).",
   "rotulo": "Construcción completada",
-  "titulo": "Antes de una camisa hay una menos que su número; las dos puntas suman una más que todas.",
+  "titulo": "Solo cambia si algo entra o sale",
   "rotulo_recuadro": "La regla que queda",
-  "texto": "La última dice cuántas hay; antes de una camisa hay una menos que su número; sus dos lugares suman una más que las camisas; y de una a otra, contando las dos, es la resta y una más.",
-  "destino": "la entrega",
+  "texto": "Si solo los acomodan, la cantidad sigue igual; si venden o traen, cambia por lo vendido y lo traído.",
+  "destino": "el estante",
   "imagen": "final-desarrollo.webp",
-  "imagen_alt": "La libreta verde abierta con la regla escrita a mano y Yarisa copiándola en su hoja."
+  "imagen_alt": "La tarjeta del estante escrita a mano con la regla"
 }

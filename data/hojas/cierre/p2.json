@@ -5,66 +5,79 @@
     "nivel": "generalizar",
     "lo_que_pide": "Generaliza. Usa la regla donde no la probó: en otra forma de presentar lo mismo, en lo que otro dejó escrito, o al revés, del resultado a lo que lo produjo. Cada desafío le cambia el gesto y lo que varía.",
     "al_salir": "Sale sabiendo que la regla vale fuera de los casos donde nació, y dónde deja de valer.",
-    "arista": "De la cantidad al lugar donde termina el tramo: tres camisas desde la 2.ª llegan hasta la 4.ª, porque la 2.ª ya es una de las tres.",
+    "arista": "La regla vale en otra parte y con otra gente: la cantidad cambia solo por lo que entra y lo que sale.",
     "acto": "calcular",
-    "pieza": "tramo-del-riel",
+    "escena": "El duelo de la escuela: don Rafa llevó sus ocho cuadernos al salón y dos dichos chocan, «cambia la cantidad» y «sigue igual». Ocho fichas con lo que pasó en el salón: los pusieron en rueda; la directora se llevó dos; los apilaron en el escritorio; llegó uno de la papelería; se cayeron y los recogieron todos; uno se quedó en la mochila de Ana, fuera del salón; se llevaron tres y trajeron tres; los regaron por las mesas. El estudiante calcula qué le hace cada caso a la cantidad y lleva la ficha al dicho que sostiene; «se llevaron tres y trajeron tres» va a «sigue igual», porque entró tanto como salió. El veredicto cierra: la cantidad cambia solo por lo que entra y lo que sale. La leyenda nombra el salón de don Rafa, con el dibujo del cuaderno. Los aparatos, en orden: las fichas, los dos cajones, la página, la leyenda.",
+    "pieza": "clasificador-de-cajones",
     "esquemas": [],
     "numeros": {
-      "objeto": "camisa",
-      "n": 8,
-      "modo": "hasta_cual",
-      "casos": 3
+      "objeto": "cuaderno",
+      "cajones": 2,
+      "fichas": 8,
+      "pagina": 8
     },
-    "maestro_pregunta": "Tres desde la segunda y llegaste a la cuarta: ¿por qué no a la quinta?",
-    "registro": "El registro de tramos (desde · cuántas · dije · el riel); se vuelve a mirar en el cierre 8 (la boleta).",
+    "disposicion": "E",
+    "maestro_pregunta": "¿Por qué «se llevaron tres y trajeron tres» va con «sigue igual» si entraron y salieron cuadernos?",
+    "registro": "Los dos cajones con sus fichas y el veredicto; se vuelve a mirar en el cierre 5 como caso de la regla.",
     "impreso": "no"
   },
   "id": "p2",
   "casa": "00014",
   "paso": 2,
   "total": 8,
-  "nombre": "hasta_cual_se_lleva",
-  "pieza": "tramo-del-riel",
+  "nombre": "el_duelo_de_la_escuela",
+  "pieza": "clasificador-de-cajones",
   "disposicion": "E",
   "zonas": {
-    "experimento": "riel",
-    "leyenda": {"casa": "leyenda", "texto": "Tres desde la 2.ª: la 2.ª ya es una.", "objeto": "camisa"},
-    "control": "caso",
-    "evidencia": "registro"
+    "experimento": "fichas",
+    "leyenda": "voz",
+    "control": "cajones",
+    "evidencia": "pagina"
   },
-  "titulo": "hasta cuál se lleva",
-  "instruccion": "Escribe hasta cuál camisa llega lo que se lleva Papo y pulsa Comprobar.",
+  "titulo": "el duelo de la escuela",
+  "instruccion": "Lleva cada caso al dicho que sostiene.",
   "ayuda": [
-    "La tarjeta dice cuántas se lleva Papo y desde cuál camisa empieza",
-    "Escribe el lugar de la última que se lleva antes de que el riel las encienda",
-    "Pulsa Comprobar: el riel enciende tantas como dice la boleta y marca dónde termina"
+    "Cada caso empieza con los 8 cuadernos de don Rafa en el salón",
+    "Toca un caso y después el dicho que sostiene: ¿qué le hizo ese caso a la cantidad?",
+    "Cuando los ocho estén puestos, aparece el veredicto"
   ],
   "datos": {
-    "objeto": "camisa",
-    "n": 8,
-    "nombres": ["Tomás", "Génesis", "Adriel", "Yulissa", "Mateo", "Paola", "Isaac", "Dayana"],
-    "modo": "hasta_cual",
-    "columnas": ["desde", "cuántas", "dije", "el riel"],
-    "rotulo_riel": "El riel de la banda",
-    "rotulo_caso": "Lo que dice la boleta",
-    "rotulo_registro": "El registro",
-    "rotulo_ventana": "ventana",
-    "rotulo_puerta": "puerta",
-    "plantilla_orden": "{{n}}.ª",
-    "etiqueta_cuenta": "encendidas",
-    "etiqueta_cuantas": "hasta cuál",
-    "boton_comprobar": "Comprobar",
-    "msg_vacio": "Escribe hasta cuál antes de comprobar.",
-    "msg_bien": "Dijiste <b>{{dicho}}</b> y el riel llega a <b>{{riel}}</b>: lo mismo.",
-    "msg_mal": "Dijiste <b>{{dicho}}</b> y el riel llega a <b>{{riel}}</b>. {{pista}}",
-    "msg_completar": "Los tres tramos de la boleta están encendidos y anotados.",
-    "casos": [
-      {"texto": "Papo se lleva tres, desde la 2.ª.", "desde": 2, "cuantas": 3, "pista": "La 2.ª ya es una de las tres: corre dos más."},
-      {"texto": "Con las ocho otra vez: cuatro, desde la 5.ª.", "desde": 5, "cuantas": 4, "pista": "La 5.ª ya es una de las cuatro."},
-      {"texto": "Con las ocho otra vez: cinco, desde la 3.ª.", "desde": 3, "cuantas": 5, "pista": "La 3.ª ya es una de las cinco."}
-    ]
+    "objeto": "cuaderno",
+    "rotulo_fichas": "Los casos del salón",
+    "rotulo_cajones": "Los dos dichos",
+    "rotulo_pagina": "El salón al empezar",
+    "etiqueta_ficha": "Caso",
+    "columna_n": "caso",
+    "columna_dato": "al empezar",
+    "sin_fila": "8 cuadernos",
+    "etiqueta_cuenta": "casos",
+    "voz": { "quien": "Don Rafa", "texto": "Cada caso empieza con mis 8 cuadernos." },
+    "cajones": [
+      { "clave": "cambia", "t": "Cambia" },
+      { "clave": "igual", "t": "Sigue igual" }
+    ],
+    "fichas": [
+      { "n": 1, "t": "Los ponen en rueda", "cajon": "igual", "pista": "En rueda son los mismos: nadie sacó ni trajo." },
+      { "n": 2, "t": "La directora se lleva 2", "cajon": "cambia", "pista": "Salieron 2 del salón: hay 2 menos." },
+      { "n": 3, "t": "Los apilan en el escritorio", "cajon": "igual", "pista": "Apilados son los mismos: nadie sacó ni trajo." },
+      { "n": 4, "t": "Llega 1 de la papelería", "cajon": "cambia", "pista": "Entró 1 al salón: hay 1 más." },
+      { "n": 5, "t": "Se caen y los recogen todos", "cajon": "igual", "pista": "Los recogieron todos: ninguno salió del salón." },
+      { "n": 6, "t": "Ana se lleva 1 en la mochila", "cajon": "cambia", "pista": "La mochila salió del salón con 1: hay 1 menos." },
+      { "n": 7, "t": "Se llevan 3 y traen 3", "cajon": "igual", "pista": "Salieron 3 y entraron 3: la cantidad queda igual." },
+      { "n": 8, "t": "Los riegan por las mesas", "cajon": "igual", "pista": "Regados son los mismos: nadie sacó ni trajo." }
+    ],
+    "pagina": [
+      { "n": 1 }, { "n": 2 }, { "n": 3 }, { "n": 4 },
+      { "n": 5 }, { "n": 6 }, { "n": 7 }, { "n": 8 }
+    ],
+    "veredicto": "La cantidad cambia solo por lo que entra y lo que sale.",
+    "msg_elige": "Toca un caso y después el dicho que sostiene.",
+    "msg_ficha_elegida": "{{ficha}}: ¿a qué dicho va?",
+    "msg_bien": "{{ficha}} va con «{{cajon}}».",
+    "msg_mal": "{{ficha}} no va con ese dicho. {{pista}}",
+    "msg_completar": "Los ocho casos están puestos; abajo, el veredicto."
   },
-  "limites": {"n": 9, "casos": 4, "renglones": 4},
-  "emite": ["terminó"],
+  "limites": { "cajones": 3, "objetos_por_fila": 8 },
+  "emite": [ "terminó" ],
   "escucha": []
 }

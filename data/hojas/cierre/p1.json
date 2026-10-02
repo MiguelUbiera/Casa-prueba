@@ -5,97 +5,59 @@
     "nivel": "generalizar",
     "lo_que_pide": "Generaliza. Usa la regla donde no la probó: en otra forma de presentar lo mismo, en lo que otro dejó escrito, o al revés, del resultado a lo que lo produjo. Cada desafío le cambia el gesto y lo que varía.",
     "al_salir": "Sale sabiendo que la regla vale fuera de los casos donde nació, y dónde deja de valer.",
-    "arista": "La regla vale en otro riel, con otros nombres y otro pedido: la última de la banda es la 8.ª, hay ocho, y la boleta de Papo pide un tramo.",
+    "arista": "La cantidad del estante se sabe por lo que entró y salió, no por cómo se ve el montón.",
     "acto": "comparar",
+    "escena": "Tres viñetas del miércoles, que se tocan en orden: a las ocho llega la caja y Yariel pone los doce cuadernos en fila en el estante; a las nueve Kenia vende tres y a las nueve y media Yariel apila los que quedan; a las diez don Rafa mira la torre y dice «ahí no hay nueve». Con cada viñeta se enciende una parte del esquema: si vendieron o trajeron, la cantidad cambió; si solo los acomodaron, «?». El estudiante compara los tres dichos y decide cuántos hay en la torre sin contarla. Habla doña Carmen: quiere una tarjeta en el estante que diga cuántos hay y que se cambie solo cuando algo entre o salga. Se instala la palabra «tarjeta del estante». La leyenda es la palabra con su nota. Los aparatos, en orden: las tres viñetas, el esquema, la voz, la palabra.",
     "pieza": "vinetas-esquema-voz",
     "esquemas": [],
     "numeros": {
-      "objeto": "camisa",
+      "objeto": "cuaderno",
       "vinetas": 3
     },
-    "maestro_pregunta": "¿Qué va a mirar Yarisa en el riel para llenar la boleta?",
-    "registro": "El esquema con los dos «?» (de la 2.ª a la 4.ª: restando → ?; contando → ?); se vuelve a mirar en el cierre 2 y en el cierre 8.",
+    "disposicion": "F",
+    "maestro_pregunta": "¿Qué tiene que decir la tarjeta a las diez, y qué dos cosas del cuadernito lo sostienen?",
+    "registro": "El esquema con el «?» en la rama del acomodo; se vuelve a mirar en el cierre 5, en el pleito del miércoles.",
     "impreso": "no"
   },
   "id": "p1",
   "casa": "00014",
   "paso": 1,
   "total": 8,
-  "nombre": "el_riel_de_la_banda",
+  "nombre": "la_torre_del_miercoles",
   "pieza": "vinetas-esquema-voz",
   "disposicion": "F",
-  "zonas": {
-    "experimento": "vinetas",
-    "evidencia": "esquema",
-    "voz": "voz",
-    "leyenda": "palabra"
-  },
-  "titulo": "el riel de la banda",
-  "instruccion": "Toca las tres viñetas del viernes, en orden.",
+  "zonas": { "experimento": "vinetas", "evidencia": "esquema", "voz": "voz", "leyenda": "palabra" },
+  "titulo": "la torre del miércoles",
+  "instruccion": "Toca las tres viñetas del miércoles, en orden.",
   "ayuda": [
-    "Toca la viñeta del riel, después la de Papo y después la de Yarisa",
+    "Toca la viñeta de las ocho, después la de las nueve y media y después la de las diez",
     "Con cada viñeta se enciende una parte del esquema",
-    "Los dos signos de pregunta quedan encendidos: esa es la cuenta de la boleta"
+    "La última deja el signo de pregunta encendido: ¿qué le hizo cada cosa a la cantidad?"
   ],
   "datos": {
-    "palabra": "boleta",
-    "palabra_nota": "La hoja de la entrega, con sus cuentas y su firma",
-    "objeto": "camisa",
-    "piso": {
-      "cols": 6,
-      "filas": 4,
-      "semilla": 7
-    },
+    "palabra": "tarjeta del estante",
+    "palabra_nota": "La que dice cuántos cuadernos hay",
+    "objeto": "cuaderno",
+    "piso": { "cols": 6, "filas": 4, "semilla": 4 },
     "vinetas": [
-      {
-        "dia": "Viernes temprano",
-        "texto": "Ocho camisas de la banda cuelgan del riel.",
-        "forma": "fila",
-        "n": 8,
-        "burbuja": "La última es la octava: la banda está completa."
-      },
-      {
-        "dia": "Papo, en la puerta",
-        "texto": "«Me llevo de la 2.ª a la 4.ª para el ensayo».",
-        "forma": "fila",
-        "n": 3,
-        "burbuja": "Las demás, en la otra vuelta del motor."
-      },
-      {
-        "dia": "Yarisa, con la libreta",
-        "texto": "«¿Cuántas se lleva, y cuántas quedan?»",
-        "forma": "fila",
-        "n": 5,
-        "burbuja": "La boleta pide los dos números."
-      }
+      { "dia": "A las ocho", "texto": "Llega la caja y Yariel pone 12 cuadernos en fila.", "forma": "fila", "n": 12,
+        "burbuja": "12 cuadernos en fila en el estante." },
+      { "dia": "A las nueve y media", "texto": "Kenia vendió 3 a las nueve; Yariel los apila.", "forma": "torre", "n": 9,
+        "burbuja": "Se fueron tres; los otros, en torre." },
+      { "dia": "A las diez", "texto": "Don Rafa: «En la torre no hay nueve».", "forma": "torre", "n": 9,
+        "burbuja": "Don Rafa mide la torre con los ojos." }
     ],
-    "respuesta": "las viñetas se tocan en el orden en que están: 1, 2, 3; de la 2.ª a la 4.ª son tres, y quedan cinco",
+    "respuesta": "las viñetas se tocan en el orden en que están: 1, 2, 3; la burbuja de la última es la de completar",
     "esquema": {
-      "rotulo": "El esquema de la boleta",
-      "aria": "De la 2.ª a la 4.ª: si se restan los lugares, signo de pregunta; si se cuentan en el riel, signo de pregunta",
-      "raiz": "De la 2.ª a la 4.ª",
-      "arriba": {
-        "si": "se restan los lugares",
-        "entonces": "?"
-      },
-      "abajo": {
-        "si": "se cuentan en el riel",
-        "entonces": "?"
-      }
+      "rotulo": "El esquema del estante",
+      "aria": "Los cuadernos del estante: si vendieron o trajeron, la cantidad cambió; si solo los acomodaron, signo de pregunta",
+      "raiz": "Los cuadernos del estante",
+      "arriba": { "si": "vendieron o trajeron cuadernos", "entonces": "la cantidad cambió" },
+      "abajo": { "si": "solo los acomodaron", "entonces": "?" }
     },
-    "voz": {
-      "quien": "Doña Minerva",
-      "texto": "La boleta dice cuántas; el riel dice cuáles. Tienen que cuadrar."
-    }
+    "voz": { "quien": "Doña Carmen", "texto": "Quiero una tarjeta que cambie solo si algo entra o sale." }
   },
-  "limites": {
-    "vinetas": 3,
-    "objetos_fila": 24,
-    "objetos_torre": 19,
-    "esquema_raiz": 30,
-    "esquema_si": 35,
-    "esquema_entonces": 23
-  },
-  "emite": ["terminó"],
+  "limites": { "vinetas": 3, "objetos_fila": 24, "objetos_torre": 19, "esquema_raiz": 30, "esquema_si": 35, "esquema_entonces": 23 },
+  "emite": [ "terminó" ],
   "escucha": []
 }

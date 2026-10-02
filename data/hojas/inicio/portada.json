@@ -1,10 +1,11 @@
 {
+  "_": "Hoja de muestra de la entrada (casa/disposiciones/entrada.html). Se escribe encima de cada valor, con mayúscula al empezar; la ceja y la imagen se dejan como están. El botón es un verbo y el sitio o la cosa de la historia, de dos a cuatro palabras («Entrar al multiuso»), sin Empezar, Comenzar, Continuar ni Siguiente: el montador rechaza el que no cumple (R-15).",
   "etapa": "Exploración inicial",
-  "titulo": "La camisa de Marielys",
-  "frase1": "Martes en el taller de doña Minerva: seis camisas cuelgan del riel.",
-  "frase2": "Papo busca la cuarta y descuelga otra; Yarisa no lo deja pasar.",
-  "boton_entrada": "Entrar al taller",
+  "titulo": "La torre y la fila de don Rafa",
+  "frase1": "En la papelería de doña Carmen llegó la caja de cuadernos.",
+  "frase2": "Don Rafa quiere ocho y la torre le parece poca cosa.",
+  "boton_entrada": "Entrar a la papelería",
   "imagen": "portada-inicio.webp",
-  "imagen_alt": "Papo descuelga una camisa desde la puerta mientras Yarisa, desde la ventana, le señala otra.",
-  "imagen_leyenda": "Papo descuelga desde la puerta; Yarisa señala desde la ventana."
+  "imagen_alt": "Don Rafa en el mostrador de la papelería con su lista en la mano",
+  "imagen_leyenda": "Don Rafa llega por los ocho cuadernos de su lista"
 }

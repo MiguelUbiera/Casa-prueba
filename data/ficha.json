@@ -1,11 +1,11 @@
 {
   "identidad": {
-    "codigo": "S321-00022",
-    "ruta": "1.1.2.10",
-    "slug": "/na/conteo-y-numeracion/cardinalidad-y-ordinalidad/relacion-entre-cardinalidad-y-ordinalidad/la-ultima-dice-cuantas",
-    "titulo": "La última dice cuántas",
+    "codigo": "S321-00014",
+    "ruta": "1.1.2.2",
+    "slug": "/na/conteo-y-numeracion/cardinalidad-y-ordinalidad/conservacion-de-la-cantidad/la-tarjeta-del-estante",
+    "titulo": "La tarjeta del estante",
     "version": "1.0",
-    "fecha": "2026-10-01"
+    "fecha": "2026-10-02"
   },
   "ubicacion": {
     "area": {
@@ -21,16 +21,16 @@
       "nombre": "Cardinalidad y Ordinalidad"
     },
     "unidad": {
-      "ruta": "1.1.2.10",
-      "nombre": "Relación entre Cardinalidad y Ordinalidad"
+      "ruta": "1.1.2.2",
+      "nombre": "Conservación de la Cantidad"
     }
   },
-  "descripcion_breve": "En un taller de costura de Baní, el estudiante relaciona el lugar de cada camisa en el riel con cuántas hay, y con esa relación cuadra y firma la boleta de entrega.",
+  "descripcion_breve": "El estudiante prueba en la papelería de doña Carmen qué cambia la cantidad de un montón de cuadernos y lleva la cuenta del estante sin volver a contar.",
   "esencial": {
-    "concepto_central": "La relación entre ordinal y cardinal: el lugar de la última dice cuántas hay.",
-    "nivel_profundidad": "Análisis",
+    "concepto_central": "La conservación de la cantidad: acomodar no la cambia; entrar o salir, sí",
+    "nivel_profundidad": "Aplicación",
     "gam": [
-      3,
+      1,
       3
     ],
     "carga_lectura": 1,
@@ -46,100 +46,100 @@
     "organizacion": [
       "Grupo completo",
       "Parejas",
+      "Pequeño grupo",
       "Individual"
     ],
     "tecnologia": "Navegador, computadora y pantalla o PDI",
-    "material_complementario": "Lápiz, el imprimible y nueve tarjetas con nombres sobre una cuerda.",
+    "material_complementario": "Pizarra digital o proyector y el imprimible, uno por estudiante",
     "requiere_impresion": true,
     "idioma": "español",
     "ambientacion": "Hispanoamérica · República Dominicana"
   },
   "conocimientos_previos": [
     {
-      "ruta": "1.1.2.9",
-      "nombre": "Comparación de Posiciones Ordinales"
+      "ruta": "1.1.2.1",
+      "nombre": "Cantidad Total de una Colección"
     }
   ],
   "aprendizajes_esperados": [
-    "Dice cuántas hay en una fila con el lugar de la última, y al revés.",
-    "Calcula cuántas hay antes de un lugar y hasta él sin contarlas.",
-    "Encuentra el lugar desde la otra punta con cuántas hay en la fila.",
-    "Cuenta un tramo de un lugar a otro con la resta y una más.",
-    "Predice cuántas quedan y qué lugar hacen las demás al quitar o añadir una.",
-    "Distingue qué pregunta contesta una cantidad y cuál contesta un lugar."
+    "Cuenta un montón tocando cada objeto una vez, en torre, en fila o regado.",
+    "Predice la cantidad antes de un acomodo y la comprueba.",
+    "Distingue un acomodo de una venta o una llegada.",
+    "Lleva la cantidad por varios cambios sumando lo que entra y restando lo que sale.",
+    "Escribe con sus palabras la regla de cuándo cambia la cantidad.",
+    "Sostiene un veredicto con la regla y un dato a la vista."
   ],
   "errores_previsibles": [
     {
-      "error": "Cree que «la octava» quiere decir ocho camisas.",
-      "respuesta": "El veredicto del cierre 5 enfrenta «la octava» y «ocho» ante la pregunta de doña Milagros, y el porqué dice qué contesta cada número."
+      "error": "Juzga la cantidad por el sitio que ocupa el montón.",
+      "respuesta": "El montón que se muda enseña la huella cambiando y la cantidad quieta; el pleito del mostrador se decide con la libreta a la vista."
     },
     {
-      "error": "Resta los lugares para contar un tramo y le falta una.",
-      "respuesta": "El tramo del riel del inicio 7 enciende y cuenta el tramo; en el desarrollo 2 la cuenta del riel queda al lado de la resta y una más."
+      "error": "Vuelve a contar después de cada acomodo.",
+      "respuesta": "La ronda del mostrador pide sí o no a contar de nuevo; el pleito del miércoles lo decide con la tarjeta y la regla."
     },
     {
-      "error": "Cuenta la camisa nombrada entre las que van antes de ella.",
-      "respuesta": "En el inicio 6 se escriben antes y hasta para la misma camisa, y el riel enciende primero las de antes y después la nombrada."
+      "error": "Cree que si entraron y salieron cuadernos, la cantidad cambió.",
+      "respuesta": "El duelo de la escuela pone «se llevan 3 y traen 3» frente a los dos dichos: se calcula y va a «sigue igual»."
     },
     {
-      "error": "Cree que el lugar desde la otra punta es el mismo, o el total menos el lugar.",
-      "respuesta": "El riel de dos puntas pregunta antes de dar la vuelta, y las oraciones del inicio 8 dejan a la vista que los dos lugares suman una más."
-    },
-    {
-      "error": "Cree que al quitar una camisa cambian todas de número, o ninguna.",
-      "respuesta": "La camisa que se descuelga del desarrollo 4 enseña que solo corren las de después; el cierre 7 lo repite con tres camisas seguidas."
+      "error": "Resta lo vendido y olvida lo que llegó.",
+      "respuesta": "El tablero de la tarde y el cuadernito de Kenia mezclan ventas y llegadas, y piden usar las dos."
     }
   ],
   "estructura": [
     {
       "archivo": "inicio.html",
-      "nombre": "La camisa de Marielys",
+      "nombre": "La torre y la fila",
       "funcion": "Recuperación diagnóstica"
     },
     {
       "archivo": "desarrollo.html",
-      "nombre": "El riel que crece",
+      "nombre": "Las pruebas del mostrador",
       "funcion": "Construcción guiada"
     },
     {
       "archivo": "cierre.html",
-      "nombre": "La entrega de la banda",
+      "nombre": "El miércoles de la tarjeta",
       "funcion": "Evaluación gamificada"
     }
   ],
   "evidencia_observable": [
-    "El imprimible con la regla copiada y la libreta de un riel de ocho escrita y firmada, con su «lo sé porque».",
-    "El registro de cada máquina, con la predicción al lado de lo que salió.",
-    "La boleta de entrega de la banda, llena y firmada, en el último desafío del cierre."
+    "La zona 5 del imprimible: el camino del tablero de la tarde, con la cantidad de cada casilla escrita sin contar y la firma.",
+    "La regla escrita a mano en la zona 3: acomodar no cambia la cantidad; vender o traer, sí.",
+    "La tarjeta del estante firmada en el cierre, con lo que entró, lo que salió y lo que queda."
   ],
   "repertorio_dinamicas": {
     "acto": "Contar",
     "nivel": "Justificar",
-    "estructura_de_juego": "Una ronda de agilidad contra el reloj en el cierre."
+    "estructura_de_juego": "Una ronda contra el reloj y un tablero que se recorre llevando la cuenta"
   },
   "red": {
-    "continua_en": [],
+    "continua_en": [
+      {
+        "ruta": "1.1.2.3",
+        "nombre": "Comparación de Cardinalidades"
+      }
+    ],
     "refuerza": [
       {
-        "ruta": "1.1.2.9",
-        "nombre": "Comparación de Posiciones Ordinales"
+        "ruta": "1.1.2.1",
+        "nombre": "Cantidad Total de una Colección"
       }
     ],
     "se_relaciona_con": []
   },
   "etiquetas": {
     "contexto_narrativo": [
-      "taller de costura",
-      "Baní",
-      "uniformes escolares",
-      "riel de camisas",
-      "boleta de entrega"
+      "papelería",
+      "estante de cuadernos",
+      "cuadernito de ventas",
+      "San Francisco de Macorís"
     ],
     "objetos_matematicos": [
-      "cardinal",
-      "ordinal",
-      "relación entre lugar y cantidad",
-      "conteo de un tramo"
+      "conservación de la cantidad",
+      "cardinal de un conjunto",
+      "suma y resta como cambio"
     ],
     "representaciones": [
       "concreta",
@@ -149,13 +149,14 @@
     ],
     "habilidades": [
       "contar",
-      "calcular",
       "predecir",
-      "generalizar",
+      "comparar",
+      "calcular",
       "justificar"
     ],
     "juegos": [
-      "ronda de agilidad"
+      "ronda contra el reloj",
+      "tablero de casillas"
     ],
     "herramientas": []
   },

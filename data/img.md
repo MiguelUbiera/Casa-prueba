@@ -1,4 +1,4 @@
-# Guion de imágenes · S321-00022 · La última dice cuántas
+# Guion de imágenes · S321-00014 · La tarjeta del estante
 
 ```
 1 · Pega el Bloque de contexto en tu chat de IA de imágenes y espera su confirmación.
@@ -7,9 +7,8 @@
     transparencia, conviértela a WebP; si llegó con fondo, pídela otra vez.
 ```
 
-Cada imagen llega ya recortada: fondo transparente, en WebP y con el lado largo
-de unos 1200 px. La forma (vertical, apaisada o casi cuadrada) la dice cada
-petición, porque la pide su escena. No se recorta a mano ni se convierte después.
+Cada imagen llega ya recortada: fondo transparente y en WebP. No se recorta a mano
+ni se convierte después.
 
 ---
 
@@ -27,55 +26,51 @@ EL ARCHIVO, IGUAL PARA LAS SIETE
   ni recuadro, ni viñeta, ni sombra de suelo, ni cuadrícula detrás. La página
   donde va la imagen se ve a través.
 - Formato WebP, no PNG. Si no puedes entregar WebP, PNG con transparencia.
-- El lado largo mide alrededor de 1200 píxeles. La forma no es una regla: cada
-  petición dice si es vertical, apaisada o casi cuadrada, según lo que pida su
-  escena, y da la medida aproximada.
 - Ningún vacío marcado: solo la imagen, pura y simple. Sin rótulo, sin número,
   sin zona señalada, sin nada que diga «aquí va algo».
 
 LA HISTORIA
-En Baní, en el taller de costura de doña Minerva, las camisas de uniforme que
-se terminan se cuelgan en un riel, en fila, desde la ventana hasta la puerta de
-la calle. Es la semana del pedido del colegio: nueve camisas para el acto del
-viernes. Yarisa, la nieta, cuenta las camisas con el dedo desde la ventana y
-quiere llevar la libreta de pedidos. Papo, el mensajero, entra por la puerta y
-cuenta desde la puerta, así que a la misma camisa le da otro número. El martes
-descuelga la camisa equivocada; el jueves el riel se completa; el viernes llega
-el pedido de la banda del liceo, y Papo se lleva tres camisas con una boleta de
-entrega que Yarisa llena y firma. Termina con la boleta firmada y el motor de
-Papo arrancando.
+En la papelería de doña Carmen, en San Francisco de Macorís, un martes de agosto,
+la semana antes de las clases, llega la caja de cuadernos. Don Rafa, maestro,
+viene por ocho, uno por nombre de su lista. Yariel, el sobrino que ayuda los
+martes, los pone en torre y a don Rafa le parecen pocos; Kenia, la que atiende el
+mostrador, los pone en fila y le parecen muchos. Por la tarde, doña Carmen prueba
+en el mostrador qué cambia de verdad cuántos hay: acomodar no; vender o recibir,
+sí. El miércoles Kenia anota cada venta y cada llegada en su cuadernito, Yariel
+lleva la tarjeta del estante sin volver a contar y, al cerrar, la tarjeta cuadra
+con el estante.
 
 EL REPARTO
 
-YARISA, la nieta de la costurera. Niña de primaria, de unos nueve años, tono
-de piel #b0764c, pelo negro recogido en una cola alta con una liga amarilla,
-delgada. Camiseta blanco roto con el cuello manchado de tiza de sastre,
-pantalón corto azul y sandalias. Detalle fijo: la libreta de pedidos de tapa
-verde en la mano y un lápiz detrás de la oreja.
+Doña Carmen, la dueña de la papelería. Unos sesenta años, piel #8b5636, pelo
+lacio gris recogido en un moño bajo, complexión ancha y estatura baja. Blusa de
+botones color petróleo y delantal de tela cruda con un bolsillo para lápices.
+Detalle fijo: unos lentes de lectura colgados al cuello con un cordón terracota.
 
-DOÑA MINERVA, la costurera y dueña del taller. Sesenta y tantos años, tono de
-piel #5c3521, pelo canoso recogido en un moño, brazos fuertes. Vestido de
-flores pequeñas con un delantal gris claro lleno de alfileres. Detalle fijo: la
-cinta métrica amarilla colgada al cuello y los lentes sujetos con un cordón.
+Yariel, su sobrino, que ayuda los martes. Unos dieciséis años, piel #cd9668,
+pelo de rizo cerrado y corto, delgado y alto. Camiseta verde oscuro, jeans y
+tenis gastados. Detalle fijo: un lápiz detrás de la oreja.
 
-PAPO, el mensajero. Veintitantos años, tono de piel #cd9668, pelo corto con una
-raya afeitada a un lado, flaco y alto. Camiseta roja de mensajería y jeans.
-Detalle fijo: el casco del motor bajo el brazo y la boleta doblada en el
-bolsillo de la camiseta.
+Kenia, la que atiende el mostrador. Unos veinticinco años, piel #5c3521, pelo
+lacio y largo en una cola de caballo, complexión mediana. Polo crema liso y
+pantalón negro. Detalle fijo: el cuadernito de ventas de tapa terracota, siempre
+en la mano o asomando del bolsillo.
 
-EL TALLER DE DOÑA MINERVA (lugar). Una sala de casa en Baní: la máquina de
-coser junto a la ventana abierta, la mesa de planchar, un ventilador de pedestal
-y el mango del patio tras la ventana. Tres rasgos que se repiten: el riel de
-tubo metálico con ganchos de madera, de la ventana, a la izquierda, a la puerta
-de la calle, a la derecha; las camisas colgadas en fila; la libreta verde de
-Yarisa.
+Don Rafa, maestro de escuela. Unos cincuenta años, piel #dfb491, pelo ondulado
+entrecano, bigote, complexión robusta. Camisa azul claro de manga corta y
+pantalón gris de tela. Detalle fijo: una lista de nombres doblada en el bolsillo
+de la camisa.
 
-LA CAMISA DE UNIFORME (objeto recurrente). Camisa de manga corta en su gancho
-de madera, con una etiqueta de papel con un nombre colgando del gancho. Las del
-colegio, celestes con bolsillo al pecho; las de la banda del liceo, blanco roto
-con un filo vino en el cuello. Nunca una camiseta ni una blusa, y nunca blanco
-puro. LA BOLETA DE ENTREGA (objeto recurrente). Una hoja con renglones escritos
-a mano en español, con cantidades y lugares; nunca en blanco.
+LA PAPELERÍA (lugar). Una papelería pequeña de pueblo, de paredes crema. Tres
+rasgos que se repiten: un mostrador de madera clara con una vitrina de vidrio al
+frente; detrás, un estante de madera con cuadernos de colores en montones; y una
+puerta de reja abierta a la calle, con luz de mañana.
+
+EL CUADERNO Y LA TARJETA (objetos recurrentes). El cuaderno escolar:
+rectangular, de tapa lisa en terracota, petróleo, ciruela o verde, con espiral
+oscura a un lado; nunca blanco puro. La tarjeta del estante: una cartulina crema
+colgada de un clavo en el borde del estante, con un número escrito a mano en
+tinta oscura.
 
 EL PACTO DE CONTINUIDAD
 
@@ -182,68 +177,52 @@ presenta el mundo, la de entrada invita a lo que no ha pasado y la de salida cie
 lo que ya pasó. No son la misma imagen repetida.
 
 ### Imagen 1 — `portada-secuencia.webp`
-Portada de la secuencia · apaisada, unos 1200 × 800. Presenta el mundo: el lugar y su gente antes de que pase nada. No puede aparecer el problema, ni resuelto ni planteado.
+Portada de la secuencia. Presenta el mundo: el lugar y su gente antes de que pase nada.
 
 ```
 Imagen 1 de 7 del repertorio. Misma clase, mismos personajes que las anteriores.
 
-LA FORMA
-Apaisada: el lado largo, de unos 1200 píxeles, va en horizontal; el otro, unos
-800.
-
 LA IMAGEN
-El taller de doña Minerva en Baní, una tarde de calor, antes de que pase nada.
-A la izquierda, la ventana abierta con el mango del patio; junto a ella, doña
-Minerva cose en la máquina, con la cinta métrica amarilla al cuello y los lentes
-en su cordón. Cruzando la sala, el riel de tubo metálico con seis camisas
-celestes de uniforme en sus ganchos de madera, en fila de la ventana a la
-puerta, cada una con su etiqueta de papel. Yarisa, de pie bajo el riel, toca la
-primera camisa con el dedo, con la libreta verde en la otra mano y el lápiz
-detrás de la oreja. A la derecha, en la puerta de la calle, Papo se asoma con el
-casco bajo el brazo; detrás de él, en la acera, asoma la rueda de su motor. Un
-ventilador de pedestal y la mesa de planchar completan la sala. Los tres están
-tranquilos: es un martes cualquiera.
+La papelería por dentro, una mañana de martes. Doña Carmen, detrás del mostrador
+de madera clara, abre una caja de cartón llena de cuadernos de colores; Yariel, a
+su lado, sostiene contra el pecho una pila de cuadernos y mira el estante de
+madera, todavía medio vacío, detrás de ellos. Sobre el mostrador hay un vaso con
+lápices y una regla. Al fondo, la puerta de reja abierta deja entrar la luz de la
+calle. Nadie discute ni cuenta: es el principio de un día de trabajo corriente.
+No aparece la tarjeta del estante ni ningún número escrito.
 
 EL RECORTE
-El corte pasa por: arriba, por el tubo del riel y la copa del mango en la
-ventana; izquierda, por el marco de la ventana y el hombro de doña Minerva;
-derecha, por el marco de la puerta y la rueda del motor; abajo, por las patas de
-la máquina, los pies de Yarisa y el umbral de la puerta, a distinta altura.
-Corte a tijera ceñido al dibujo, sin margen intermedio de ningún color. UN SOLO
-CONTORNO, el del dibujo: sin aura, sin banda blanca separada de la figura, sin
-una segunda línea por fuera, sin relieve. Perímetro irregular y sinuoso, sin
-rectas. Todo va CONTENIDO en la lámina, con aire transparente por los cuatro
-lados; ningún trazo llega al canto. Detrás nada, fondo transparente: ni panel de
-respaldo, ni sombra, ni marca de agua. Ningún blanco puro dentro del dibujo.
+El corte pasa por: arriba, por encima del estante, siguiendo los montones de
+cuadernos; izquierda, por el hombro de doña Carmen y la esquina del mostrador;
+derecha, por la espalda de Yariel y un tramo de la reja; abajo, por el frente del
+mostrador, a distinta altura. Corte a tijera ceñido al dibujo, sin margen
+intermedio de ningún color. UN SOLO CONTORNO, el del dibujo: sin aura, sin banda
+blanca separada de la figura, sin una segunda línea por fuera, sin relieve.
+Perímetro irregular y sinuoso, sin rectas. Todo va CONTENIDO en la lámina, con
+aire transparente por los cuatro lados; ningún trazo llega al canto. Detrás
+nada, fondo transparente: ni panel de respaldo, ni sombra, ni marca de agua.
+Ningún blanco puro dentro del dibujo.
 
 Al terminar, responde solo: 1 · portada-secuencia.webp
 ```
 
 ### Imagen 2 — `portada-inicio.webp`
-Entrada del inicio · apaisada, unos 1200 × 800. Invita a lo que no ha pasado: el problema a punto de empezar. No puede aparecer lo que se descubre ni cómo se resuelve.
+Entrada del inicio. Invita a lo que no ha pasado: el pedido a punto de empezar.
 
 ```
 Imagen 2 de 7 del repertorio. Misma clase, mismos personajes que las anteriores.
 
-LA FORMA
-Apaisada: el lado largo, de unos 1200 píxeles, va en horizontal; el otro, unos
-800.
-
 LA IMAGEN
-El mismo taller, el martes por la tarde. Papo, en la puerta de la calle, a la
-derecha, descuelga del riel una camisa celeste, la cuarta contando desde su
-lado, con el casco bajo el brazo y prisa en el gesto. Al otro extremo del riel,
-junto a la ventana, Yarisa estira el brazo y señala otra camisa, con la libreta
-verde abierta en la otra mano y la boca a punto de decir algo. Entre los dos, el
-riel con las seis camisas celestes en fila. Doña Minerva, en la máquina de
-coser, levanta la vista por encima de los lentes. Todavía no se sabe quién tiene
-razón.
+Don Rafa llega al mostrador con su lista de nombres desdoblada en una mano y la
+otra apoyada en la madera; mira hacia la caja de cuadernos. Del otro lado, Kenia
+lo atiende con el cuadernito de ventas abierto y un lápiz. Sobre el mostrador
+todavía no hay ninguna torre ni ninguna fila de cuadernos: el pedido está por
+empezar. Mañana de martes, luz de la calle entrando por la reja.
 
 EL RECORTE
-El corte pasa por: arriba, por el tubo del riel y el borde de la ventana;
-izquierda, por el hombro de Yarisa y el marco de la ventana; derecha, por la
-espalda de Papo y el marco de la puerta; abajo, por los pies de los dos y la
-mesa de la máquina, a distinta altura. Corte a tijera ceñido al dibujo, sin
+El corte pasa por: arriba, por encima de las cabezas de los dos; izquierda, por
+el brazo de don Rafa y su lista; derecha, por el hombro de Kenia; abajo, por el
+borde del mostrador, a distinta altura. Corte a tijera ceñido al dibujo, sin
 margen intermedio de ningún color. UN SOLO CONTORNO, el del dibujo: sin aura, sin
 banda blanca separada de la figura, sin una segunda línea por fuera, sin relieve.
 Perímetro irregular y sinuoso, sin rectas. Todo va CONTENIDO en la lámina, con
@@ -255,92 +234,22 @@ Al terminar, responde solo: 2 · portada-inicio.webp
 ```
 
 ### Imagen 3 — `final-inicio.webp`
-Salida del inicio · vertical, unos 900 × 1200. Cierra lo que ya pasó en el inicio y deja la duda en el aire. No puede aparecer la regla ni el final de la historia.
+Salida del inicio. Cierra lo que pasó y deja la duda en el aire.
 
 ```
 Imagen 3 de 7 del repertorio. Misma clase, mismos personajes que las anteriores.
 
-LA FORMA
-Vertical: el lado largo, de unos 1200 píxeles, va en alto; el otro, unos 900.
-
 LA IMAGEN
-Yarisa sola, sentada en un banquito de madera frente al riel, al final de la
-tarde. Tiene la libreta verde abierta sobre las rodillas y el lápiz en la mano,
-y mira la cuarta camisa del riel, pensando. Las camisas celestes cuelgan en fila
-sobre ella, de la ventana a la puerta. Entra un poco de luz anaranjada por la
-ventana. En la libreta se leen, escritos a mano, dos números para la misma
-camisa, «4.ª» y «3.ª», con un signo de pregunta al lado. La duda sigue abierta.
+Sobre el mostrador, dos montones de cuadernos de colores: uno apilado en torre
+estrecha y otro tendido en una fila larga. Don Rafa, inclinado sobre ellos, los
+mira con la mano en la barbilla, como quien todavía no está seguro; Yariel, al
+fondo, señala la fila larga con cara de convencido. No aparece ningún número, ni
+la tarjeta del estante, ni ninguna regla escrita.
 
 EL RECORTE
-El corte pasa por: arriba, por las camisas del riel, cortadas a distinta
-altura; izquierda, por el borde de la ventana; derecha, por las camisas más
-cercanas a la puerta; abajo, por las patas del banquito y las sandalias de
-Yarisa. Corte a tijera ceñido al dibujo, sin margen intermedio de ningún color.
-UN SOLO CONTORNO, el del dibujo: sin aura, sin banda blanca separada de la
-figura, sin una segunda línea por fuera, sin relieve. Perímetro irregular y
-sinuoso, sin rectas. Todo va CONTENIDO en la lámina, con aire transparente por
-los cuatro lados; ningún trazo llega al canto. Detrás nada, fondo transparente:
-ni panel de respaldo, ni sombra, ni marca de agua. Ningún blanco puro dentro del
-dibujo.
-
-Al terminar, responde solo: 3 · final-inicio.webp
-```
-
-### Imagen 4 — `portada-desarrollo.webp`
-Entrada del desarrollo · apaisada, unos 1200 × 750. Invita a lo que no ha pasado: donde se va a buscar la regla. No puede aparecer la regla ya encontrada.
-
-```
-Imagen 4 de 7 del repertorio. Misma clase, mismos personajes que las anteriores.
-
-LA FORMA
-Apaisada: el lado largo, de unos 1200 píxeles, va en horizontal; el otro, unos
-750.
-
-LA IMAGEN
-El jueves en el taller. Doña Minerva, de pie junto a la punta del riel que da a
-la puerta, cuelga una camisa celeste nueva al final de la fila; el riel ahora es
-más largo y tiene más camisas. Sobre la mesa de planchar esperan dos camisas
-dobladas. Yarisa, cerca de la ventana, anota en la libreta verde, con el lápiz
-entre los dedos. Papo no está: su casco descansa sobre una silla junto a la
-puerta. El ventilador mueve un poco las mangas de las camisas.
-
-EL RECORTE
-El corte pasa por: arriba, por el tubo del riel y los ganchos; izquierda, por
-el marco de la ventana y el codo de Yarisa; derecha, por la espalda de doña
-Minerva y la silla con el casco; abajo, por la mesa de planchar y los pies de
-las dos, a distinta altura. Corte a tijera ceñido al dibujo, sin margen
-intermedio de ningún color. UN SOLO CONTORNO, el del dibujo: sin aura, sin banda
-blanca separada de la figura, sin una segunda línea por fuera, sin relieve.
-Perímetro irregular y sinuoso, sin rectas. Todo va CONTENIDO en la lámina, con
-aire transparente por los cuatro lados; ningún trazo llega al canto. Detrás
-nada, fondo transparente: ni panel de respaldo, ni sombra, ni marca de agua.
-Ningún blanco puro dentro del dibujo.
-
-Al terminar, responde solo: 4 · portada-desarrollo.webp
-```
-
-### Imagen 5 — `final-desarrollo.webp`
-Salida del desarrollo · casi cuadrada, unos 1200 × 1100. Cierra lo que ya pasó: la regla obtenida, en manos de quien la usa. No puede aparecer el desenlace de la historia.
-
-```
-Imagen 5 de 7 del repertorio. Misma clase, mismos personajes que las anteriores.
-
-LA FORMA
-Casi cuadrada: el lado largo, de unos 1200 píxeles, va en horizontal; el otro,
-unos 1100.
-
-LA IMAGEN
-Sobre la mesa de planchar, la libreta verde abierta con una regla escrita a
-mano, en español y con buena letra: «La última dice cuántas. Las dos puntas
-suman una más». Al lado, Yarisa, inclinada, la copia con el lápiz en una hoja
-impresa, concentrada; su cola alta con la liga amarilla le cae sobre un hombro.
-Detrás, el riel con nueve camisas celestes. Doña Minerva apoya una mano en el
-hombro de Yarisa y mira la hoja por encima de los lentes.
-
-EL RECORTE
-El corte pasa por: arriba, por la cabeza de doña Minerva y las camisas del
-riel; izquierda, por el borde de la libreta; derecha, por el brazo de doña
-Minerva; abajo, por el borde de la mesa de planchar, a distinta altura. Corte a
+El corte pasa por: arriba, por la cabeza de don Rafa y la mano de Yariel;
+izquierda, por el extremo de la fila de cuadernos; derecha, por la torre y el
+hombro de Yariel; abajo, por el canto del mostrador, a distinta altura. Corte a
 tijera ceñido al dibujo, sin margen intermedio de ningún color. UN SOLO
 CONTORNO, el del dibujo: sin aura, sin banda blanca separada de la figura, sin
 una segunda línea por fuera, sin relieve. Perímetro irregular y sinuoso, sin
@@ -348,31 +257,80 @@ rectas. Todo va CONTENIDO en la lámina, con aire transparente por los cuatro
 lados; ningún trazo llega al canto. Detrás nada, fondo transparente: ni panel de
 respaldo, ni sombra, ni marca de agua. Ningún blanco puro dentro del dibujo.
 
+Al terminar, responde solo: 3 · final-inicio.webp
+```
+
+### Imagen 4 — `portada-desarrollo.webp`
+Entrada del desarrollo. Invita a lo que no ha pasado: donde se va a buscar la regla.
+
+```
+Imagen 4 de 7 del repertorio. Misma clase, mismos personajes que las anteriores.
+
+LA IMAGEN
+La tarde del martes. Kenia, detrás del mostrador, tiene abierto el cuadernito de
+ventas y un lápiz listo; doña Carmen, a su lado, coloca unos cuadernos sobre el
+mostrador, junto a la caja abierta, como quien va a hacer una prueba. Luz de
+tarde, más cálida. No aparece la tarjeta del estante escrita ni ninguna regla.
+
+EL RECORTE
+El corte pasa por: arriba, por encima de las dos cabezas; izquierda, por el
+hombro de Kenia y su cuadernito; derecha, por el brazo de doña Carmen y la caja;
+abajo, por el frente del mostrador, a distinta altura. Corte a tijera ceñido al
+dibujo, sin margen intermedio de ningún color. UN SOLO CONTORNO, el del dibujo:
+sin aura, sin banda blanca separada de la figura, sin una segunda línea por
+fuera, sin relieve. Perímetro irregular y sinuoso, sin rectas. Todo va CONTENIDO
+en la lámina, con aire transparente por los cuatro lados; ningún trazo llega al
+canto. Detrás nada, fondo transparente: ni panel de respaldo, ni sombra, ni
+marca de agua. Ningún blanco puro dentro del dibujo.
+
+Al terminar, responde solo: 4 · portada-desarrollo.webp
+```
+
+### Imagen 5 — `final-desarrollo.webp`
+Salida del desarrollo. Cierra lo que pasó: la regla obtenida, en manos de quien la usa.
+
+```
+Imagen 5 de 7 del repertorio. Misma clase, mismos personajes que las anteriores.
+
+LA IMAGEN
+En primer plano, la tarjeta del estante recién escrita a mano, que doña Carmen
+termina de colgar de su clavo en el borde del estante; detrás, cuadernos
+ordenados en montones. En la tarjeta solo se ve un número escrito a mano en tinta
+oscura, sin frases. Yariel mira la tarjeta desde un lado, con el lápiz detrás de
+la oreja. Es el final de la tarde; no aparece el miércoles ni el estante al
+cerrar.
+
+EL RECORTE
+El corte pasa por: arriba, por el borde superior del estante; izquierda, por la
+mano y el brazo de doña Carmen; derecha, por la cara de Yariel; abajo, por los
+montones de cuadernos, a distinta altura. Corte a tijera ceñido al dibujo, sin
+margen intermedio de ningún color. UN SOLO CONTORNO, el del dibujo: sin aura, sin
+banda blanca separada de la figura, sin una segunda línea por fuera, sin relieve.
+Perímetro irregular y sinuoso, sin rectas. Todo va CONTENIDO en la lámina, con
+aire transparente por los cuatro lados; ningún trazo llega al canto. Detrás
+nada, fondo transparente: ni panel de respaldo, ni sombra, ni marca de agua.
+Ningún blanco puro dentro del dibujo.
+
 Al terminar, responde solo: 5 · final-desarrollo.webp
 ```
 
 ### Imagen 6 — `portada-cierre.webp`
-Entrada del cierre · apaisada, unos 1200 × 800. Invita a lo que no ha pasado: el momento en que la historia se decide. No puede aparecer el desenlace ni lo que se produjo.
+Entrada del cierre. Invita al momento en que la historia se decide.
 
 ```
 Imagen 6 de 7 del repertorio. Misma clase, mismos personajes que las anteriores.
 
-LA FORMA
-Apaisada: el lado largo, de unos 1200 píxeles, va en horizontal; el otro, unos
-800.
-
 LA IMAGEN
-El viernes temprano. El riel tiene ahora ocho camisas de la banda del liceo,
-blanco roto con un filo vino en el cuello, en fila de la ventana a la puerta.
-Papo, en la puerta, con el casco bajo el brazo, sostiene la boleta de entrega
-abierta, una hoja con renglones escritos a mano. Doña Minerva, junto al riel,
-señala con el dedo una de las primeras camisas. Yarisa espera con la libreta
-verde y el lápiz listos. Todavía no se ha descolgado ninguna camisa.
+La mañana del miércoles. Yariel acomoda los cuadernos en el estante, poniéndolos
+en torre, con la tarjeta del estante colgada a un lado; no los cuenta. Al fondo,
+Kenia abre una caja nueva de cuadernos que acaba de llegar, con el cuadernito de
+ventas asomando del bolsillo. No aparece la tarjeta firmada ni el estante al
+cerrar.
 
 EL RECORTE
-El corte pasa por: arriba, por el tubo del riel; izquierda, por el marco de la
-ventana y el brazo de doña Minerva; derecha, por el marco de la puerta y la
-espalda de Papo; abajo, por los pies de los tres y el umbral, a distinta altura.
+El corte pasa por: arriba, por encima del estante y la cabeza de Yariel;
+izquierda, por la tarjeta colgada y el borde del estante; derecha, por Kenia y
+su caja; abajo, por la base del estante y las manos de Kenia, a distinta altura.
 Corte a tijera ceñido al dibujo, sin margen intermedio de ningún color. UN SOLO
 CONTORNO, el del dibujo: sin aura, sin banda blanca separada de la figura, sin
 una segunda línea por fuera, sin relieve. Perímetro irregular y sinuoso, sin
@@ -384,33 +342,28 @@ Al terminar, responde solo: 6 · portada-cierre.webp
 ```
 
 ### Imagen 7 — `final-cierre.webp`
-Salida del cierre · apaisada, unos 1200 × 850. Cierra la historia: el desenlace y lo que se produjo (la boleta firmada). No puede aparecer una duda abierta.
+Salida del cierre. Cierra la historia: el desenlace y la tarjeta firmada.
 
 ```
 Imagen 7 de 7 del repertorio. Misma clase, mismos personajes que las anteriores.
 
-LA FORMA
-Apaisada: el lado largo, de unos 1200 píxeles, va en horizontal; el otro, unos
-850.
-
 LA IMAGEN
-En la acera, frente a la puerta del taller, Papo arranca su motor con el casco
-puesto y tres camisas de la banda colgadas en una funda transparente a la
-espalda. Yarisa, en la puerta, levanta en alto la boleta de entrega firmada, con
-los renglones escritos y una firma al pie. Detrás de ella, dentro del taller,
-cinco camisas blanco roto con filo vino siguen en el riel. Doña Minerva, en la
-ventana, despide con la mano. Todo quedó cuadrado.
+Al cerrar el miércoles. La tarjeta del estante, firmada al pie con un nombre
+escrito a mano, cuelga sobre un montón pequeño de cuadernos en el estante. Doña
+Carmen y Yariel la miran satisfechos, uno a cada lado; Kenia, delante del
+mostrador, cierra el cuadernito de ventas. La luz de la tarde entra baja por la
+reja. Nada queda pendiente: el día cuadró.
 
 EL RECORTE
-El corte pasa por: arriba, por el casco de Papo y el marco de la puerta;
-izquierda, por la rueda trasera del motor; derecha, por el marco de la ventana y
-la mano de doña Minerva; abajo, por la acera y las ruedas, a distinta altura.
-Corte a tijera ceñido al dibujo, sin margen intermedio de ningún color. UN SOLO
-CONTORNO, el del dibujo: sin aura, sin banda blanca separada de la figura, sin
-una segunda línea por fuera, sin relieve. Perímetro irregular y sinuoso, sin
-rectas. Todo va CONTENIDO en la lámina, con aire transparente por los cuatro
-lados; ningún trazo llega al canto. Detrás nada, fondo transparente: ni panel de
-respaldo, ni sombra, ni marca de agua. Ningún blanco puro dentro del dibujo.
+El corte pasa por: arriba, por el estante y la tarjeta; izquierda, por el hombro
+de doña Carmen; derecha, por Yariel y el borde del estante; abajo, por el
+mostrador y el cuadernito de Kenia, a distinta altura. Corte a tijera ceñido al
+dibujo, sin margen intermedio de ningún color. UN SOLO CONTORNO, el del dibujo:
+sin aura, sin banda blanca separada de la figura, sin una segunda línea por
+fuera, sin relieve. Perímetro irregular y sinuoso, sin rectas. Todo va CONTENIDO
+en la lámina, con aire transparente por los cuatro lados; ningún trazo llega al
+canto. Detrás nada, fondo transparente: ni panel de respaldo, ni sombra, ni
+marca de agua. Ningún blanco puro dentro del dibujo.
 
 Al terminar, responde solo: 7 · final-cierre.webp
 ```
@@ -420,11 +373,11 @@ Al terminar, responde solo: 7 · final-cierre.webp
 ## Las 7 imágenes, en orden
 
 ```
- 1  portada-secuencia.webp    apaisada, unos 1200 × 800
- 2  portada-inicio.webp       apaisada, unos 1200 × 800
- 3  final-inicio.webp         vertical, unos 900 × 1200
- 4  portada-desarrollo.webp   apaisada, unos 1200 × 750
- 5  final-desarrollo.webp     casi cuadrada, unos 1200 × 1100
- 6  portada-cierre.webp       apaisada, unos 1200 × 800
- 7  final-cierre.webp         apaisada, unos 1200 × 850
+ 1  portada-secuencia.webp    apaisada, unos 1600 × 1000
+ 2  portada-inicio.webp       apaisada, unos 1400 × 1000
+ 3  final-inicio.webp         apaisada, unos 1400 × 1000
+ 4  portada-desarrollo.webp   apaisada, unos 1400 × 1000
+ 5  final-desarrollo.webp     cuadrada, unos 1200 × 1200
+ 6  portada-cierre.webp       apaisada, unos 1400 × 1000
+ 7  final-cierre.webp         apaisada, unos 1400 × 1000
 ```

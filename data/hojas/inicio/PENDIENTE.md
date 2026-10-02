@@ -1,4 +1,6 @@
-# Pendientes · inicio
+# Inicio · pendiente
 
-- **p10 · la pantalla se sale 10 px por abajo** (disposición B; alto de cada sitio: experimento 348, control 287, evidencia 658, voz 92, leyenda 92). Se acortaron la voz y las tarjetas de los tres casos y bajó de 51 a 10 px; lo demás lo fija el plan: el riel tapado, la tarjeta del caso y el registro de tres renglones.
-- **p3 · voz donde el plan ponía leyenda** — la tabla de dos columnas exige su voz en ese sitio (lo dijo el guarda de las hojas). Va Yarisa: «Ventana y puerta: las dos puntas del riel». La leyenda del plan quedó fuera.
+- Paso 2, `filas`: los renglones del libro solo llevan número; de quién es cada pedido (don Rafa, la profesora Yineth, el taller de Mélida) lo dice la voz de Kenia.
+- Paso 4, la libreta: el plan pide cuatro pruebas; la ficha de la mesa no dice con cuántas da el paso por terminado (su hoja de muestra habla de tres).
+- Paso 6, `zonas.voz`: el plan pone ahí la leyenda y dice que nadie habla; el guarda de las hojas pide la voz de la pieza en ese sitio. Habla doña Carmen.
+- Paso 6: el guarda de la escena (R-23) marca que el caso 1 da por cierto el dicho de Kenia y el caso 3, ninguno. El plan lo pide así (el dicho de Kenia no habla de ventas); queda como marca.

@@ -5,84 +5,63 @@
     "nivel": "explorar",
     "lo_que_pide": "Explora. Se encuentra con el problema de la historia y lo tantea con lo que ya sabía hacer. Al final ve la idea nueva funcionar en una máquina y dice qué va a salir antes de verlo.",
     "al_salir": "Sale sabiendo qué parte del problema resuelve con lo que ya sabía y qué parte no. Ya vio la idea nueva en acción, pero todavía no sabe cuándo ni por qué pasa.",
-    "arista": "La última dice cuántas: cuando la marcada es la última, el lugar y la cantidad llevan el mismo número; cuántas habla de todas y el lugar, de una.",
+    "arista": "Contar da la misma cantidad en torre, en fila o regados: se toca cada cuaderno una vez y el último número es el de todos.",
     "acto": "contar",
-    "pieza": "fila-de-dos-preguntas",
-    "esquemas": [
-      "dos-preguntas"
-    ],
+    "escena": "La página de pedidos del martes, con tres renglones de cuadernos dibujados: los de don Rafa, ocho; los de la profesora Yineth, seis; los del taller de Mélida, nueve. El estudiante cuenta los cuadernos de cada renglón, escribe la cantidad en su casilla y comprueba; la página se completa con un número por pedido. Habla Kenia: ella escribe el cuadernito y necesita la cantidad de cada pedido para apartarlos. La leyenda nombra que cada renglón es un pedido, con el dibujo del cuaderno. Los aparatos, en orden: los renglones dibujados, el campo, la página, la leyenda, la voz.",
+    "pieza": "libro-que-se-llena",
+    "esquemas": [],
     "numeros": {
-      "objeto": "camisa",
-      "casos": 3
+      "objeto": "cuaderno",
+      "filas": 3
     },
-    "maestro_pregunta": "En el riel del martes la última es la sexta y hay seis: ¿es casualidad o pasa siempre?",
-    "registro": "El registro de tres renglones (riel · cuántas · lugar: 4 · 4.ª, 6 · 6.ª, 6 · 4.ª); se vuelve a mirar en el inicio 4, que lo usa sin contar, y en el desarrollo 3 como prueba.",
+    "disposicion": "D",
+    "maestro_pregunta": "¿Qué número escribiste para don Rafa, y por qué ese y no el de la torre ni el de la fila?",
+    "registro": "La página de pedidos (8 · 6 · 9); se vuelve a mirar en el inicio 3 como la cifra de don Rafa y en el inicio 6 como dato a la vista.",
     "impreso": "no"
   },
   "id": "p2",
   "casa": "00014",
   "paso": 2,
   "total": 10,
-  "nombre": "cuantas_hay_en_el_riel",
-  "pieza": "fila-de-dos-preguntas",
-  "disposicion": "C",
+  "nombre": "la_pagina_de_pedidos",
+  "pieza": "libro-que-se-llena",
+  "disposicion": "D",
   "zonas": {
-    "experimento": "fila",
-    "control": "preguntas",
-    "evidencia": "registro",
-    "voz": [
-      "voz",
-      {
-        "esquema": "dos-preguntas",
-        "rotulo": "Las dos preguntas",
-        "pregunta_1": "¿Cuántas hay?",
-        "numero_1": "",
-        "habla_1": "de todas",
-        "pregunta_2": "¿En qué lugar?",
-        "numero_2": "",
-        "habla_2": "de una sola"
-      }
-    ]
+    "experimento": "dibujos",
+    "control": "campo",
+    "evidencia": "pagina",
+    "voz": "voz",
+    "leyenda": { "casa": "leyenda", "texto": "Cada renglón es un pedido del martes.", "objeto": "cuaderno" }
   },
-  "titulo": "cuántas hay en el riel",
-  "instruccion": "Escribe cuántas camisas hay y en qué lugar va la marcada.",
+  "titulo": "la página de pedidos",
+  "instruccion": "Cuenta los cuadernos de cada pedido y escribe el número en su renglón.",
   "ayuda": [
-    "Cuenta todas las camisas del riel y escribe el número en el primer campo",
-    "Cuenta desde la ventana, a la izquierda, hasta la camisa marcada y escribe ese lugar en el segundo",
-    "Pulsa Comprobar: la llave abraza a todas y el lugar aparece debajo de una; después viene otro riel"
+    "El pedido de turno está marcado: cuenta sus cuadernos, escribe cuántos y pulsa Comprobar",
+    "Toca cada cuaderno una vez; el último número que dices es el de todos",
+    "La página se completa con un número por pedido"
   ],
   "datos": {
-    "objeto": "camisa",
-    "rotulo_fila": "El riel",
-    "rotulo_preguntas": "Las dos preguntas",
-    "rotulo_registro": "El registro del riel",
-    "pregunta_cuantos": "¿Cuántas camisas hay?",
-    "pregunta_lugar": "¿En qué lugar va la marcada?",
-    "etiqueta_todos": "de todas",
-    "etiqueta_uno": "de una sola",
-    "columna_caso": "riel",
-    "columna_cuantos": "cuántas",
-    "columna_lugar": "lugar",
+    "objeto": "cuaderno",
+    "rotulo_dibujos": "Los pedidos del martes",
+    "rotulo_campo": "Cuántos cuadernos hay",
+    "rotulo_pagina": "La página de pedidos",
+    "etiqueta_fila": "Pedido",
+    "texto_vacio": "ningún cuaderno",
+    "columna_fila": "pedido",
+    "columna_cuantos": "cuadernos",
+    "etiqueta_cerradas": "pedidos anotados",
+    "etiqueta_campo": "Cuadernos del pedido",
     "boton_comprobar": "Comprobar",
-    "voz": {
-      "quien": "Yarisa",
-      "texto": "¿Cuántas hay, y en qué lugar va la de Marielys?"
-    },
-    "casos": [
-      {"n": 4, "marcado": 4, "momento": "El lunes · la última"},
-      {"n": 6, "marcado": 6, "momento": "El martes · la última"},
-      {"n": 6, "marcado": 4, "momento": "El martes · la de Marielys"}
-    ],
-    "msg_vacio": "Escribe los dos números: cuántas camisas hay y en qué lugar va la marcada.",
-    "msg_cuantos_mal": "Cuántas habla de todas: cuenta el riel entero, de la ventana a la puerta.",
-    "msg_lugar_mal": "El lugar se cuenta desde la ventana, una por una, hasta la marcada.",
-    "msg_bien": "Hay {{cuantos}}; la marcada va de {{lugar}}. Uno es de todas; el otro, de una.",
-    "msg_completar": "Tres rieles, dos números cada uno: cuántas habla de todas; el lugar, de una."
+    "voz": { "quien": "Kenia", "texto": "Los aparto por pedido y los anoto: el 1 es de don Rafa, el 2 de la profesora Yineth y el 3 del taller de Mélida." },
+    "filas": [ { "n": 1, "objetos": 8 }, { "n": 2, "objetos": 6 }, { "n": 3, "objetos": 9 } ],
+    "plantilla_turno": "Le toca al {{fila}}.",
+    "msg_vacio": "Escribe un número: cuántos cuadernos hay en este pedido.",
+    "msg_mal": "En el {{fila}} no hay {{dicho}}: toca cada cuaderno una vez.",
+    "msg_bien": "{{fila}}: {{cuantos}} cuadernos. Anotado.",
+    "msg_cero": "{{fila}} no tiene ningún cuaderno: se anota 0.",
+    "msg_completar": "La página de pedidos está completa: 8 · 6 · 9, un número por pedido."
   },
-  "limites": {
-    "casos": 3,
-    "n_maximo": 12
-  },
-  "emite": ["terminó"],
+  "limites": { "objetos_por_fila": 12 },
+  "emite": [ "terminó" ],
   "escucha": []
 }

@@ -1,8 +1,9 @@
 {
+  "_": "Hoja de muestra de la salida (casa/disposiciones/salida.html). Se escribe encima de cada valor, con mayúscula al empezar salvo el destino; la ceja, el rótulo del recuadro y la imagen se dejan como están. El recuadro, en una o dos oraciones. Los botones los pone la casa; el principal dice «Continuar» y el destino, el sitio adonde se va en dos palabras, artículo y sitio («el multiuso» da «Continuar al multiuso»). El cierre no lleva ni destino ni ese botón (R-15).",
   "rotulo": "Verificación completada",
-  "titulo": "La boleta cuadra con el riel: tres se van, cinco quedan, ocho había.",
+  "titulo": "La tarjeta vale si nadie vende ni trae",
   "rotulo_recuadro": "Lo que queda escrito",
-  "texto": "La boleta de entrega de la banda, llena y firmada: hay 8, se lleva 3 (de la 2.ª a la 4.ª), quedan 5, y la de Dayana pasa de la 8.ª a la 5.ª.",
+  "texto": "El estante tiene cinco cuadernos, contados una sola vez: entraron diecisiete y salieron doce, y la tarjeta queda firmada.",
   "imagen": "final-cierre.webp",
-  "imagen_alt": "Papo arranca el motor con tres camisas en una funda; Yarisa, en la puerta, levanta la boleta firmada; cinco camisas quedan en el riel."
+  "imagen_alt": "La tarjeta del estante firmada, colgada sobre los cinco cuadernos"
 }

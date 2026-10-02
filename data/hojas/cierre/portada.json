@@ -1,10 +1,11 @@
 {
+  "_": "Hoja de muestra de la entrada (casa/disposiciones/entrada.html). Se escribe encima de cada valor, con mayúscula al empezar; la ceja y la imagen se dejan como están. El botón es un verbo y el sitio o la cosa de la historia, de dos a cuatro palabras («Entrar al multiuso»), sin Empezar, Comenzar, Continuar ni Siguiente: el montador rechaza el que no cumple (R-15).",
   "etapa": "Verificación final",
-  "titulo": "La entrega de la banda",
-  "frase1": "Viernes: ocho camisas de la banda cuelgan y Papo trae la boleta.",
-  "frase2": "Cuadra cuántas se lleva y cuáles quedan, y firma la boleta.",
-  "boton_entrada": "Llenar la boleta",
+  "titulo": "El miércoles de la tarjeta",
+  "frase1": "Llega la caja del miércoles y Kenia abre el cuadernito de ventas.",
+  "frase2": "Yariel lleva la tarjeta del estante sin volver a contar.",
+  "boton_entrada": "Abrir el estante",
   "imagen": "portada-cierre.webp",
-  "imagen_alt": "El riel con ocho camisas de la banda del liceo, Papo en la puerta con la boleta en la mano y doña Minerva señalando el riel.",
-  "imagen_leyenda": "Papo espera con la boleta; doña Minerva señala el riel."
+  "imagen_alt": "Yariel acomodando los cuadernos en el estante de la papelería",
+  "imagen_leyenda": "Yariel acomoda el estante con la tarjeta colgada"
 }

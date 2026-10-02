@@ -5,67 +5,90 @@
     "nivel": "conjeturar",
     "lo_que_pide": "Conjetura. Dice qué espera antes de ver y lo compara con lo que obtuvo, en casos que cambian. Separa los casos donde aparece la idea de los que solo se le parecen, y zanja una discusión con un dato a la vista.",
     "al_salir": "Sale con una sospecha que acierta en los casos sencillos y con la pregunta que recoge el desarrollo: ¿pasa siempre, y cómo se dice para todos los casos?",
-    "arista": "Antes de la k.ª hay k − 1 camisas y hasta la k.ª, contándola, hay k: antes de la de Jonathan (5.ª) hay cuatro; hasta ella, cinco.",
-    "acto": "calcular",
-    "pieza": "tramo-del-riel",
+    "arista": "Un dicho sobre la cantidad se decide con los datos a la vista, no con lo que abulta el montón.",
+    "acto": "comparar",
+    "escena": "El pleito del mostrador: Yariel dice «donde ocupan más sitio hay más» y Kenia dice «si nadie vende ni trae, son los mismos». A la vista, tres datos: la página de pedidos (don Rafa, 8), la libreta del mostrador (en torre 8, en fila 8, regados 8, uno a la caja 7) y el registro de los acomodos (siempre la misma cantidad). Tres casos: de la torre a la fila, ¿quién tiene razón?; los ocho regados en la mesa, ¿y ahora?; Kenia vendió uno y Yariel regó los demás, ¿quién? Para cada caso el estudiante elige un veredicto (Yariel, Kenia, ninguno de los dos) y un porqué (nadie vendió ni trajo ninguno; la fila ocupa más sitio; salió uno, hay uno menos; la torre esconde cuadernos) y sella el acta: Kenia y Kenia porque nadie vendió ni trajo, y en el tercero ninguno, porque salió uno. El acta guarda la pregunta, el veredicto y el porqué. Nadie habla: el cuarto sitio lo ocupa la leyenda que nombra los tres datos. Los aparatos, en orden: los dichos con los datos, el veredicto y el porqué, el acta, la leyenda.",
+    "pieza": "veredicto-con-porque",
     "esquemas": [],
     "numeros": {
-      "objeto": "camisa",
-      "n": 6,
-      "modo": "antes",
-      "casos": 3
+      "dichos": 2,
+      "casos": 3,
+      "veredictos": 3,
+      "porques": 4,
+      "datos_a_la_vista": 3
     },
-    "maestro_pregunta": "Antes de la sexta hay cinco, y en el riel hay seis: ¿cuál es la que falta en esa cuenta?",
-    "registro": "El registro de tres renglones (camisa · lugar · antes · hasta); se vuelve a mirar en el desarrollo 3 (la regla) y en el cierre 4 (la ronda).",
+    "disposicion": "C",
+    "maestro_pregunta": "En el caso de la venta, ¿por qué ni Yariel ni Kenia tienen razón?",
+    "registro": "El acta con los tres veredictos; se vuelve a mirar en el final del inicio y en el cierre 5, cuando el pleito vuelve con la tarjeta.",
     "impreso": "no"
   },
   "id": "p6",
   "casa": "00014",
   "paso": 6,
   "total": 10,
-  "nombre": "las_que_van_antes",
-  "pieza": "tramo-del-riel",
-  "disposicion": "E",
+  "nombre": "el_pleito_del_mostrador",
+  "pieza": "veredicto-con-porque",
+  "disposicion": "C",
   "zonas": {
-    "experimento": "riel",
-    "leyenda": {"casa": "leyenda", "texto": "Antes de la 5.ª: 1.ª, 2.ª, 3.ª y 4.ª.", "objeto": "camisa"},
-    "control": "caso",
-    "evidencia": "registro"
+    "experimento": "dichos",
+    "control": "veredicto",
+    "evidencia": "acta",
+    "voz": "voz"
   },
-  "titulo": "las que van antes",
-  "instruccion": "Escribe cuántas van antes de la camisa y hasta ella, y pulsa Comprobar.",
+  "titulo": "el pleito del mostrador",
+  "instruccion": "Elige veredicto y porqué en cada caso, y sella el acta.",
   "ayuda": [
-    "La tarjeta dice qué camisa nombra Papo y su lugar desde la ventana",
-    "En un campo van las de antes de ella; en el otro, las de hasta ella, contándola",
-    "Pulsa Comprobar: el riel enciende primero las de antes y después también la nombrada"
+    "Lee los dos dichos y los tres datos que están a la vista",
+    "Toca un veredicto y un porqué; si uno no es, tiembla y te orienta",
+    "Pulsa Sellar: el acta guarda la pregunta, el veredicto y el porqué de cada caso"
   ],
   "datos": {
-    "objeto": "camisa",
-    "n": 6,
-    "nombres": ["Dariel", "Luisa", "Kendry", "Marielys", "Jonathan", "Yeimi"],
-    "modo": "antes",
-    "columnas": ["camisa", "lugar", "antes", "hasta"],
-    "rotulo_riel": "El riel del martes",
-    "rotulo_caso": "Lo que se lleva Papo",
-    "rotulo_registro": "El registro",
-    "rotulo_ventana": "ventana",
-    "rotulo_puerta": "puerta",
-    "plantilla_orden": "{{n}}.ª",
-    "etiqueta_cuenta": "encendidas",
-    "etiqueta_antes": "antes de ella",
-    "etiqueta_hasta": "hasta ella, contándola",
-    "boton_comprobar": "Comprobar",
-    "msg_vacio": "Escribe los dos números antes de comprobar.",
-    "msg_bien": "Dijiste <b>{{dicho}}</b> y el riel cuenta <b>{{riel}}</b>: lo mismo.",
-    "msg_mal": "Dijiste <b>{{dicho}}</b> y el riel cuenta <b>{{riel}}</b>. {{pista}}",
-    "msg_completar": "Las tres camisas tienen anotadas las de antes y las de hasta.",
+    "rotulo_dichos": "Los dichos",
+    "rotulo_datos": "A la vista",
+    "rotulo_veredicto": "El veredicto",
+    "rotulo_porque": "Porque",
+    "rotulo_acta": "El acta",
+    "boton_sellar": "Sellar",
+    "columna_pregunta": "pregunta",
+    "columna_veredicto": "veredicto",
+    "columna_porque": "porque",
+    "voz": { "quien": "Doña Carmen", "texto": "Aquí se decide con los datos, no con lo que abulta." },
+    "dichos": [
+      { "quien": "Yariel", "t": "Donde ocupan más sitio, hay más cuadernos." },
+      { "quien": "Kenia", "t": "Si nadie vende ni trae, son los mismos cuadernos." }
+    ],
+    "datos_a_la_vista": [
+      "Página de pedidos: don Rafa, 8",
+      "Libreta: en torre 8, en fila 8, regados 8, uno a la caja 7",
+      "Registro de acomodos: de 8 a 8, de 8 a 8, de 6 a 6"
+    ],
+    "veredictos": [
+      { "clave": "yariel", "t": "Yariel" },
+      { "clave": "kenia", "t": "Kenia" },
+      { "clave": "ninguno", "t": "Ninguno de los dos" }
+    ],
+    "porques": [
+      { "clave": "nadie", "t": "nadie vendió ni trajo ninguno" },
+      { "clave": "sitio", "t": "la fila ocupa más sitio" },
+      { "clave": "salio", "t": "salió uno, hay uno menos" },
+      { "clave": "esconde", "t": "la torre esconde cuadernos" }
+    ],
     "casos": [
-      {"texto": "Se lleva las de antes de la de Jonathan, la 5.ª.", "k": 5, "pista": "Antes de ella no entra la suya; hasta ella, sí."},
-      {"texto": "Otra vez con seis: antes de la de Yeimi, la 6.ª.", "k": 6, "pista": "Las de antes se cuentan sin la de Yeimi."},
-      {"texto": "Otra vez con seis: antes de la de Luisa, la 2.ª.", "k": 2, "pista": "Desde la ventana hasta la de Luisa: ¿cuáles quedan antes?"}
-    ]
+      { "rotulo": "torre y fila", "pregunta": "Pasaron los ocho de la torre a la fila: ¿quién tiene razón?", "veredicto": "kenia", "porque": "nadie",
+        "pista_veredicto": "La libreta dice 8 en torre y 8 en fila. ¿Qué dicho cuadra con eso?",
+        "pista_porque": "El porqué dice qué pasó con los cuadernos, no cuánto sitio ocupan." },
+      { "rotulo": "regados en la mesa", "pregunta": "Regaron los ocho por la mesa: ¿quién tiene razón?", "veredicto": "kenia", "porque": "nadie",
+        "pista_veredicto": "En la libreta, regados también son 8. ¿Quién dijo que serían los mismos?",
+        "pista_porque": "El porqué dice qué pasó con los cuadernos, no cuánto sitio ocupan." },
+      { "rotulo": "una venta", "pregunta": "Kenia vendió uno y Yariel regó los demás: ¿quién tiene razón?", "veredicto": "ninguno", "porque": "salio",
+        "pista_veredicto": "La libreta tiene una prueba con uno a la caja: ¿qué marcó el contador?",
+        "pista_porque": "El porqué tiene que decir qué le pasó a la cantidad cuando salió uno." }
+    ],
+    "msg_elige": "Elige un veredicto y un porqué antes de sellar.",
+    "msg_bien": "Sellado: {{veredicto}}, porque {{porque}}.",
+    "msg_completar": "El acta está sellada: dos veces Kenia, y una vez ninguno, porque salió uno."
   },
-  "limites": {"n": 9, "casos": 4, "renglones": 4},
-  "emite": ["terminó"],
+  "limites": { "veredictos": 3, "porques": 4, "datos": 4, "porque_palabras": 7 },
+  "emite": [ "terminó" ],
   "escucha": []
 }

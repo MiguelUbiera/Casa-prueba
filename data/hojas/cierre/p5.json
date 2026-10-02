@@ -5,35 +5,39 @@
     "nivel": "justificar",
     "lo_que_pide": "Justifica. Resuelve él mismo el problema de la historia y sostiene cada decisión con la regla y con algo que se puede señalar. Termina entregando un producto con nombre que lleva su porqué.",
     "al_salir": "Sale con el problema resuelto por él y una respuesta que otro puede revisar y que se sostiene sola.",
-    "arista": "Cuántas no es cuál: «ocho» contesta cuántas (todas); «la octava» contesta cuál (una sola); el mismo número sirve a las dos preguntas solo para la última.",
+    "arista": "Un dicho sobre la cantidad se sostiene con la regla y con algo señalable: el cuadernito y la tarjeta.",
     "acto": "justificar",
+    "escena": "El pleito del miércoles: Yariel dice «hay que contarlos otra vez cada vez que cambian de forma» y doña Carmen dice «si nadie vende ni trae, la tarjeta sigue valiendo». A la vista: el cuadernito de Kenia hasta las once y media (12; vendió 3; los apiló; llegó 1; los regó), la tarjeta del estante que dice 9 desde las nueve, y la huella de la torre y de los regados. Tres casos: a las nueve y media Yariel apiló los nueve, ¿hay que contar otra vez?; a las once llegó uno, ¿la tarjeta de 9 sigue valiendo?; a las once y media los regó, ¿la tarjeta de 10 vale? El estudiante elige veredicto (Yariel, doña Carmen, ninguno de los dos) y porqué (solo los acomodaron; llegó uno, se suma uno; la torre esconde cuadernos; ocupan más sitio regados) y sella el acta: doña Carmen, ninguno, doña Carmen. En el sitio de la voz va el esquema de la regla de oro, escrita en el desarrollo 3, para señalarla en cada porqué. Los aparatos, en orden: los dichos con los datos, el veredicto y el porqué, el acta, la regla.",
     "pieza": "veredicto-con-porque",
-    "esquemas": [],
+    "esquemas": [
+      "regla-de-dos-huecos"
+    ],
     "numeros": {
       "dichos": 2,
-      "casos": 1,
-      "veredictos": 2,
-      "porques": 3,
+      "casos": 3,
+      "veredictos": 3,
+      "porques": 4,
       "datos_a_la_vista": 3
     },
-    "maestro_pregunta": "¿Cuándo sí sirve el mismo número para contestar las dos preguntas?",
-    "registro": "El veredicto (Yarisa) con su porqué; se vuelve a mirar en la pantalla final del cierre.",
+    "disposicion": "C",
+    "maestro_pregunta": "En el caso de las once, ¿por qué la tarjeta no sigue valiendo y tampoco hay que contar?",
+    "registro": "El acta del miércoles con los tres veredictos; se vuelve a mirar en el cierre 8, en la tarjeta firmada, y en el final del cierre.",
     "impreso": "no"
   },
   "id": "p5",
   "casa": "00014",
   "paso": 5,
   "total": 8,
-  "nombre": "ocho_o_la_octava",
+  "nombre": "el_pleito_del_miercoles",
   "pieza": "veredicto-con-porque",
   "disposicion": "C",
-  "zonas": {"experimento": "dichos", "control": "veredicto", "evidencia": "acta", "voz": "voz"},
-  "titulo": "ocho o la octava",
-  "instruccion": "Elige quién contesta lo que preguntó doña Milagros y por qué, y sella.",
+  "zonas": { "experimento": "dichos", "control": "veredicto", "evidencia": "acta", "voz": "voz" },
+  "titulo": "el pleito del miércoles",
+  "instruccion": "Elige veredicto y porqué en cada caso, y sella el acta.",
   "ayuda": [
-    "Lee la pregunta de doña Milagros, los dos dichos y los datos a la vista",
-    "Toca un veredicto y un porqué; si uno no va, tiembla y te orienta",
-    "Pulsa Sellar: el acta guarda la pregunta, el veredicto y el porqué"
+    "Lee los dos dichos, los datos a la vista y la regla del estante",
+    "Toca un veredicto y un porqué; si uno no es, tiembla y te orienta",
+    "Pulsa Sellar: el acta guarda la pregunta, el veredicto y el porqué de cada caso"
   ],
   "datos": {
     "rotulo_dichos": "Los dichos",
@@ -45,35 +49,43 @@
     "columna_pregunta": "pregunta",
     "columna_veredicto": "veredicto",
     "columna_porque": "porque",
-    "voz": {"quien": "Doña Milagros", "texto": "¿La octava? Yo pregunté cuántas, no cuál."},
+    "voz": { "quien": "Kenia", "texto": "Regla: acomodar no cambia la cantidad; vender o traer, sí." },
     "dichos": [
-      {"quien": "Papo", "t": "La octava."},
-      {"quien": "Yarisa", "t": "Ocho."}
+      { "quien": "Yariel", "t": "Si cambian de forma, hay que contarlos." },
+      { "quien": "Doña Carmen", "t": "Si nadie vende ni trae, la tarjeta sigue igual." }
     ],
     "datos_a_la_vista": [
-      "La de Dayana es la 8.ª, la última",
-      "En el riel hay 8 camisas",
-      "La boleta: pedido de 8"
+      "Cuadernito: 12, vendió 3, apiló, llegó 1, regó",
+      "La tarjeta dice 9 desde las nueve",
+      "Huella: la torre ocupa poco; regados, mucho"
     ],
     "veredictos": [
-      {"clave": "papo", "t": "Papo"},
-      {"clave": "yarisa", "t": "Yarisa"}
+      { "clave": "yariel", "t": "Yariel" },
+      { "clave": "carmen", "t": "Doña Carmen" },
+      { "clave": "ninguno", "t": "Ninguno de los dos" }
     ],
     "porques": [
-      {"clave": "una_todas", "t": "la octava es una; ocho son todas"},
-      {"clave": "lo_mismo", "t": "octava y ocho es lo mismo"},
-      {"clave": "puerta", "t": "Papo contó desde la puerta"}
+      { "clave": "acomodo", "t": "solo los acomodaron" },
+      { "clave": "llego", "t": "llegó uno, se suma uno" },
+      { "clave": "esconde", "t": "la torre esconde cuadernos" },
+      { "clave": "sitio", "t": "regados ocupan más sitio" }
     ],
     "casos": [
-      {"rotulo": "¿quién contesta?", "pregunta": "Doña Milagros: ¿cuántas camisas de la banda hay listas?", "veredicto": "yarisa", "porque": "una_todas",
-       "pista_veredicto": "Doña Milagros preguntó cuántas: ¿cuál de los dos dijo una cantidad?",
-       "pista_porque": "El porqué tiene que decir qué contesta «la octava» y qué contesta «ocho»."}
+      { "rotulo": "las nueve y media", "pregunta": "A las nueve y media los apiló: ¿hay que contar otra vez?", "veredicto": "carmen", "porque": "acomodo",
+        "pista_veredicto": "El cuadernito dice que a las nueve y media solo los apiló. ¿Qué dice la regla?",
+        "pista_porque": "El porqué dice qué pasó con los cuadernos, no cómo se ven." },
+      { "rotulo": "las once", "pregunta": "A las once llegó uno: ¿la tarjeta de 9 sigue valiendo?", "veredicto": "ninguno", "porque": "llego",
+        "pista_veredicto": "A las once llegó uno: ¿alguno de los dos dichos habla de eso?",
+        "pista_porque": "El porqué tiene que decir qué le pasó a la cantidad cuando llegó uno." },
+      { "rotulo": "las once y media", "pregunta": "A las once y media los regó: ¿la tarjeta de 10 vale?", "veredicto": "carmen", "porque": "acomodo",
+        "pista_veredicto": "A las once y media solo los regó. ¿Qué dice la regla de los acomodos?",
+        "pista_porque": "El porqué dice qué pasó con los cuadernos, no cómo se ven." }
     ],
     "msg_elige": "Elige un veredicto y un porqué antes de sellar.",
     "msg_bien": "Sellado: {{veredicto}}, porque {{porque}}.",
-    "msg_completar": "El acta está sellada: ocho contesta cuántas; la octava, cuál."
+    "msg_completar": "El acta está sellada: dos veces doña Carmen, y una vez ninguno."
   },
-  "limites": {"casos": 3, "veredictos": 3, "porques": 4, "datos": 4, "porque_palabras": 7},
-  "emite": ["terminó"],
+  "limites": { "veredictos": 3, "porques": 4, "datos": 4, "porque_palabras": 7 },
+  "emite": [ "terminó" ],
   "escucha": []
 }

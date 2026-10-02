@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <style>html{background:#0d1d26}html.s321-arranque body{opacity:0;animation:s321Destapa 0s 3s forwards}html.s321-arranque body *{animation-play-state:paused!important}@keyframes s321Destapa{to{opacity:1}}</style>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La última dice cuántas · Secuencia321</title>
+<title>La tarjeta del estante · Secuencia321</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<meta name="s321:codigo" content="S321-00022">
+<meta name="s321:codigo" content="S321-00014">
 
 <script>
 
@@ -90,15 +90,15 @@ function s321ImgPendiente(img) {
   --s321-alto-ref: 650px;
   
 
-  --s321-alto-pie: calc(6px + 70px * var(--s321-cenir));    
+  --s321-alto-pie: calc(6px + 70px * var(--s321-letra) - 20px);    
   
 
-  --s321-cromo-sup-alto: calc(14px + 38px * var(--s321-cenir));    
+  --s321-cromo-sup-alto: calc(14px + 38px * var(--s321-letra) - 10px);    
   --s321-pad-sup: var(--s321-cromo-sup-alto);
   --s321-pad-inf: 14px;
   
 
-  --s321-franja-burbuja: 80px;
+  --s321-franja-burbuja: 69px;
   
 
   --s321-pad-lat: clamp(20px, calc(2.2 * var(--s321-vw, 1vw)), 96px);
@@ -114,7 +114,7 @@ function s321ImgPendiente(img) {
 
   
 
-  --s321-obj-min: 76px;
+  --s321-obj-min: calc(76px * var(--s321-objeto));
 
    
   
@@ -123,19 +123,31 @@ function s321ImgPendiente(img) {
 
   
 
+  
+
   --s321-letra: 1.25;
-  --s321-cenir: var(--s321-letra);
+  --s321-barras: 1.375;
+  --s321-credito: 1.35;
+  --s321-menuda: 1.5625;
+  --s321-lectura: 1.4375;
+  --s321-figura: 1.3125;
+  --s321-objeto: 1.08;
+  --s321-cenir: var(--s321-lectura);
   --s321-tipo: calc(var(--s321-tipo-base) * var(--s321-letra));
+  --s321-tipo-barras: calc(var(--s321-tipo-base) * var(--s321-barras));
+  --s321-tipo-menuda: calc(var(--s321-tipo-base) * var(--s321-menuda));
+  --s321-tipo-lectura: calc(var(--s321-tipo-base) * var(--s321-lectura));
+  --s321-tipo-figura: calc(var(--s321-tipo-base) * var(--s321-figura));
 
   
 
-  --s321-txt-titulo: calc(clamp(1.8rem, calc(3.5 * var(--s321-vw, 1vw)), 2.8rem) * var(--s321-tipo));
-  --s321-txt-subtitulo: calc(clamp(1.2rem, calc(2 * var(--s321-vw, 1vw)), 1.6rem) * var(--s321-tipo));
-  --s321-txt-instruccion: calc(clamp(1.32rem, calc(1.7 * var(--s321-vw, 1vw)), 1.65rem) * var(--s321-tipo));
-  --s321-txt-cuerpo: calc(clamp(1.18rem, calc(1.4 * var(--s321-vw, 1vw)), 1.4rem) * var(--s321-tipo));
-  --s321-txt-opcion: calc(clamp(1.07rem, calc(1.2 * var(--s321-vw, 1vw)), 1.2rem) * var(--s321-tipo));
-  --s321-txt-numero: calc(clamp(2.8rem, calc(5 * var(--s321-vw, 1vw)), 4.5rem) * var(--s321-tipo));
-  --s321-txt-etiqueta: calc(0.68rem * var(--s321-tipo));
+  --s321-txt-titulo: calc(clamp(1.8rem, calc(3.5 * var(--s321-vw, 1vw)), 2.8rem) * var(--s321-tipo-figura));
+  --s321-txt-subtitulo: calc(clamp(1.2rem, calc(2 * var(--s321-vw, 1vw)), 1.6rem) * var(--s321-tipo-lectura));
+  --s321-txt-instruccion: calc(clamp(1.32rem, calc(1.7 * var(--s321-vw, 1vw)), 1.65rem) * var(--s321-tipo-lectura));
+  --s321-txt-cuerpo: calc(clamp(1.18rem, calc(1.4 * var(--s321-vw, 1vw)), 1.4rem) * var(--s321-tipo-lectura));
+  --s321-txt-opcion: calc(clamp(1.07rem, calc(1.2 * var(--s321-vw, 1vw)), 1.2rem) * var(--s321-tipo-lectura));
+  --s321-txt-numero: calc(clamp(2.8rem, calc(5 * var(--s321-vw, 1vw)), 4.5rem) * var(--s321-tipo-figura));
+  --s321-txt-etiqueta: calc(0.68rem * var(--s321-tipo-menuda));
 
   
 
@@ -148,16 +160,16 @@ function s321ImgPendiente(img) {
 
   
 
-  --s321-txt-escena: var(--s321-txt-etiqueta);
+  --s321-txt-escena: calc(0.68rem * var(--s321-tipo-barras));    
   --s321-txt-seccion: var(--s321-txt-opcion);
   --s321-txt-voz: var(--s321-txt-cuerpo);
   --s321-txt-dato: var(--s321-txt-titulo);
   --s321-txt-marcador: var(--s321-txt-opcion);
-  --s321-txt-tarjeta: calc(clamp(1.12rem, calc(1.3 * var(--s321-vw, 1vw)), 1.32rem) * var(--s321-tipo));
+  --s321-txt-tarjeta: calc(clamp(1.12rem, calc(1.3 * var(--s321-vw, 1vw)), 1.32rem) * var(--s321-tipo-lectura));
 
   
 
-  --s321-txt-antetitulo: calc(0.85rem * var(--s321-tipo));
+  --s321-txt-antetitulo: calc(0.85rem * var(--s321-tipo-menuda));
 
   
 
@@ -166,10 +178,10 @@ function s321ImgPendiente(img) {
   --s321-txt-valor: var(--s321-txt-cuerpo);
   --s321-txt-cifra: var(--s321-txt-dato);
   --s321-txt-campo: calc(var(--s321-txt-numero) * .5);
-  --s321-txt-pie: calc(.95rem * var(--s321-tipo));
-  --s321-txt-reloj: calc(.75rem * var(--s321-tipo));
-  --s321-txt-credito: calc(.7rem * var(--s321-tipo));
-  --s321-txt-volver: calc(var(--s321-txt-etiqueta) * 1.2);
+  --s321-txt-pie: calc(.95rem * var(--s321-tipo-barras));
+  --s321-txt-reloj: calc(.75rem * var(--s321-tipo-barras));
+  --s321-txt-credito: calc(.7rem * var(--s321-tipo-base) * var(--s321-credito));
+  --s321-txt-volver: calc(.816rem * var(--s321-tipo));    
 
   
 
@@ -328,7 +340,8 @@ body {
   top: var(--s321-cromo-borde, 14px); right: var(--s321-cromo-lado, 20px);
   z-index: 5;
   display: flex; align-items: center; gap: 9px;
-  padding: calc(5px * var(--s321-cenir, 1)) calc(12px * var(--s321-cenir, 1));
+   
+  padding: calc(4.58px * var(--s321-letra, 1)) calc(12px * var(--s321-letra, 1));
   border-radius: 999px;
   border: 1px solid var(--su-linea);
   background: rgba(255,252,247,.72);
@@ -557,9 +570,9 @@ u [aria-hidden="true"], ins [aria-hidden="true"],
 .s321-portada-volver {
   display: inline-flex;
   align-items: center;
-  gap: calc(8px * var(--s321-escala, 1) * var(--s321-cenir, 1));
-  min-height: calc(34px * var(--s321-escala, 1) * var(--s321-cenir, 1));
-  padding: calc(7px * var(--s321-escala, 1) * var(--s321-cenir, 1)) calc(15px * var(--s321-escala, 1) * var(--s321-cenir, 1));
+  gap: calc(8px * var(--s321-escala, 1) * var(--s321-letra, 1));
+  min-height: calc(34px * var(--s321-escala, 1) * var(--s321-letra, 1));
+  padding: calc(7px * var(--s321-escala, 1) * var(--s321-letra, 1)) calc(15px * var(--s321-escala, 1) * var(--s321-letra, 1));
   border: 1px solid var(--su-linea);
   border-radius: 999px;
   background: transparent;
@@ -981,7 +994,8 @@ input[type="range"]:focus-visible::-moz-range-thumb {
   font-size: max(calc(var(--s321-txt-escena) * var(--s321-piso-escena)), calc(var(--s321-txt-escena) * var(--s321-escala)));
   font-weight: 700; letter-spacing: 1.4px; text-transform: uppercase;
   color: #fff; background: var(--pe-claro);
-  padding: calc(5px * var(--s321-cenir, 1)) calc(16px * var(--s321-cenir, 1)); border-radius: 999px;
+  padding: calc(4.58px * var(--s321-letra, 1)) calc(16px * var(--s321-letra, 1)); border-radius: 999px;    
+  white-space: nowrap;    
 }
 
  
@@ -1046,7 +1060,9 @@ input[type="range"]:focus-visible::-moz-range-thumb {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: var(--s321-sep-min);
-  padding: 0 var(--s321-sep-borde);
+  
+
+  padding: 0 var(--s321-sep-borde) 4.7px;
 }
 
 
@@ -1075,7 +1091,10 @@ input[type="range"]:focus-visible::-moz-range-thumb {
 
 .s321-nav-btn {
   font: inherit; font-weight: 800; font-size: var(--s321-txt-pie);
-  cursor: pointer; border-radius: 999px; padding: calc(10px * var(--s321-cenir)) calc(22px * var(--s321-cenir));
+  cursor: pointer; border-radius: 999px; padding: calc(9px * var(--s321-letra)) calc(22px * var(--s321-letra));
+  
+
+  min-height: calc(44px * var(--s321-letra)); gap: calc(10px * var(--s321-letra));
 }
 .s321-nav-btn:disabled { opacity: .4; cursor: not-allowed; }
 .s321-nav-principal {
@@ -1901,8 +1920,8 @@ input[type="range"]:focus-visible::-moz-range-thumb {
 .s321-ayuda-btn:hover,
 .s321-ayuda-btn:focus-visible { background: var(--pe-velo); border-color: var(--pe-claro); transform: translateY(-1px); }
 .s321-ayuda-btn[aria-expanded="true"] { background: var(--pe-caja); border-color: var(--pe-caja); color: #fffcf7; }
-.s321-ayuda-btn svg { width: calc(20px * var(--s321-escala, 1) * var(--s321-letra, 1));
-                      height: calc(20px * var(--s321-escala, 1) * var(--s321-letra, 1)); display: block; }
+.s321-ayuda-btn svg { width: calc(20px * var(--s321-escala, 1) * var(--s321-barras, var(--s321-letra, 1)));    
+                      height: calc(20px * var(--s321-escala, 1) * var(--s321-barras, var(--s321-letra, 1))); display: block; }
 .s321-ayuda-btn[hidden] { display: none; }
 
 .s321-ayuda-nota {
@@ -2308,7 +2327,7 @@ body{ margin:0; color: var(--ti-fuerte); }
 .s321-puerta { fill: var(--te-base); stroke: var(--te-hondo); stroke-width: 1.5; }
 
  
-.s321-fila-objetos { display: block; height: calc(36px * var(--s321-escala)); max-width: 100%; }
+.s321-fila-objetos { display: block; height: calc(36px * var(--s321-objeto, 1) * var(--s321-escala)); max-width: 100%; }
 
 
 
@@ -2368,23 +2387,26 @@ body{ margin:0; color: var(--ti-fuerte); }
 }
 #apertura .s321-apertura > .s321-figura { align-items: flex-end; }
 #apertura .s321-apertura > .s321-figura > .s321-figura-rotulo { margin-inline: auto 0; }
-#final .s321-ar-duo > .s321-figura > img { object-position: right; }
 #final .s321-ar-duo > .s321-texto {
   display: flex; flex-direction: column; align-items: flex-start;
   gap: calc(var(--s321-sep) * var(--s321-escala) * var(--s321-aire, 1));
 }
 
 
-#final .s321-ar-duo { grid-template-columns: minmax(0, 1fr) calc(var(--s321-fig-alto) * var(--s321-escala) * .7467); }
-#final .s321-ar-duo:has(> .s321-figura > img) { grid-template-columns: minmax(0, 1fr) auto; }
-#final .s321-ar-duo > .s321-figura > img,
-#apertura .s321-apertura > .s321-figura > img { width: auto; max-width: calc(var(--s321-ancho-arreglo) / 2); }
+#final .s321-ar-duo { grid-template-columns: minmax(0, 1fr) calc(var(--s321-fig-alto) * var(--s321-escala)); }
+#apertura .s321-apertura > .s321-figura { flex: 0 0 calc(var(--s321-fig-alto) * var(--s321-escala)); }
+#final .s321-ar-duo > .s321-figura > :is(img, .s321-img-pendiente),
+#apertura .s321-apertura > .s321-figura > :is(img, .s321-img-pendiente) {
+  width: calc(var(--s321-fig-alto) * var(--s321-escala)); height: calc(var(--s321-fig-alto) * var(--s321-escala));
+  min-width: 0; min-height: 0; max-width: 100%; max-height: calc(var(--s321-fig-alto) * var(--s321-escala)); margin: 0;
+  object-fit: contain; object-position: right center;
+}
 #final .s321-ar-duo > .s321-texto { max-width: none; }
- 
+
+
 #final .s321-cinta { width: fit-content; max-width: 100%; }
+#final .s321-cinta > p { font-weight: 700; }
 #apertura .s321-apertura > .s321-apertura-texto { flex: 1 1 0; }
-#apertura .s321-apertura > .s321-figura { flex: 0 0 calc(var(--s321-fig-alto) * var(--s321-escala) * .7467); }
-#apertura .s321-apertura > .s321-figura:has(> img) { flex: 0 0 auto; width: min-content; }    
 #apertura .s321-apertura-texto > .s321-titulo,
 #apertura .s321-apertura-texto > .s321-btn,
 #final .s321-ar-duo > .s321-texto > .s321-titulo,
@@ -2404,54 +2426,42 @@ body{ margin:0; color: var(--ti-fuerte); }
  
 
 
-.fi-fila { display: flex; align-items: flex-end; flex-wrap: nowrap; gap: calc(8px * var(--s321-escala)); width: 100%; }
-.fi-bandera { flex: 0 0 auto; box-sizing: border-box; width: calc(104px * var(--s321-escala) * var(--s321-cenir)); min-height: calc(64px * var(--s321-escala) * var(--s321-cenir));
-  display: grid; place-items: center; text-align: center; padding: calc(4px * var(--s321-escala));
-  border-radius: var(--s321-radio); border: 3px solid transparent;
-  font-family: var(--s321-fam-codigo); font-weight: 800; text-transform: uppercase; letter-spacing: .5px; line-height: 1.15;
-  font-size: var(--s321-letra-etiqueta); color: transparent; }
-.fi-bandera.fi-activa { color: #fff; background: var(--te-base); border-color: var(--te-hondo); }
-.fi-puestos { flex: 1 1 auto; min-width: 0; display: flex; align-items: flex-end; gap: calc(8px * var(--s321-escala)); }
-.fi-puesto { box-sizing: border-box; flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: calc(2px * var(--s321-escala));
-  padding: calc(4px * var(--s321-escala)) calc(4px * var(--s321-escala)) calc(6px * var(--s321-escala));
-  border: 2px solid transparent; border-radius: var(--s321-radio); }
-.fi-puesto.fi-marcado { border-color: var(--te-base); background: var(--te-velo); }
-.fi-ord { font-family: var(--s321-fam-codigo); font-weight: 800; color: var(--pe-base); font-size: var(--s321-letra-valor); line-height: 1; }
-.fi-puesto.fi-marcado .fi-ord { color: var(--te-hondo); }
-.fi-obj { display: block; width: calc(56px * var(--s321-escala)); height: calc(56px * var(--s321-escala)); }
-.fi-nombre { width: 100%; text-align: center; overflow-wrap: anywhere; font-family: var(--s321-fam-cuerpo); font-weight: 700; color: var(--ti-media); font-size: var(--s321-letra-etiqueta); line-height: 1.2; }
-.fi-cifras { display: flex; flex-wrap: wrap; gap: calc(28px * var(--s321-escala)); align-items: flex-end; }
-.fi-cifra { display: flex; flex-direction: column; align-items: flex-start; gap: calc(2px * var(--s321-escala)); }
-.fi-cifra .s321-cifra-veredicto { line-height: 1; min-width: calc(64px * var(--s321-escala)); }
-.fi-sentido { font-family: var(--s321-fam-cuerpo); font-weight: 800; color: var(--ti-fuerte); font-size: var(--s321-letra-valor); line-height: 1.2; }
-.fi-mandos { display: flex; flex-wrap: wrap; align-items: center; gap: max(var(--s321-sep-min), calc(var(--s321-sep) * var(--s321-escala))); }
-.fi-campos { display: flex; flex-wrap: wrap; align-items: center; gap: calc(10px * var(--s321-escala)); }
-.fi-campo-rotulo { font-family: var(--s321-fam-cuerpo); font-weight: 600; color: #fff; font-size: var(--s321-letra-etiqueta); }
+.mm-cabecera { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: calc(16px * var(--s321-escala)); width: 100%; }
+.mm-piso { width: 100%; }
+.mm-piso .s321-piso-svg { display: block; width: 100%; height: auto; }
+.mm-cifras { display: flex; flex-wrap: wrap; gap: calc(28px * var(--s321-escala)); align-items: flex-end; }
+.mm-cifra { display: flex; flex-direction: column; align-items: flex-start; gap: calc(2px * var(--s321-escala)); }
+.mm-cifra .s321-cifra-veredicto { line-height: 1; min-width: calc(64px * var(--s321-escala)); }
+.mm-forma { font-family: var(--s321-fam-cuerpo); font-weight: 700; color: var(--ti-media); font-size: var(--s321-letra-valor); line-height: 1.2; }
+.mm-mudanzas { display: flex; flex-wrap: wrap; gap: calc(8px * var(--s321-escala)); width: 100%; }
+.mm-mudanzas .s321-btn { flex: 1 1 calc(33% - 8px * var(--s321-escala)); min-width: 0; white-space: normal; text-align: center; }
+.mm-campos { display: flex; flex-wrap: wrap; align-items: center; gap: calc(10px * var(--s321-escala)); }
+.mm-campo-rotulo { font-family: var(--s321-fam-cuerpo); font-weight: 600; color: #fff; font-size: var(--s321-letra-etiqueta); }
 
 
  
 
 
-.tr-puntas { display: flex; justify-content: space-between; width: 100%; }
-.tr-punta { font-family: var(--s321-fam-cuerpo); font-weight: 700; color: var(--ti-media); font-size: var(--s321-letra-etiqueta); text-transform: uppercase; letter-spacing: .04em; }
-.tr-pista { display: flex; align-items: flex-end; gap: calc(8px * var(--s321-escala)); width: 100%; min-height: calc(140px * var(--s321-escala)); padding: 0 calc(4px * var(--s321-escala)); border-top: calc(6px * var(--s321-escala)) solid var(--te-hondo); border-radius: 4px 4px 0 0; box-sizing: border-box; }
-.tr-puesto { box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: calc(2px * var(--s321-escala)); flex: 0 0 auto; width: calc(88px * var(--s321-escala)); padding: calc(4px * var(--s321-escala)) 0; border: 2px solid transparent; border-radius: var(--s321-radio); background: transparent; font: inherit; color: inherit; }
-.tr-puesto[role="button"] { cursor: pointer; user-select: none; -webkit-user-select: none; }
-.tr-puesto[role="button"][aria-disabled="true"] { cursor: default; }
-.tr-puesto[role="button"]:focus-visible { outline: 3px solid var(--pe-base); outline-offset: 2px; }
-.tr-lugar { display: block; height: calc(22px * var(--s321-escala)); line-height: 1; color: var(--te-hondo); font-family: var(--s321-fam-codigo); font-weight: 800; font-size: var(--s321-letra-etiqueta); white-space: nowrap; }
-.tr-nombre { display: block; height: calc(22px * var(--s321-escala)); line-height: 1; color: var(--ti-media); font-family: var(--s321-fam-cuerpo); font-weight: 600; font-size: var(--s321-letra-etiqueta); white-space: nowrap; }
-.tr-obj { display: block; width: calc(60px * var(--s321-escala)); height: calc(60px * var(--s321-escala)); border-radius: 10px; }
-.tr-puesto.tr-viva .tr-obj, .tr-puesto.tr-tocada .tr-obj { background: var(--te-velo); outline: 3px solid var(--te-base); outline-offset: -3px; }
-.tr-puesto.tr-fin { border-color: var(--pe-base); background: var(--pe-velo); }
-.tr-cuentas { display: flex; flex-wrap: wrap; gap: calc(28px * var(--s321-escala)); align-items: flex-end; }
-.tr-cuenta { display: flex; flex-direction: column; align-items: flex-start; gap: calc(2px * var(--s321-escala)); }
-.tr-cuenta .s321-cifra-veredicto { line-height: 1; min-width: calc(64px * var(--s321-escala)); }
-.tr-tarjeta { box-sizing: border-box; width: 100%; min-height: calc(76px * var(--s321-escala) * var(--s321-cenir)); padding: calc(10px * var(--s321-escala) * var(--s321-cenir)) calc(14px * var(--s321-escala) * var(--s321-cenir)); background: var(--su-tarjeta); border: 2px solid var(--pe-base); border-radius: var(--s321-radio); }
-.tr-texto { margin: 0; font-family: var(--s321-fam-cuerpo); font-weight: 700; color: var(--ti-fuerte); font-size: var(--s321-letra-tarjeta); line-height: 1.3; }
-.tr-campos { display: flex; flex-wrap: wrap; align-items: center; gap: calc(10px * var(--s321-escala)); }
-.tr-campo-rotulo { font-family: var(--s321-fam-cuerpo); font-weight: 600; color: var(--ti-media); font-size: var(--s321-letra-etiqueta); }
-.tr-formula { font-family: var(--s321-fam-codigo); font-weight: 700; color: var(--te-hondo); font-size: var(--s321-letra-valor); }
+.co-dos { display: flex; gap: var(--s321-canal); width: 100%; align-items: flex-start; }
+.co-dos > div { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: calc(6px * var(--s321-escala)); }
+.co-fila {
+  box-sizing: border-box; display: flex; align-items: center; gap: calc(12px * var(--s321-escala)); width: 100%;
+  min-height: calc(40px * var(--s321-escala) * var(--s321-cenir)); padding: calc(3px * var(--s321-escala)) calc(10px * var(--s321-escala));
+  background: var(--su-tarjeta); border: 2px solid var(--su-linea); border-radius: 10px; cursor: pointer; font: inherit; color: var(--ti-fuerte); text-align: left; position: relative;
+}
+.co-fila-num { font-family: var(--s321-fam-codigo); font-weight: 800; color: var(--te-hondo); font-size: var(--s321-letra-valor); min-width: calc(34px * var(--s321-escala)); text-align: right; }
+.co-fila-texto { font-weight: 700; color: var(--ti-media); font-size: var(--s321-letra-opcion); }
+.co-fila[aria-pressed="true"] { border-color: var(--te-base); background: var(--te-velo); }
+.co-fila.co-sellada { border-color: var(--mal); cursor: default; }
+.co-fila:focus-visible { outline: 3px solid var(--pe-base); outline-offset: 2px; }
+.co-sello-marca {
+  position: absolute; right: calc(10px * var(--s321-escala)); top: 50%; transform: translateY(-50%) rotate(-6deg);
+  font-family: var(--s321-fam-codigo); font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: var(--mal);
+  border: 3px solid var(--mal); border-radius: 6px; padding: calc(2px * var(--s321-escala)) calc(8px * var(--s321-escala)); font-size: var(--s321-letra-etiqueta); line-height: 1.2;
+}
+.co-lista-fila { display: flex; align-items: center; gap: calc(12px * var(--s321-escala)); min-height: calc(40px * var(--s321-escala) * var(--s321-cenir)); padding: calc(3px * var(--s321-escala)) calc(10px * var(--s321-escala)); border-bottom: 1px solid var(--su-linea); }
+.co-lista-quien { font-weight: 700; color: var(--ti-media); font-size: var(--s321-letra-opcion); flex: 1 1 auto; }
+.co-sello-btn { min-width: calc(200px * var(--s321-escala)); }
 
 
  
@@ -2475,50 +2485,65 @@ body{ margin:0; color: var(--ti-fuerte); }
  
 
 
-.fm-fila { display: flex; align-items: flex-end; gap: calc(8px * var(--s321-escala)); width: 100%; }
-.fm-frente {
-  box-sizing: border-box; flex: 0 0 auto; width: calc(14px * var(--s321-escala)); height: calc(84px * var(--s321-escala));
-  margin-right: calc(10px * var(--s321-escala)); border-radius: 6px; background: var(--pe-base);
+.sv-silla { width: calc(40px * var(--s321-escala)); height: calc(40px * var(--s321-escala)); display: block; }
+.sv-silla-btn {
+  width: calc(44px * var(--s321-escala)); height: calc(44px * var(--s321-escala));
+  padding: calc(2px * var(--s321-escala)); border-radius: 10px;
+  border: 1px solid transparent; background: transparent;
+  cursor: pointer; display: grid; place-items: center;
+  box-shadow: none;
 }
-.fm-puestos { display: flex; align-items: flex-end; gap: calc(8px * var(--s321-escala)); min-height: calc(84px * var(--s321-escala)); }
-.fm-puesto { display: flex; flex-direction: column; align-items: center; gap: calc(2px * var(--s321-escala)); flex: 0 0 auto; }
-.fm-marca { display: block; height: calc(18px * var(--s321-escala)); line-height: 1; color: var(--te-base); font-size: var(--s321-letra-etiqueta); }
-.fm-obj { display: block; width: calc(62px * var(--s321-escala)); height: calc(62px * var(--s321-escala)); border-radius: 12px; }
-.fm-puesto.fm-marcado .fm-obj { background: var(--te-velo); outline: 3px solid var(--te-base); outline-offset: -3px; }
-.fm-cifras { display: flex; flex-wrap: wrap; gap: calc(28px * var(--s321-escala)); align-items: flex-end; }
-.fm-cifra { display: flex; flex-direction: column; align-items: flex-start; gap: calc(2px * var(--s321-escala)); }
-.fm-cifra .s321-cifra-veredicto { line-height: 1; min-width: calc(64px * var(--s321-escala)); }
-.fm-mudanzas { display: flex; flex-wrap: wrap; gap: calc(8px * var(--s321-escala)); width: 100%; }
-.fm-mudanzas .s321-btn { flex: 1 1 calc(33% - 8px * var(--s321-escala)); min-width: 0; white-space: normal; text-align: center; }
-.fm-campos { display: flex; flex-wrap: wrap; align-items: center; gap: calc(10px * var(--s321-escala)); }
-.fm-campo-rotulo { font-family: var(--s321-fam-cuerpo); font-weight: 600; color: #fff; font-size: var(--s321-letra-etiqueta); }
+.sv-silla-btn .sv-silla { width: 100%; height: 100%; }
+.sv-silla-btn:hover { background: var(--su-tarjeta); border-color: var(--su-borde-calido); }
+.sv-silla-btn:focus-visible { outline: 3px solid var(--pe-base); outline-offset: 2px; }
+.sv-silla-btn.sv-contada { background: var(--te-velo); border-color: var(--te-suave); }
+.sv-silla-btn.sv-arrastrando { cursor: grabbing; background: var(--su-tarjeta); border-color: var(--te-base); box-shadow: var(--s321-sombra-tarjeta); }
+.sv-silla-btn.s321-clickable:hover { transform: none; box-shadow: none; }
+.sv-silla-btn.s321-clickable:active { transform: scale(.96); }
+
+
+.sv-puerta-txt { font-family: var(--s321-fam-codigo); font-weight: 700; color: var(--pe-base); letter-spacing: 1px;
+  font-size: var(--s321-letra-rotulo); line-height: 1;
+  position: absolute; transform: translateX(-50%); pointer-events: none; white-space: nowrap; }
+
+
+.sv-piso-mesa .s321-puerta { fill: var(--su-tarjeta); stroke: var(--pe-base); stroke-width: 2; }
 
 
  
 
 
-.lc-puntas { display: flex; justify-content: space-between; width: 100%; }
-.lc-punta { font-family: var(--s321-fam-cuerpo); font-weight: 700; color: var(--ti-media); font-size: var(--s321-letra-etiqueta); text-transform: uppercase; letter-spacing: .04em; }
-.lc-pista { display: flex; align-items: flex-end; gap: calc(8px * var(--s321-escala)); width: 100%; min-height: calc(140px * var(--s321-escala)); padding: 0 calc(4px * var(--s321-escala)); border-top: calc(6px * var(--s321-escala)) solid var(--te-hondo); border-radius: 4px 4px 0 0; box-sizing: border-box; }
-.lc-puesto { display: flex; flex-direction: column; align-items: center; gap: calc(2px * var(--s321-escala)); flex: 0 0 auto; width: calc(84px * var(--s321-escala)); }
-.lc-lugar { display: block; height: calc(22px * var(--s321-escala)); line-height: 1; color: var(--te-hondo); font-family: var(--s321-fam-codigo); font-weight: 800; font-size: var(--s321-letra-etiqueta); white-space: nowrap; }
-.lc-nombre { display: block; height: calc(22px * var(--s321-escala)); line-height: 1; color: var(--ti-media); font-family: var(--s321-fam-cuerpo); font-weight: 600; font-size: var(--s321-letra-etiqueta); white-space: nowrap; }
-.lc-obj { display: block; width: calc(60px * var(--s321-escala)); height: calc(60px * var(--s321-escala)); border-radius: 10px; }
-.lc-puesto.lc-viva .lc-obj { background: var(--te-velo); outline: 3px solid var(--te-base); outline-offset: -3px; }
-.lc-puesto.lc-marcada .lc-obj { background: var(--pe-velo); outline: 3px solid var(--pe-base); outline-offset: -3px; }
-.lc-renglones { display: flex; flex-direction: column; gap: calc(3px * var(--s321-escala)); width: 100%; margin-bottom: calc(6px * var(--s321-escala)); }
-.lc-renglon { box-sizing: border-box; display: flex; flex-wrap: wrap; align-items: center; gap: calc(8px * var(--s321-escala)); width: 100%; padding: calc(3px * var(--s321-escala) * var(--s321-cenir)) calc(12px * var(--s321-escala) * var(--s321-cenir));
-  background: var(--su-tarjeta); border: 2px solid var(--su-linea); border-radius: var(--s321-radio); }
-.lc-renglon.lc-activo { border-color: var(--pe-base); }
-.lc-renglon.lc-hecho { border-color: var(--te-base); background: var(--te-velo); }
-.lc-renglon-texto { flex: 1 1 calc(220px * var(--s321-escala)); margin: 0; font-family: var(--s321-fam-cuerpo); font-weight: 700; color: var(--ti-fuerte); font-size: var(--s321-letra-opcion); line-height: 1.2; }
-.lc-cifras { display: flex; flex-wrap: wrap; gap: calc(6px * var(--s321-escala)) calc(18px * var(--s321-escala)); align-items: baseline; }
-.lc-cifra { display: flex; align-items: baseline; gap: calc(6px * var(--s321-escala)); }
-.lc-cifra .s321-cifra-veredicto { line-height: 1; min-width: calc(44px * var(--s321-escala)); }
-.lc-renglon-num { font-family: var(--s321-fam-codigo); font-weight: 800; color: var(--te-hondo); font-size: var(--s321-letra-valor); min-width: calc(48px * var(--s321-escala)); text-align: right; }
-.lc-renglon .s321-campo { width: calc(72px * var(--s321-escala)); }
-.lc-firma { display: flex; flex-wrap: wrap; align-items: center; gap: calc(10px * var(--s321-escala)); }
-.lc-firmado { margin: 0; font-family: var(--s321-fam-cuerpo); font-weight: 700; color: var(--te-hondo); font-size: var(--s321-letra-valor); min-height: calc(32px * var(--s321-escala)); }
+.sv-casillas { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: calc(8px * var(--s321-escala)); width: 100%; }
+
+
+.sv-casilla {
+  position: relative; min-height: calc(72px * var(--s321-escala) * var(--s321-cenir));
+  padding: calc(34px * var(--s321-escala) * var(--s321-cenir)) calc(10px * var(--s321-escala) * var(--s321-cenir)) calc(12px * var(--s321-escala) * var(--s321-cenir));
+  border: 2px solid var(--su-linea); border-radius: 10px; background: var(--su-tarjeta);
+  font-weight: 700; color: var(--ti-media); line-height: 1.25;
+  font-size: var(--s321-letra-opcion);
+}
+.sv-casilla::before {
+  content: attr(data-n); position: absolute; left: calc(10px * var(--s321-escala) * var(--s321-cenir)); top: calc(8px * var(--s321-escala) * var(--s321-cenir));
+  font-family: var(--s321-fam-codigo); font-weight: 700; color: var(--pe-base); font-size: var(--s321-letra-marcador); line-height: 1;
+}
+.sv-casilla.sv-aqui { border-color: var(--te-base); background: var(--te-velo); }
+.sv-casilla.sv-pasada { border-color: var(--ok); }
+.sv-casilla .sv-cuenta-casilla { display: block; font-family: var(--s321-fam-codigo); color: var(--ok); font-size: var(--s321-letra-opcion); min-height: 1.2em; }
+.sv-ficha-tablero {
+  position: absolute; right: calc(6px * var(--s321-escala)); bottom: calc(6px * var(--s321-escala));
+  width: calc(18px * var(--s321-escala)); height: calc(18px * var(--s321-escala)); border-radius: 50%;
+  background: var(--te-base); border: 2px solid #fff; box-shadow: var(--s321-sombra-tarjeta);
+}
+ 
+.sv-camino { display: flex; flex-wrap: wrap; gap: calc(6px * var(--s321-escala)); align-items: center; }
+.sv-camino-paso {
+  min-width: calc(44px * var(--s321-escala) * var(--s321-cenir)); height: calc(44px * var(--s321-escala) * var(--s321-cenir));
+  display: grid; place-items: center; border-radius: 10px; border: 2px dashed var(--su-linea); background: var(--su-tarjeta);
+  font-family: var(--s321-fam-codigo); font-weight: 700; color: var(--te-hondo); font-size: var(--s321-letra-valor);
+}
+.sv-camino-paso.sv-escrita { border-style: solid; border-color: var(--ok); }
+.sv-camino-paso.sv-inicio { border-color: var(--pe-base); color: var(--pe-base); }
 
 </style>
 </head>
@@ -2534,41 +2559,41 @@ body{ margin:0; color: var(--ti-fuerte); }
     <div class="s321-apertura" style="--s321-fig-alto:max(460px, calc(52 * var(--s321-vh, 1vh)))">
       <div class="s321-apertura-texto">
         <span class="s321-eyebrow s321-animate-in">Construcción guiada</span>
-        <h1 class="s321-titulo s321-animate-in">El riel que crece</h1>
-        <p class="s321-cuerpo s321-animate-in">Jueves: doña Minerva cuelga las tres que faltaban y Papo descuelga. Prueba el riel de dos puntas y escribe la regla del riel.</p>
-        <button type="button" class="s321-btn s321-btn-principal s321-clickable s321-animate-in" id="btnComenzar" onclick="s321Sonido.click();s321Ir(1,'next')">Colgar las camisas</button>
+        <h1 class="s321-titulo s321-animate-in">Las pruebas del mostrador</h1>
+        <p class="s321-cuerpo s321-animate-in">Por la tarde, doña Carmen pone a prueba acomodos, ventas y llegadas. La regla la escriben ustedes en la tarjeta del estante.</p>
+        <button type="button" class="s321-btn s321-btn-principal s321-clickable s321-animate-in" id="btnComenzar" onclick="s321Sonido.click();s321Ir(1,'next')">Pasar al mostrador</button>
       </div>
       <figure class="s321-figura s321-prox-quieto">
-        <img src="img/portada-desarrollo.webp" alt="Doña Minerva cuelga una camisa nueva al final del riel, ahora más largo, mientras Yarisa anota en la libreta." onerror="s321ImgPendiente(this)">
-        <p class="s321-figura-rotulo">Doña Minerva cuelga las que faltaban; Yarisa anota.</p>
+        <img src="img/portada-desarrollo.webp" alt="Kenia detrás del mostrador con el cuadernito de ventas abierto" onerror="s321ImgPendiente(this)">
+        <p class="s321-figura-rotulo">Kenia anota en el cuadernito cada venta y cada llegada</p>
       </figure>
     </div>
   </div>
 </section>
 <section class="s321-screen" id="p1" style="display:none" data-s321-montador="s321MontarPantalla" data-s321-disposicion="G"
-         data-s321-ayuda="Pulsa Dar la vuelta: la bandera pasa de la ventana a la puerta y los números cambian | Tras dos vueltas el riel vuelve al martes y te pregunta antes: escribe el lugar y pulsa Comprobar | Copia cada vuelta del registro en la zona 1 del imprimible" data-ergonomia="tablero">
+         data-s321-ayuda="Pulsa una mudanza: los cuadernos cambian de forma, o se vende o llega alguno, y la cuenta dice cuántos hay | La huella dice cuánto sitio ocupan; la cuenta dice cuántos son | Tras dos mudanzas el montón te pregunta antes: escribe cuántos va a haber y pulsa Comprobar">
   <div class="s321-lote s321-lote-escena">
-    <span class="s321-insignia">Paso 1 de 5 · el riel que crece</span>
-    <p class="s321-instruccion s321-animate-in">Da la vuelta al riel del jueves y descubre de qué queda la marcada.</p>
+    <span class="s321-insignia">Paso 1 de 5 · el montón de la tarde</span>
+    <p class="s321-instruccion s321-animate-in">Pulsa una mudanza y predice cuántos cuadernos habrá después.</p>
     
     <div class="s321-disposicion s321-disposicion-G" style="grid-template-columns:minmax(0, 25fr) minmax(0, 40fr) minmax(0, 35fr);grid-template-rows:minmax(min-content, 1fr) auto auto;grid-template-areas:&quot;experimento experimento evidencia&quot; &quot;voz control evidencia&quot; &quot;voz control cinta&quot;">
       <div class="s321-sitio s321-sitio-experimento s321-sitio-arriba" data-zona="experimento" style="grid-area:experimento">
-        <div class="s321-zona" id="p1Fila" style="width:100%"></div>
+        <div class="s321-zona" id="p1Monton" style="width:100%"></div>
       </div>
       <div class="s321-sitio s321-sitio-voz s321-sitio-abajo" data-zona="voz" style="grid-area:voz">
-        <div class="s321-voz s321-aparato-casa" data-s321-aparato="voz"><span class="s321-quien s321-etiqueta">Doña Minerva</span><p class="s321-prosa">Colgué al final las tres que faltaban: ya hay nueve en el riel.</p></div>
+        <div class="s321-leyenda s321-aparato-casa" data-s321-aparato="leyenda" data-s321-objeto="cuaderno"><span class="s321-leyenda-dibujo" aria-hidden="true"></span><p class="s321-leyenda-texto">La huella mide el sitio.</p></div>
       </div>
       <div class="s321-sitio s321-sitio-control s321-sitio-abajo" data-zona="control" style="grid-area:control">
-        <div class="s321-zona" id="p1Mandos" style="width:100%"></div>
+        <div class="s321-zona" id="p1Mudanzas" style="width:100%"></div>
         <div class="s321-maquina-pregunta" id="p1Pregunta" hidden></div>
       </div>
       <div class="s321-sitio s321-sitio-evidencia s321-sitio-arriba" data-zona="evidencia" style="grid-area:evidencia">
         <div class="s321-zona" id="p1Registro" style="width:100%"></div>
       </div>
       <div class="s321-sitio s321-sitio-cinta s321-sitio-abajo" data-zona="cinta" style="grid-area:cinta">
-        <div class="s321-libreta s321-animate-in" data-libreta="registrar" data-modo="individual">
+        <div class="s321-libreta s321-animate-in" data-libreta="registrar" data-modo="pareja">
   <svg class="s321-libreta-ico" viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="4" width="21" height="25" rx="4" fill="#faf5ee" stroke="#8f3a1e" stroke-width="2.6"/><path d="M11 4v25" stroke="#b04a2a" stroke-width="2.6"/><path d="M15 12h8M15 17h8M15 22h5" stroke="#2c5c70" stroke-width="2.2" stroke-linecap="round"/></svg>
-  <span class="s321-libreta-texto"><b>Zona 1 · Registra las vueltas del riel</b><span class="s321-libreta-modo">Individual</span></span>
+  <span class="s321-libreta-texto"><b>Zona 1 · El registro del montón</b><span class="s321-libreta-modo">En pareja</span></span>
   <a href="imprimible.pdf" target="_blank" rel="noopener" class="s321-libreta-abrir s321-clickable">Abrir</a>
 </div>
       </div>
@@ -2578,20 +2603,20 @@ body{ margin:0; color: var(--ti-fuerte); }
 </section>
 
 <section class="s321-screen" id="p2" style="display:none" data-s321-montador="s321MontarPantalla" data-s321-disposicion="E"
-         data-s321-ayuda="La tarjeta dice de cuál camisa a cuál va el tramo, con las dos puntas | En un campo va lo que cuentas camisa por camisa; en el otro, la resta de los lugares y una más | Pulsa Comprobar: el riel enciende el tramo, lo cuenta y pone las dos cifras juntas" data-ergonomia="tablero">
+         data-s321-ayuda="A la izquierda está la lista del mediodía; a la derecha, la página con los mismos montones ahora | Toca un montón de la página que no diga lo mismo que la lista y pulsa No cuadra | El registro anota qué dice ahora y qué decía al mediodía">
   <div class="s321-lote s321-lote-escena">
-    <span class="s321-insignia">Paso 2 de 5 · dos cuentas para lo mismo</span>
-    <p class="s321-instruccion s321-animate-in">Escribe cuántas hay contando y con la resta y una más, y comprueba.</p>
+    <span class="s321-insignia">Paso 2 de 5 · el cotejo de la tarde</span>
+    <p class="s321-instruccion s321-animate-in">Coteja la lista con la página y sella los montones que no cuadran.</p>
     
     <div class="s321-disposicion s321-disposicion-E" style="grid-template-columns:minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);grid-template-rows:minmax(min-content, 1fr) auto;grid-template-areas:&quot;experimento experimento experimento&quot; &quot;leyenda control evidencia&quot;">
       <div class="s321-sitio s321-sitio-experimento s321-sitio-arriba" data-zona="experimento" style="grid-area:experimento">
-        <div class="s321-zona" id="p2Riel" style="width:100%"></div>
+        <div class="s321-zona" id="p2Cotejo" style="width:100%"></div>
       </div>
       <div class="s321-sitio s321-sitio-leyenda s321-sitio-abajo" data-zona="leyenda" style="grid-area:leyenda">
-        <div class="s321-leyenda s321-aparato-casa" data-s321-aparato="leyenda" data-s321-objeto="camisa"><span class="s321-leyenda-dibujo" aria-hidden="true"></span><p class="s321-leyenda-texto">La resta deja fuera a la primera del tramo: por eso se suma una más.</p></div>
+        <div class="s321-voz"><span class="s321-quien s321-etiqueta">Kenia</span><p class="s321-prosa">Yo vendí uno y recibí uno: búscalos.</p></div>
       </div>
       <div class="s321-sitio s321-sitio-control s321-sitio-abajo" data-zona="control" style="grid-area:control">
-        <div class="s321-zona" id="p2Caso" style="width:100%"></div>
+        <div class="s321-zona" id="p2Sello" style="width:100%"></div>
       </div>
       <div class="s321-sitio s321-sitio-evidencia s321-sitio-abajo" data-zona="evidencia" style="grid-area:evidencia">
         <div class="s321-zona" id="p2Registro" style="width:100%"></div>
@@ -2602,17 +2627,17 @@ body{ margin:0; color: var(--ti-fuerte); }
 </section>
 
 <section class="s321-screen" id="p3" style="display:none" data-s321-montador="s321MontarPantalla" data-s321-disposicion="G"
-         data-s321-ayuda="Toca una ficha y después el hueco donde va; si no va, el hueco tiembla | Lee las pruebas: la regla tiene que valer para las tres a la vez | Con los tres huecos llenos, la regla se vuelve regla de oro: cópiala en la zona 3">
+         data-s321-ayuda="Toca una ficha y después el hueco donde va; si no va, el hueco tiembla | La regla tiene que valer para las seis pruebas a la vez | Con los dos huecos llenos, la regla se vuelve regla de oro">
   <div class="s321-lote s321-lote-escena">
-    <span class="s321-insignia">Paso 3 de 5 · la regla del riel</span>
-    <p class="s321-instruccion s321-animate-in">Completa la regla con las fichas para que cuadre con las tres pruebas.</p>
+    <span class="s321-insignia">Paso 3 de 5 · la regla del estante</span>
+    <p class="s321-instruccion s321-animate-in">Completa la regla con las fichas para que valga en las seis pruebas.</p>
     
     <div class="s321-disposicion s321-disposicion-G" style="grid-template-columns:minmax(0, 25fr) minmax(0, 40fr) minmax(0, 35fr);grid-template-rows:minmax(min-content, 1fr) auto auto;grid-template-areas:&quot;experimento experimento evidencia&quot; &quot;voz control evidencia&quot; &quot;voz control cinta&quot;">
       <div class="s321-sitio s321-sitio-experimento s321-sitio-arriba" data-zona="experimento" style="grid-area:experimento">
         <div class="s321-zona" id="p3Regla" style="width:100%"></div>
       </div>
       <div class="s321-sitio s321-sitio-voz s321-sitio-abajo" data-zona="voz" style="grid-area:voz">
-        <div class="s321-voz"><span class="s321-quien s321-etiqueta">Yarisa</span><p class="s321-prosa">Con esta regla lleno la libreta sin contar camisa por camisa.</p></div>
+        <div class="s321-voz"><span class="s321-quien s321-etiqueta">Doña Carmen</span><p class="s321-prosa">Que valga para las seis pruebas, y la cuelgo.</p></div>
       </div>
       <div class="s321-sitio s321-sitio-control s321-sitio-abajo" data-zona="control" style="grid-area:control">
         <div class="s321-zona" id="p3Fichas" style="width:100%"></div>
@@ -2623,7 +2648,7 @@ body{ margin:0; color: var(--ti-fuerte); }
       <div class="s321-sitio s321-sitio-cinta s321-sitio-abajo" data-zona="cinta" style="grid-area:cinta">
         <div class="s321-libreta s321-animate-in" data-libreta="verificar" data-modo="individual">
   <svg class="s321-libreta-ico" viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="4" width="21" height="25" rx="4" fill="#faf5ee" stroke="#8f3a1e" stroke-width="2.6"/><path d="M11 4v25" stroke="#b04a2a" stroke-width="2.6"/><path d="M15 12h8M15 17h8M15 22h5" stroke="#2c5c70" stroke-width="2.2" stroke-linecap="round"/></svg>
-  <span class="s321-libreta-texto"><b>Zona 3 · Copia la regla del riel</b><span class="s321-libreta-modo">Individual</span></span>
+  <span class="s321-libreta-texto"><b>Zona 3 · La regla de la tarjeta</b><span class="s321-libreta-modo">Individual</span></span>
   <a href="imprimible.pdf" target="_blank" rel="noopener" class="s321-libreta-abrir s321-clickable">Abrir</a>
 </div>
       </div>
@@ -2632,28 +2657,27 @@ body{ margin:0; color: var(--ti-fuerte); }
   <div class="s321-feedback" hidden aria-live="polite"></div>
 </section>
 
-<section class="s321-screen" id="p4" style="display:none" data-s321-montador="s321MontarPantalla" data-s321-disposicion="B"
-         data-s321-ayuda="Pulsa lo que pasa: el riel se mueve y debajo se lee cuántas hay y de qué va Sofía | Lo que no cabe en el riel de ahora se apaga solo | Tras una prueba el riel te pregunta antes: escribe los dos números y pulsa Comprobar" data-ergonomia="tablero">
+<section class="s321-screen" id="p4" style="display:none" data-s321-montador="s321MontarPantalla" data-s321-disposicion="D"
+         data-s321-ayuda="Primero solo acomódalos; después saca uno por la puerta; después mete uno; al final, acomoda y saca uno | Antes de anotar, di qué número espera la regla; el contador dice cuántos hay en el mostrador | Pulsa Anotar prueba después de cada cosa que hagas" data-ergonomia="tablero">
   <div class="s321-lote s321-lote-escena">
-    <span class="s321-insignia">Paso 4 de 5 · la camisa que se descuelga</span>
-    <p class="s321-instruccion s321-animate-in">Elige qué pasa en el riel y descubre qué cambia: cuántas o el lugar.</p>
+    <span class="s321-insignia">Paso 4 de 5 · la mesa de la tarde</span>
+    <p class="s321-instruccion s321-animate-in">Arrastra los cuadernos, una cosa cada vez, y anota cada prueba.</p>
     
-    <div class="s321-disposicion s321-disposicion-B" style="grid-template-columns:minmax(0, 55fr) minmax(0, 45fr);grid-template-rows:auto auto minmax(min-content, 1fr);grid-template-areas:&quot;experimento evidencia&quot; &quot;control evidencia&quot; &quot;voz leyenda&quot;">
+    <div class="s321-disposicion s321-disposicion-D" style="grid-template-columns:minmax(0, 62fr) minmax(0, 38fr);grid-template-rows:auto minmax(min-content, 1fr) auto auto;grid-template-areas:&quot;experimento control&quot; &quot;experimento evidencia&quot; &quot;voz evidencia&quot; &quot;voz leyenda&quot;">
       <div class="s321-sitio s321-sitio-experimento s321-sitio-arriba" data-zona="experimento" style="grid-area:experimento">
-        <div class="s321-zona" id="p4Fila" style="width:100%"></div>
+        <div class="s321-zona" id="p4Piso"></div>
       </div>
       <div class="s321-sitio s321-sitio-control s321-sitio-arriba" data-zona="control" style="grid-area:control">
-        <div class="s321-zona" id="p4Mudanzas" style="width:100%"></div>
-        <div class="s321-maquina-pregunta" id="p4Pregunta" hidden></div>
+        <div class="s321-zona" id="p4Anotar"></div>
       </div>
       <div class="s321-sitio s321-sitio-evidencia s321-sitio-arriba" data-zona="evidencia" style="grid-area:evidencia">
-        <div class="s321-zona" id="p4Registro" style="width:100%"></div>
-      </div>
-      <div class="s321-sitio s321-sitio-voz s321-sitio-abajo" data-zona="voz" style="grid-area:voz">
-        <div class="s321-voz s321-aparato-casa" data-s321-aparato="voz"><span class="s321-quien s321-etiqueta">Papo</span><p class="s321-prosa">Me llevo una y las demás que se arreglen.</p></div>
+        <div class="s321-zona" id="p4Libreta" style="width:100%"></div>
       </div>
       <div class="s321-sitio s321-sitio-leyenda s321-sitio-abajo" data-zona="leyenda" style="grid-area:leyenda">
-        <div class="s321-leyenda s321-aparato-casa" data-s321-aparato="leyenda" data-s321-objeto="camisa"><span class="s321-leyenda-dibujo" aria-hidden="true"></span><p class="s321-leyenda-texto">Si se va una, las de su derecha corren un gancho.</p></div>
+        <div class="s321-leyenda" id="p4Leyenda" data-s321-objeto="cuaderno"><span class="s321-leyenda-dibujo" aria-hidden="true"></span><p class="s321-leyenda-texto">Por la puerta salen y entran cuadernos.</p></div>
+      </div>
+      <div class="s321-sitio s321-sitio-voz s321-sitio-abajo" data-zona="voz" style="grid-area:voz">
+        <div class="s321-voz"><span class="s321-quien s321-etiqueta">Doña Carmen</span><p class="s321-prosa">Una cosa cada vez, y me dices qué movió el contador.</p></div>
       </div>
     </div>
   </div>
@@ -2661,28 +2685,28 @@ body{ margin:0; color: var(--ti-fuerte); }
 </section>
 
 <section class="s321-screen" id="p5" style="display:none" data-s321-montador="s321MontarPantalla" data-s321-disposicion="G"
-         data-s321-ayuda="Cada renglón trae los lugares y le falta la cantidad: escríbela y pulsa Anotar | El riel enciende lo que el renglón nombra; si no cuadra, te orienta y lo vuelves a intentar | Con todos los renglones escritos, escribe tu nombre, pulsa Firmar y pasa a la zona 5" data-ergonomia="tablero">
+         data-s321-ayuda="Pulsa Avanzar la ficha: cae en la casilla siguiente, con lo que anotó Kenia | Escribe cuántos cuadernos hay después de esa casilla y pulsa Comprobar (o Enter) | Usa la regla de la tarjeta; el piso de abajo solo sirve para comprobar" data-ergonomia="tablero">
   <div class="s321-lote s321-lote-escena">
-    <span class="s321-insignia">Paso 5 de 5 · la libreta del jueves</span>
-    <p class="s321-instruccion s321-animate-in">Escribe el número de cada renglón, anótalo y firma la libreta.</p>
+    <span class="s321-insignia">Paso 5 de 5 · el tablero de la tarde</span>
+    <p class="s321-instruccion s321-animate-in">Avanza la ficha y escribe cuántos cuadernos hay después de cada casilla.</p>
     
     <div class="s321-disposicion s321-disposicion-G" style="grid-template-columns:minmax(0, 25fr) minmax(0, 40fr) minmax(0, 35fr);grid-template-rows:minmax(min-content, 1fr) auto auto;grid-template-areas:&quot;experimento experimento evidencia&quot; &quot;voz control evidencia&quot; &quot;voz control cinta&quot;">
       <div class="s321-sitio s321-sitio-experimento s321-sitio-arriba" data-zona="experimento" style="grid-area:experimento">
-        <div class="s321-zona" id="p5Riel" style="width:100%"></div>
+        <div class="s321-zona" id="p5Tablero" style="width:100%"></div>
       </div>
       <div class="s321-sitio s321-sitio-voz s321-sitio-abajo" data-zona="voz" style="grid-area:voz">
-        <div class="s321-voz s321-aparato-casa" data-s321-aparato="voz"><span class="s321-quien s321-etiqueta">Yarisa</span><p class="s321-prosa">Esta libreta la escribo yo, y tiene que cuadrar con el riel.</p></div>
+        <div class="s321-zona" id="p5Piso" style="width:100%"></div>
       </div>
       <div class="s321-sitio s321-sitio-control s321-sitio-abajo" data-zona="control" style="grid-area:control">
-        <div class="s321-zona" id="p5Libreta" style="width:100%"></div>
+        <div class="s321-zona" id="p5Turno" style="width:100%"></div>
       </div>
       <div class="s321-sitio s321-sitio-evidencia s321-sitio-arriba" data-zona="evidencia" style="grid-area:evidencia">
-        <div class="s321-zona" id="p5Cuadre" style="width:100%"></div>
+        <div class="s321-zona" id="p5Registro" style="width:100%"></div>
       </div>
       <div class="s321-sitio s321-sitio-cinta s321-sitio-abajo" data-zona="cinta" style="grid-area:cinta">
         <div class="s321-libreta s321-animate-in" data-libreta="producir" data-modo="individual">
   <svg class="s321-libreta-ico" viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="4" width="21" height="25" rx="4" fill="#faf5ee" stroke="#8f3a1e" stroke-width="2.6"/><path d="M11 4v25" stroke="#b04a2a" stroke-width="2.6"/><path d="M15 12h8M15 17h8M15 22h5" stroke="#2c5c70" stroke-width="2.2" stroke-linecap="round"/></svg>
-  <span class="s321-libreta-texto"><b>Zona 5 · Escribe la libreta de un riel de ocho</b><span class="s321-libreta-modo">Individual</span></span>
+  <span class="s321-libreta-texto"><b>Zona 5 · El camino del tablero</b><span class="s321-libreta-modo">Individual</span></span>
   <a href="imprimible.pdf" target="_blank" rel="noopener" class="s321-libreta-abrir s321-clickable">Abrir</a>
 </div>
       </div>
@@ -2696,18 +2720,18 @@ body{ margin:0; color: var(--ti-fuerte); }
     <div class="s321-ar-duo s321-ar-arriba">
       <div class="s321-texto">
         <span class="s321-eyebrow s321-animate-in"><i class="fas fa-flag-checkered" aria-hidden="true"></i> Construcción completada</span>
-        <h2 class="s321-titulo s321-animate-in">Antes de una camisa hay una menos que su número; las dos puntas suman una más que todas.</h2>
+        <h2 class="s321-titulo s321-animate-in">Solo cambia si algo entra o sale</h2>
         <div class="s321-cinta s321-animate-in">
           <span class="s321-rotulo">La regla que queda</span>
-          <p>La última dice cuántas hay; antes de una camisa hay una menos que su número; sus dos lugares suman una más que las camisas; y de una a otra, contando las dos, es la resta y una más.</p>
+          <p>Si solo los acomodan, la cantidad sigue igual; si venden o traen, cambia por lo vendido y lo traído.</p>
         </div>
         <div class="s321-fila-inicio s321-animate-in">
           <button type="button" class="s321-btn s321-btn-claro s321-clickable" id="btnRevisar" onclick="s321Sonido.click();s321Ir(1,'prev')">Revisar</button>
           <a class="s321-btn s321-clickable" id="btnVolverSecuencia" href="index.html" onclick="s321Sonido.click()">Volver a la secuencia</a>
-          <a class="s321-btn s321-btn-principal s321-clickable" id="btnSeguir" href="cierre.html" data-s321-siguiente onclick="s321Sonido.click()">Continuar a la entrega</a>
+          <a class="s321-btn s321-btn-principal s321-clickable" id="btnSeguir" href="cierre.html" data-s321-siguiente onclick="s321Sonido.click()">Continuar al estante</a>
         </div>
       </div>
-      <figure class="s321-figura s321-prox-quieto" style="margin:0"><img src="img/final-desarrollo.webp" alt="La libreta verde abierta con la regla escrita a mano y Yarisa copiándola en su hoja." onerror="s321ImgPendiente(this)"></figure>
+      <figure class="s321-figura s321-prox-quieto" style="margin:0"><img src="img/final-desarrollo.webp" alt="La tarjeta del estante escrita a mano con la regla" onerror="s321ImgPendiente(this)"></figure>
     </div>
   </div>
 </section>
@@ -3345,7 +3369,11 @@ function s321AjustarLineas(pantallaEl) {
                       sobra: s321CuantoSobra(el, d.objetivo) });
   };
 
-  pantalla.querySelectorAll(S321_UNA_LINEA).forEach((el) => revisar(el, true));
+  
+
+  const apilada = (el) => [].some.call(el.querySelectorAll('*'), (h) => !h.closest('svg') && h.textContent.trim() &&
+    /^(block|flex|grid|table|list-item)/.test(getComputedStyle(h).display));
+  pantalla.querySelectorAll(S321_UNA_LINEA).forEach((el) => { if (!apilada(el)) revisar(el, true); });
   pantalla.querySelectorAll(S321_VARIAS_LINEAS).forEach((el) => revisar(el, false));
 
   if (pendientes.length) {
@@ -3714,7 +3742,7 @@ function s321VerificarCromo() {
     var ins = activa.querySelector('.s321-insignia');
     var sup = activa.querySelector(':scope > .s321-cromo-sup');
     var apertura = activa.classList.contains('s321-apertura') || activa.querySelector('.s321-apertura');
-    if (!ins && !apertura) f.push('la pantalla activa no tiene insignia de paso .s321-insignia (estructura.md §7)');
+    if (!ins && !apertura && activa.id !== 'final') f.push('la pantalla activa no tiene insignia de paso .s321-insignia (estructura.md §7)');    
     if (ins && (!sup || ins.parentElement !== sup))
       f.push('la insignia de «' + (activa.id || '?') + '» sigue dentro del lote: hud.js no pudo ' +
              'adoptarla (¿se copió hud.js después de pintar la pantalla por innerHTML? ' +
@@ -4193,9 +4221,7 @@ function s321VerificarTipografia(raiz) {
   
 
   var LETRA = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--s321-letra')) || 1;
-  
-
-  var ALTO_PIE = 6 + 70 * LETRA, CROMO_ALTO = 14 + 38 * LETRA, PAD_INF = 14, FRANJA_BURBUJA = 80 * LETRA,
+  var ALTO_PIE = 6 + 70 * LETRA - 20, CROMO_ALTO = 14 + 38 * LETRA - 10, PAD_INF = 14, FRANJA_BURBUJA = 80 * LETRA - 11,
       CROMO_BORDE = 14, CROMO_LADO = 20;
 
   
@@ -5621,10 +5647,6 @@ S321.objetoAbstracto = function (nombre) {
 </script>
 <script>
  
-S321.objetos["camisa"] = {"nombre": "camisa", "abstracto": false, "otros": ["camisa de botones", "camisa de vestir"], "svg": "<path class=\"dn-cara\" d=\"M16 8H24L20 16Z\"/><path class=\"dn-cuerpo\" d=\"M6 18L14 10H18L20 14L22 10H26L34 18L30 22V34H10V22Z\"/><path class=\"dn-detalle\" d=\"M20 18V32\"/>"};
-</script>
-<script>
- 
 
 
 var S321 = window.S321 || (window.S321 = {});
@@ -5680,7 +5702,7 @@ S321.formas = {
   },
    
   regadas: function (n, W, H, semilla) {
-    return s321Dispersar(n, { ancho: W, alto: H, tam: 40, semilla: semilla }).puntos;
+    return n > 0 ? s321Dispersar(n, { ancho: W, alto: H, tam: 40, semilla: semilla }).puntos : [];    
   }
 };
 
@@ -5719,7 +5741,7 @@ S321.puertaSvg = function (W, H, alto) {
 S321.filaDeObjetos = function (objeto, n, estado, cls) {
   var L = S321.LOSETA, W = Math.max(1, n) * L, dentro = '';
   for (var i = 0; i < n; i++) dentro += S321.objetoEn(objeto, estado || 'llena', i * L + L / 2, L / 2, 36, i);
-  return '<svg class="s321-fila-objetos' + (cls ? ' ' + cls : '') + '" viewBox="0 0 ' + W + ' ' + L + '" style="width:calc(' + (W * 0.9) + 'px * var(--s321-escala))" aria-hidden="true" focusable="false">' + dentro + '</svg>';
+  return '<svg class="s321-fila-objetos' + (cls ? ' ' + cls : '') + '" viewBox="0 0 ' + W + ' ' + L + '" style="width:calc(' + (W * 0.9) + 'px * var(--s321-objeto, 1) * var(--s321-escala))" aria-hidden="true" focusable="false">' + dentro + '</svg>';
 };
 
 
@@ -6890,9 +6912,10 @@ window.S321_ESCENAS = window.S321_ESCENAS || {};
     return String(plantilla).replace(/\{\{(\w+)\}\}/g, function (m, k) { return (valores[k] != null) ? valores[k] : ''; });
   }
   function escapar(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+   
   function campoNumero(etiqueta) {
     var c = document.createElement('input');
-    c.type = 'text'; c.inputMode = 'numeric'; c.className = 's321-campo'; c.maxLength = 2; c.placeholder = '?';
+    c.type = 'text'; c.inputMode = 'numeric'; c.className = 's321-campo sv-campo'; c.maxLength = 3; c.placeholder = '?';
     c.autocomplete = 'off'; c.setAttribute('autocorrect', 'off'); c.setAttribute('autocapitalize', 'off'); c.spellcheck = false;
     c.setAttribute('aria-label', etiqueta);
     return c;
@@ -6903,140 +6926,133 @@ window.S321_ESCENAS = window.S321_ESCENAS || {};
     var id = pantalla.id;
     var dt = d.datos || {};
     var objeto = dt.objeto || 'ficha';
-    var NOMBRES = dt.nombres || [], VUELTAS = dt.vueltas || [];
     var LIBRES = (dt.pruebas_libres != null) ? dt.pruebas_libres : 2;
+    var MUDANZAS = dt.mudanzas || [], VUELTAS = dt.vueltas || [];
+    var P = dt.piso || {};
+    var COLS = P.cols || 16, FILAS = P.filas || 3;
+    var TOPE = Math.min(14, Math.floor(COLS * FILAS * 2 / 5));
+    var FORMAS = { torre: 'en torre', fila: 'en fila', rueda: 'en rueda', regadas: 'regados' };
+    if (dt.formas) for (var f in dt.formas) if (dt.formas[f]) FORMAS[f] = dt.formas[f];
     var T = {
-      rotulo_fila: dt.rotulo_fila || 'La fila', rotulo_inicio: dt.rotulo_inicio || 'inicio', rotulo_mandos: dt.rotulo_mandos || 'Los mandos',
-      rotulo_pregunta: dt.rotulo_pregunta || 'La fila pregunta', rotulo_registro: dt.rotulo_registro || 'El registro',
-      plantilla_orden: dt.plantilla_orden || '{{n}}.º', etiqueta_sentido: dt.etiqueta_sentido || 'se cuenta', etiqueta_lugar: dt.etiqueta_lugar || 'el marcado va de',
-      palabra_ida: dt.palabra_ida || 'de ida', palabra_vuelta: dt.palabra_vuelta || 'de vuelta',
-      boton_invertir: dt.boton_invertir || 'Dar la vuelta', boton_ida: dt.boton_ida || 'Volver de ida', boton_comprobar: dt.boton_comprobar || 'Comprobar',
-      etiqueta_prediccion: dt.etiqueta_prediccion || 'queda de',
-      columna_puesto: dt.columna_puesto || 'puesto', columna_ida: dt.columna_ida || 'ida', columna_vuelta: dt.columna_vuelta || 'vuelta', columna_predije: dt.columna_predije || 'predije',
-      msg_invertida: dt.msg_invertida || '{{marcado}} era {{antes}} {{ida}} y queda {{despues}} {{vuelta}}.',
-      msg_ida: dt.msg_ida || 'Otra vez de ida: {{marcado}} va de {{antes}}.',
-      msg_pregunta: dt.msg_pregunta || '{{n}} puestos. {{marcado}} va de {{antes}} {{ida}}. {{vuelta}}, ¿de qué queda?',
-      msg_prediccion_invalida: dt.msg_prediccion_invalida || 'Escribe un número: de qué va a quedar el marcado.',
-      msg_dos_pruebas: dt.msg_dos_pruebas || 'Ahora la fila te pregunta a ti antes de dar la vuelta.',
-      msg_compara: dt.msg_compara || 'Dijiste <b>{{dicho}}</b> · queda <b>{{queda}}</b> {{vuelta}}.',
-      msg_cierre: dt.msg_cierre || 'Los puestos no se movieron; cambió por dónde se empieza a contar.'
+      rotulo_monton: dt.rotulo_monton || 'El montón', rotulo_mudanzas: dt.rotulo_mudanzas || 'Las mudanzas',
+      rotulo_pregunta: dt.rotulo_pregunta || 'El montón pregunta', rotulo_registro: dt.rotulo_registro || 'El registro',
+      etiqueta_hay: dt.etiqueta_hay || 'hay', etiqueta_forma: dt.etiqueta_forma || 'están',
+      boton_comprobar: dt.boton_comprobar || 'Comprobar',
+      etiqueta_cuantos: dt.etiqueta_cuantos || 'cuántos habrá',
+      columna_mudanza: dt.columna_mudanza || 'mudanza', columna_habia: dt.columna_habia || 'había', columna_hay: dt.columna_hay || 'hay', columna_predije: dt.columna_predije || 'predije',
+      msg_pregunta: dt.msg_pregunta || 'Hay {{n}} {{objetos}} {{forma}}. Si {{mudanza}}, ¿cuántos habrá?',
+      msg_prediccion_invalida: dt.msg_prediccion_invalida || 'Escribe un número: cuántos va a haber.',
+      msg_mudanza: dt.msg_mudanza || '{{mudanza}}: hay {{hay}} {{objetos}} {{forma}}.',
+      msg_dos_pruebas: dt.msg_dos_pruebas || 'Ahora el montón te pregunta antes de mudarse.',
+      msg_compara: dt.msg_compara || 'Dijiste <b>{{dicho}}</b> · hay <b>{{hay}}</b>.',
+      msg_cierre: dt.msg_cierre || 'La cuenta cambió solo cuando entró o salió alguno; con la forma, nunca.'
     };
     var st = s321Estado[id];
-    st.n = NOMBRES.length; st.marcado = dt.marcado || 1; st.vuelta = false; st.pruebas = 0; st.fase = 'libre'; st.v = 0;
-    var zF = lote.querySelector('#' + id + 'Fila'), zM = lote.querySelector('#' + id + 'Mandos'), zQ = lote.querySelector('#' + id + 'Pregunta'), zR = lote.querySelector('#' + id + 'Registro');
-
-    function ordinal(k) { return sust(T.plantilla_orden, { n: k }); }
-    function posicionDe(k) { return st.vuelta ? st.n - k + 1 : k; }
-    function nombre(k) { return String(NOMBRES[k - 1] != null ? NOMBRES[k - 1] : ordinal(k)); }
+    st.n = (dt.n_inicial != null) ? dt.n_inicial : 6; st.forma = FORMAS[dt.forma_inicial] ? dt.forma_inicial : 'fila';
+    st.pruebas = 0; st.fase = 'libre'; st.v = 0; st.semilla = P.semilla || 1;
+    var zM = lote.querySelector('#' + id + 'Monton'), zU = lote.querySelector('#' + id + 'Mudanzas'), zQ = lote.querySelector('#' + id + 'Pregunta'), zR = lote.querySelector('#' + id + 'Registro');
 
      
-    zF.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_fila) + '</span>';
-    var fila = el('div', 'fi-fila');
-    var bIzq = el('div', 'fi-bandera fi-activa', escapar(T.rotulo_inicio)), bDer = el('div', 'fi-bandera', escapar(T.rotulo_inicio));
-    var puestos = el('div', 'fi-puestos');
-    fila.appendChild(bIzq); fila.appendChild(puestos); fila.appendChild(bDer);
-    zF.appendChild(fila);
-    var cifras = el('div', 'fi-cifras',
-      '<div class="fi-cifra"><span class="s321-rotulo">' + escapar(T.etiqueta_sentido) + '</span><span class="fi-sentido" id="' + id + 'Sentido"></span></div>' +
-      '<div class="fi-cifra"><span class="s321-rotulo">' + escapar(T.etiqueta_lugar) + '</span><span class="s321-cifra-veredicto" id="' + id + 'Lugar"></span></div>');
-    zF.appendChild(cifras);
-    var cSentido = cifras.querySelector('#' + id + 'Sentido'), cLugar = cifras.querySelector('#' + id + 'Lugar');
-    function htmlPuestos() {
-      var s = '';
-      for (var k = 1; k <= st.n; k++) {
-        s += '<div class="fi-puesto' + (k === st.marcado ? ' fi-marcado' : '') + '"><span class="fi-ord">' + escapar(ordinal(posicionDe(k))) + '</span>' +
-          '<svg class="fi-obj" viewBox="0 0 40 40" aria-hidden="true" focusable="false">' + S321.objetoEn(objeto, k === st.marcado ? 'contada' : 'llena', 20, 20, 36) + '</svg>' +
-          '<span class="fi-nombre">' + escapar(nombre(k)) + '</span></div>';
-      }
-      return s;
-    }
-    function pintar(sinFundido) {
-      bIzq.classList.toggle('fi-activa', !st.vuelta); bDer.classList.toggle('fi-activa', st.vuelta);
-      var html = htmlPuestos(), sentido = st.vuelta ? T.palabra_vuelta : T.palabra_ida, lugar = ordinal(posicionDe(st.marcado));
-      if (sinFundido) { puestos.innerHTML = html; cSentido.textContent = sentido; cLugar.textContent = lugar; }
-      else { s321Cambiar(puestos, html); s321Cambiar(cSentido, escapar(sentido)); s321Cambiar(cLugar, escapar(lugar)); }
-    }
-    pintar(true);
+    function textoForma(forma) { return FORMAS[forma] || forma; }
+    function svgDe(n, forma) { return S321.pisoConForma(objeto, n, forma, COLS, FILAS, { semilla: st.semilla, huella: true }).svg; }
+    var cabecera = el('div', 'mm-cabecera', '<span class="s321-rotulo">' + escapar(T.rotulo_monton) + '</span>');
+    zM.appendChild(cabecera);
+    var cifras = el('div', 'mm-cifras',
+      '<div class="mm-cifra"><span class="s321-rotulo">' + escapar(T.etiqueta_hay) + '</span><span class="s321-cifra-veredicto" id="' + id + 'Hay">' + st.n + '</span></div>' +
+      '<div class="mm-cifra"><span class="s321-rotulo">' + escapar(T.etiqueta_forma) + '</span><span class="mm-forma" id="' + id + 'Forma">' + escapar(textoForma(st.forma)) + '</span></div>');
+    cabecera.appendChild(cifras);
+    var piso = el('div', 'mm-piso', svgDe(st.n, st.forma));
+    zM.appendChild(piso);
+    var cHay = cifras.querySelector('#' + id + 'Hay'), cForma = cifras.querySelector('#' + id + 'Forma');
+    function pintarCifras() { s321Cambiar(cHay, String(st.n)); s321Cambiar(cForma, escapar(textoForma(st.forma))); }
+    function reponer(n, forma) { st.n = n; st.forma = forma; st.semilla++; s321Cambiar(piso, svgDe(n, forma)); pintarCifras(); }
+    function cabe(mud) { var n2 = st.n + (mud.d || 0); return n2 >= 0 && n2 <= TOPE; }
 
      
-    zM.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_mandos) + '</span>';
-    var mandos = el('div', 'fi-mandos');
-    var invertir = s321Boton('s321-btn s321-btn-principal s321-clickable', T.boton_invertir, function () { girar(null); });
-    mandos.appendChild(invertir); zM.appendChild(mandos);
+    function mover(mud) {
+      st.n += (mud.d || 0);
+      if (mud.forma && FORMAS[mud.forma]) st.forma = mud.forma;
+      st.semilla++;
+      s321Cambiar(piso, svgDe(st.n, st.forma));
+      pintarCifras();
+    }
+
+     
+    zU.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_mudanzas) + '</span>';
+    var filaU = el('div', 'mm-mudanzas');
+    var botones = MUDANZAS.map(function (mud) {
+      var b = s321Boton('s321-btn s321-clickable', escapar(mud.t), function () { mudanza(mud, null); }, { 'aria-label': mud.t });
+      filaU.appendChild(b); return b;
+    });
+    zU.appendChild(filaU);
+    function apagarLasQueNoCaben() { MUDANZAS.forEach(function (mud, i) { botones[i].disabled = !cabe(mud); }); }
+    apagarLasQueNoCaben();
 
      
     zQ.innerHTML = '<span class="s321-etiqueta">' + escapar(T.rotulo_pregunta) + '</span>';
     var pregunta = el('p', '', '');
-    var campos = el('div', 'fi-campos');
-    var campo = campoNumero(T.etiqueta_prediccion);
-    campos.appendChild(el('span', 'fi-campo-rotulo', escapar(T.etiqueta_prediccion))); campos.appendChild(campo);
+    var campos = el('div', 'mm-campos');
+    var campo = campoNumero(T.etiqueta_cuantos);
+    campos.appendChild(el('span', 'mm-campo-rotulo', escapar(T.etiqueta_cuantos))); campos.appendChild(campo);
     var comprobar = s321Boton('s321-btn s321-clickable', T.boton_comprobar, function () { comprobarVuelta(); });
     campos.appendChild(comprobar);
     zQ.appendChild(pregunta); zQ.appendChild(campos);
-    campo.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); comprobarVuelta(); } });
+    campo.addEventListener('keydown', function (e) { if (e.key === 'Enter') comprobarVuelta(); });
 
      
     var RENGLONES = Math.max(1, LIBRES + VUELTAS.length);
     zR.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_registro) + '</span>' +
-      '<table class="s321-tabla"><thead><tr><th>' + escapar(T.columna_puesto) + '</th><th class="s321-num">' + escapar(T.columna_ida) + '</th><th class="s321-num">' + escapar(T.columna_vuelta) + '</th><th class="s321-num">' + escapar(T.columna_predije) + '</th></tr></thead><tbody>' +
+      '<table class="s321-tabla sv-tabla"><thead><tr><th>' + escapar(T.columna_mudanza) + '</th><th class="s321-num">' + escapar(T.columna_habia) + '</th><th class="s321-num">' + escapar(T.columna_hay) + '</th><th class="s321-num">' + escapar(T.columna_predije) + '</th></tr></thead><tbody>' +
       Array.apply(null, Array(RENGLONES)).map(function () { return '<tr class="s321-vacia"><td>—</td><td class="s321-num">—</td><td class="s321-num">—</td><td class="s321-num">—</td></tr>'; }).join('') + '</tbody></table>';
     var tabla = zR.querySelector('table');
 
-    function anotar(quien, ida, vuelta, dicho) {
+    function anotar(texto, habia, hay, dicho) {
       var filas = tabla.tBodies[0].rows;
       var i = st.pruebas < filas.length ? st.pruebas : filas.length - 1;
       if (st.pruebas >= filas.length) { for (var j = 1; j < filas.length; j++) filas[j - 1].innerHTML = filas[j].innerHTML; }
-      var f = filas[i]; f.className = 's321-viva';
-      f.innerHTML = '<td>' + escapar(quien) + '</td><td class="s321-num">' + escapar(ordinal(ida)) + '</td><td class="s321-num">' + escapar(ordinal(vuelta)) + '</td><td class="s321-num">' + (dicho == null ? '—' : escapar(dicho)) + '</td>';
+      var fila = filas[i]; fila.className = 's321-viva';
+      fila.innerHTML = '<td>' + escapar(texto) + '</td><td class="s321-num">' + habia + '</td><td class="s321-num">' + hay + '</td><td class="s321-num">' + (dicho == null ? '—' : escapar(dicho)) + '</td>';
       for (var q = 0; q < filas.length; q++) if (q !== i && filas[q].className === 's321-viva') filas[q].className = '';
       st.pruebas++;
     }
 
-     
-    function girar(dicho) {
-      var antes = posicionDe(st.marcado);
-      st.vuelta = !st.vuelta;
-      pintar(false);
-      var despues = posicionDe(st.marcado);
-      s321Cambiar(invertir, escapar(st.vuelta ? T.boton_ida : T.boton_invertir));
-      if (st.vuelta) {
-        anotar(nombre(st.marcado), antes, despues, dicho);
-        if (dicho == null) {
-          var msg = sust(T.msg_invertida, { marcado: nombre(st.marcado), antes: ordinal(antes), despues: ordinal(despues), ida: T.palabra_ida, vuelta: T.palabra_vuelta });
-          if (st.fase === 'libre' && st.pruebas >= LIBRES && VUELTAS.length) {
-            st.fase = 'vuelta';
-            s321Burbuja(pantalla, T.msg_dos_pruebas, 'aclaracion');
-            s321Reloj(pantalla, preguntar, 1400);
-          } else {
-            s321Burbuja(pantalla, msg, 'aclaracion');
-          }
+    function mudanza(mud, dicho) {
+      if (!cabe(mud)) return null;
+      var habia = st.n;
+      mover(mud);
+      apagarLasQueNoCaben();
+      anotar(mud.t, habia, st.n, dicho);
+      if (dicho == null) {
+        var msg = sust(T.msg_mudanza, { mudanza: mud.t, hay: st.n, objetos: T.etiqueta_hay, forma: textoForma(st.forma) });
+        if (st.fase === 'libre' && st.pruebas >= LIBRES && VUELTAS.length) {
+          st.fase = 'vuelta';
+          s321Burbuja(pantalla, T.msg_dos_pruebas, 'aclaracion');
+          s321Reloj(pantalla, preguntar, 1400);
+        } else if (st.fase === 'libre' && !VUELTAS.length && st.pruebas >= LIBRES) {
+          s321Completar(pantalla, msg, cifras);
+        } else {
+          s321Burbuja(pantalla, msg, 'aclaracion');
         }
-      } else if (dicho == null) {
-        s321Burbuja(pantalla, sust(T.msg_ida, { marcado: nombre(st.marcado), antes: ordinal(despues) }), 'aclaracion');
       }
-      return { queda: despues };
+      return st.n;
     }
+    function mudanzaDe(clave) { return MUDANZAS.filter(function (m) { return m.clave === clave; })[0]; }
     function preguntar() {
-      var v = VUELTAS[st.v];
-      st.vuelta = false;
-      if (v.n != null) st.n = Math.max(1, Math.min(NOMBRES.length, v.n));
-      if (v.marcado != null) st.marcado = v.marcado;
-      pintar(false);
-      s321Cambiar(invertir, escapar(T.boton_invertir));
-      invertir.disabled = true;
-      pregunta.innerHTML = '<b>' + escapar(v.frase) + '.</b> ' + sust(T.msg_pregunta, { n: st.n, marcado: nombre(st.marcado), antes: ordinal(st.marcado), ida: T.palabra_ida, vuelta: T.palabra_vuelta });
-      s321Salir(zM); s321Entrar(zQ);    
+      var v = VUELTAS[st.v], mud = mudanzaDe(v.mud) || MUDANZAS[0];
+      if (v.n != null || v.forma != null) reponer(v.n != null ? v.n : st.n, (v.forma != null && FORMAS[v.forma]) ? v.forma : st.forma);
+      botones.forEach(function (b) { b.disabled = true; });
+      pregunta.innerHTML = '<b>' + escapar(v.frase) + '.</b> ' + sust(T.msg_pregunta, { n: st.n, objetos: T.etiqueta_hay, forma: textoForma(st.forma), mudanza: mud.t });
+      s321Salir(zU); s321Entrar(zQ);    
       campo.value = ''; campo.disabled = false; comprobar.disabled = false; campo.focus();
     }
     function comprobarVuelta() {
-      var v = VUELTAS[st.v];
-      if (!v) return;
+      var v = VUELTAS[st.v], mud = mudanzaDe(v.mud) || MUDANZAS[0];
       var dicho = numeroDe(campo);
       if (isNaN(dicho)) { s321Fallo(campo); s321Burbuja(pantalla, T.msg_prediccion_invalida, 'error'); return; }
       campo.disabled = true; comprobar.disabled = true;
-      var r = girar(ordinal(dicho));
-      var acierto = r && r.queda === dicho;
-      var msg = sust(T.msg_compara, { dicho: ordinal(dicho), queda: r ? ordinal(r.queda) : '', vuelta: T.palabra_vuelta });
+      var hay = mudanza(mud, String(dicho));
+      var acierto = hay === dicho;
+      var msg = sust(T.msg_compara, { dicho: dicho, hay: hay == null ? '' : hay });
       st.v++;
       if (st.v < VUELTAS.length) {
         s321Burbuja(pantalla, msg, acierto ? 'acierto' : 'error');
@@ -7044,20 +7060,19 @@ window.S321_ESCENAS = window.S321_ESCENAS || {};
       } else {
         s321Completar(pantalla, msg, cifras);
         pregunta.innerHTML = escapar(T.msg_cierre);
-        pantalla.dispatchEvent(new CustomEvent('s321:escena', { bubbles: true, detail: { escena: 'fila-que-se-invierte', hecho: true, n: st.n } }));
+        pantalla.dispatchEvent(new CustomEvent('s321:escena', { bubbles: true, detail: { escena: 'monton-que-se-muda', hecho: true, hay: st.n, forma: st.forma } }));
       }
     }
-    if (!LIBRES && VUELTAS.length) s321Reloj(pantalla, function () { st.fase = 'vuelta'; preguntar(); }, 600);
   };
 
   escena.ayudantes = { el: el, sust: sust };
-  S321_ESCENAS['fila-que-se-invierte'] = escena;
+  S321_ESCENAS['monton-que-se-muda'] = escena;
 })();
 
  
 s321Montadores['p1'] = function (pantalla, lote) {
-  s321Registrar('p1', "el_riel_que_crece");
-  S321_ESCENAS['fila-que-se-invierte'](pantalla, lote, {"id": "p1", "casa": "00014", "paso": 1, "total": 5, "nombre": "el_riel_que_crece", "pieza": "fila-que-se-invierte", "disposicion": "G", "zonas": {"experimento": ["fila"], "voz": [{"casa": "voz", "quien": "Doña Minerva", "texto": "Colgué al final las tres que faltaban: ya hay nueve en el riel."}], "control": ["mandos", "pregunta"], "evidencia": ["registro"]}, "titulo": "el riel que crece", "instruccion": "Da la vuelta al riel del jueves y descubre de qué queda la marcada.", "ayuda": ["Pulsa Dar la vuelta: la bandera pasa de la ventana a la puerta y los números cambian", "Tras dos vueltas el riel vuelve al martes y te pregunta antes: escribe el lugar y pulsa Comprobar", "Copia cada vuelta del registro en la zona 1 del imprimible"], "datos": {"objeto": "camisa", "nombres": ["Dariel", "Luisa", "Kendry", "Marielys", "Jonathan", "Yeimi", "Brayan", "Sofía", "Enmanuel"], "marcado": 4, "pruebas_libres": 2, "rotulo_fila": "El riel del jueves", "rotulo_inicio": "inicio", "rotulo_mandos": "Por dónde se cuenta", "rotulo_pregunta": "El riel pregunta", "rotulo_registro": "El registro de vueltas", "plantilla_orden": "{{n}}.ª", "etiqueta_sentido": "se cuenta", "etiqueta_lugar": "la marcada va de", "palabra_ida": "desde la ventana", "palabra_vuelta": "desde la puerta", "boton_invertir": "Dar la vuelta", "boton_ida": "Volver a la ventana", "boton_comprobar": "Comprobar", "etiqueta_prediccion": "queda de", "columna_puesto": "camisa", "columna_ida": "ventana", "columna_vuelta": "puerta", "columna_predije": "predije", "msg_invertida": "La de {{marcado}} era la {{antes}} {{ida}} y queda la {{despues}} {{vuelta}}.", "msg_ida": "Otra vez {{ida}}: la de {{marcado}} va de {{antes}}.", "msg_pregunta": "Hay {{n}}. La de {{marcado}} va de {{antes}} {{ida}}: {{vuelta}}, ¿de qué queda?", "msg_prediccion_invalida": "Escribe un número: de qué va a quedar la camisa marcada.", "msg_dos_pruebas": "Dos vueltas. Ahora el riel vuelve al martes y te pregunta antes.", "msg_compara": "Dijiste <b>{{dicho}}</b> · queda la <b>{{queda}}</b> {{vuelta}}.", "msg_cierre": "La de Marielys no se movió: con más camisas cambió su lugar desde la puerta.", "vueltas": [{"n": 6, "marcado": 4, "frase": "El martes, con seis: la de Marielys"}, {"n": 9, "marcado": 4, "frase": "El jueves, con nueve: la de Marielys"}, {"n": 9, "marcado": 5, "frase": "Con nueve: la de Jonathan"}]}, "limites": {"nombres": 9, "vueltas": 4, "renglones": 6}, "emite": ["terminó"], "escucha": []});
+  s321Registrar('p1', "el_monton_de_la_tarde");
+  S321_ESCENAS['monton-que-se-muda'](pantalla, lote, {"id": "p1", "casa": "00014", "paso": 1, "total": 5, "nombre": "el_monton_de_la_tarde", "pieza": "monton-que-se-muda", "disposicion": "G", "zonas": {"experimento": ["monton"], "voz": [{"casa": "leyenda", "texto": "La huella mide el sitio.", "objeto": "cuaderno"}], "control": ["mudanzas", "pregunta"], "evidencia": ["registro"]}, "titulo": "el montón de la tarde", "instruccion": "Pulsa una mudanza y predice cuántos cuadernos habrá después.", "ayuda": ["Pulsa una mudanza: los cuadernos cambian de forma, o se vende o llega alguno, y la cuenta dice cuántos hay", "La huella dice cuánto sitio ocupan; la cuenta dice cuántos son", "Tras dos mudanzas el montón te pregunta antes: escribe cuántos va a haber y pulsa Comprobar"], "datos": {"objeto": "cuaderno", "n_inicial": 8, "forma_inicial": "fila", "pruebas_libres": 2, "piso": {"cols": 16, "filas": 3, "semilla": 9}, "rotulo_monton": "El mostrador", "rotulo_mudanzas": "Las mudanzas", "rotulo_pregunta": "El montón pregunta", "rotulo_registro": "El registro de la tarde", "etiqueta_hay": "cuadernos", "etiqueta_forma": "están", "etiqueta_cuantos": "cuántos habrá", "boton_comprobar": "Comprobar", "columna_mudanza": "mudanza", "columna_habia": "había", "columna_hay": "hay", "columna_predije": "predije", "formas": {"torre": "apilados", "fila": "en fila", "rueda": "en rueda", "regadas": "regados"}, "msg_pregunta": "Hay {{n}} {{objetos}} {{forma}}. Si {{mudanza}}, ¿cuántos habrá?", "msg_prediccion_invalida": "Escribe un número: cuántos cuadernos va a haber.", "msg_mudanza": "{{mudanza}}: hay {{hay}} {{objetos}} {{forma}}.", "msg_dos_pruebas": "Dos mudanzas. Ahora el montón te pregunta a ti antes de moverse.", "msg_compara": "Dijiste <b>{{dicho}}</b> · hay <b>{{hay}}</b>.", "msg_cierre": "Cuatro vueltas en el registro, cada una con lo que predijiste al lado.", "mudanzas": [{"clave": "apilan", "t": "los apilan", "forma": "torre", "d": 0}, {"clave": "riegan", "t": "los riegan", "forma": "regadas", "d": 0}, {"clave": "rueda", "t": "en rueda", "forma": "rueda", "d": 0}, {"clave": "vende", "t": "vende uno", "d": -1}, {"clave": "llega", "t": "llega uno", "d": 1}, {"clave": "vende_riega", "t": "vende y riega", "forma": "regadas", "d": -1}], "vueltas": [{"n": 8, "forma": "fila", "mud": "riegan", "frase": "Ocho cuadernos en fila"}, {"mud": "vende", "frase": "Los mismos cuadernos, regados"}, {"n": 7, "forma": "torre", "mud": "llega", "frase": "Siete cuadernos apilados"}, {"n": 9, "forma": "fila", "mud": "vende_riega", "frase": "Nueve cuadernos en fila"}]}, "limites": {"mudanzas": 6, "vueltas": 4, "n_maximo": 14}, "emite": ["terminó"], "escucha": []});
   if (window.S321 && S321.aparatosDeCasa) S321.aparatosDeCasa(pantalla);
 };
 </script>
@@ -7077,202 +7092,98 @@ window.S321_ESCENAS = window.S321_ESCENAS || {};
     return String(plantilla).replace(/\{\{(\w+)\}\}/g, function (m, k) { return (valores[k] != null) ? valores[k] : ''; });
   }
   function escapar(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
-  function campoNumero(etiqueta) {
-    var c = document.createElement('input');
-    c.type = 'text'; c.inputMode = 'numeric'; c.className = 's321-campo sv-campo'; c.maxLength = 2; c.placeholder = '?';
-    c.autocomplete = 'off'; c.setAttribute('autocorrect', 'off'); c.setAttribute('autocapitalize', 'off'); c.spellcheck = false;
-    c.setAttribute('aria-label', etiqueta);
-    return c;
-  }
-  function numeroDe(campo) { var m = String(campo.value).match(/\d+/); return m ? parseInt(m[0], 10) : NaN; }
-  function cajaPulsable(clase, html, alPulsar, attrs) {
-    var c = document.createElement('div');
-    c.className = clase; c.innerHTML = html; c.setAttribute('role', 'button'); c.tabIndex = 0;
-    if (attrs) Object.keys(attrs).forEach(function (k) { c.setAttribute(k, attrs[k]); });
-    function pulsar(ev) {
-      if (c.getAttribute('aria-disabled') === 'true') return;
-      if (typeof s321Sonido !== 'undefined') s321Sonido.click();
-      alPulsar(c, ev);
-    }
-    c.addEventListener('click', pulsar);
-    c.addEventListener('keydown', function (ev) { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); pulsar(ev); } });
-    return c;
-  }
 
   var escena = function (pantalla, lote, d) {
     var id = pantalla.id;
     var dt = d.datos || {};
-    var objeto = dt.objeto || 'ficha', N = parseInt(dt.n, 10) || 0, NOMBRES = dt.nombres || [];
-    var MODO = dt.modo || 'tramo', CASOS = dt.casos || [];
-    var COL = dt.columnas || (MODO === 'antes' ? ['pieza', 'lugar', 'antes · hasta', 'el riel'] : MODO === 'dos_cuentas' ? ['de', 'a', 'contando', 'con la cuenta'] : MODO === 'hasta_cual' ? ['desde', 'cuántas', 'dije', 'el riel'] : ['de', 'a', 'dije', 'el riel']);
+    var objeto = dt.objeto || 'ficha';
+    var LISTA = dt.lista || [], PAGINA = dt.pagina || [], ERRORES = dt.errores || [];
     var T = {
-      rotulo_riel: dt.rotulo_riel || 'El riel', rotulo_caso: dt.rotulo_caso || 'El caso', rotulo_registro: dt.rotulo_registro || 'El registro',
-      rotulo_ventana: dt.rotulo_ventana || 'ventana', rotulo_puerta: dt.rotulo_puerta || 'puerta',
-      plantilla_orden: dt.plantilla_orden || '{{n}}.ª', etiqueta_cuenta: dt.etiqueta_cuenta || 'encendidas',
-      etiqueta_antes: dt.etiqueta_antes || 'antes de ella', etiqueta_hasta: dt.etiqueta_hasta || 'hasta ella, contándola',
-      etiqueta_cuantas: dt.etiqueta_cuantas || 'cuántas', etiqueta_contando: dt.etiqueta_contando || 'contando',
-      etiqueta_cuenta_resta: dt.etiqueta_cuenta_resta || 'con la cuenta', etiqueta_lugar: dt.etiqueta_lugar || 'hasta cuál',
-      boton_comprobar: dt.boton_comprobar || 'Comprobar',
-      msg_vacio: dt.msg_vacio || 'Escribe el número antes de comprobar.',
-      msg_toca: dt.msg_toca || 'Toca las piezas del tramo una por una: la cuenta sube sola.',
-      msg_bien: dt.msg_bien || 'Dijiste <b>{{dicho}}</b> y el riel cuenta <b>{{riel}}</b>: lo mismo.',
-      msg_mal: dt.msg_mal || 'Dijiste <b>{{dicho}}</b> y el riel cuenta <b>{{riel}}</b>. {{pista}}',
-      msg_completar: dt.msg_completar || 'Todos los tramos están contados y anotados.'
+      rotulo_cotejo: dt.rotulo_cotejo || 'La lista y la página',
+      rotulo_lista: dt.rotulo_lista || 'La lista', rotulo_pagina: dt.rotulo_pagina || 'La página',
+      rotulo_sello: dt.rotulo_sello || 'El sello', boton_sello: dt.boton_sello || 'No cuadra', texto_sello: dt.texto_sello || 'no cuadra',
+      rotulo_registro: dt.rotulo_registro || 'Lo que no cuadra',
+      columna_fila: dt.columna_fila || 'fila', columna_dice: dt.columna_dice || 'dice', columna_debia: dt.columna_debia || 'debía decir',
+      etiqueta_fila: dt.etiqueta_fila || 'Fila', texto_cero: dt.texto_cero || '0', texto_blanco: dt.texto_blanco || 'en blanco',
+      msg_elige: dt.msg_elige || 'Toca una fila de la página y después el sello.',
+      msg_fila_elegida: dt.msg_fila_elegida || '{{fila}}: ahora el sello, si no cuadra.',
+      msg_cuadra: dt.msg_cuadra || '{{fila}} sí cuadra con la lista: mira otra.',
+      msg_sellada: dt.msg_sellada || '{{fila}}: dice {{dice}} y debía decir {{debia}}.',
+      msg_completar: dt.msg_completar || 'Las filas que no cuadran ya tienen su sello.'
     };
-    var st = s321Estado[id]; st.i = 0; st.ocupado = false; st.tocadas = {};
-    var zR = lote.querySelector('#' + id + 'Riel'), zC = lote.querySelector('#' + id + 'Caso'), zG = lote.querySelector('#' + id + 'Registro');
-
-    function ordinal(k) { return sust(T.plantilla_orden, { n: k }); }
-    function nombre(k) { return NOMBRES[k - 1] || ordinal(k); }
-    function respuestaDe(c) {
-      if (MODO === 'antes') return { antes: c.k - 1, hasta: c.k };
-      if (MODO === 'tramo' || MODO === 'dos_cuentas') return { cuantas: c.a - c.de + 1 };
-      var q = Number(c.cuantas) || 0;
-      return { lugar: c.pide === 'desde' ? (Number(c.hasta) - q + 1) : (Number(c.desde) + q - 1) };
-    }
-    function tramoDe(c) {
-      if (MODO === 'antes') return [1, c.k];
-      if (MODO === 'tramo' || MODO === 'dos_cuentas') return [c.de, c.a];
-      var r = respuestaDe(c).lugar;
-      return c.pide === 'desde' ? [r, Number(c.hasta)] : [Number(c.desde), r];
-    }
+    var st = s321Estado[id]; st.elegida = null; st.selladas = 0;
+    var zC = lote.querySelector('#' + id + 'Cotejo'), zS = lote.querySelector('#' + id + 'Sello'), zR = lote.querySelector('#' + id + 'Registro');
 
      
-    zR.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_riel) + '</span>';
-    zR.appendChild(el('div', 'tr-puntas', '<span class="tr-punta">' + escapar(T.rotulo_ventana) + '</span><span class="tr-punta">' + escapar(T.rotulo_puerta) + '</span>'));
-    var pista = el('div', 'tr-pista');
-    var puestos = [];
-    for (var k = 1; k <= N; k++) {
-      (function (k) {
-        var html = '<span class="tr-lugar">' + escapar(ordinal(k)) + '</span>' +
-          '<svg class="tr-obj" viewBox="0 0 40 40" aria-hidden="true" focusable="false">' + S321.objetoEn(objeto, 'llena', 20, 20, 36) + '</svg>' +
-          '<span class="tr-nombre">' + escapar(NOMBRES[k - 1] || '') + '</span>';
-        var p = MODO === 'dos_cuentas' ? cajaPulsable('tr-puesto s321-clickable s321-prox-quieto', html, function () { tocar(k); }, { 'aria-label': nombre(k) }) : el('div', 'tr-puesto', html);
-        pista.appendChild(p); puestos.push(p);
-      })(k);
-    }
-    zR.appendChild(pista);
-    var cuentas = el('div', 'tr-cuentas', '<div class="tr-cuenta"><span class="s321-rotulo">' + escapar(T.etiqueta_cuenta) + '</span><span class="s321-cifra-veredicto" id="' + id + 'Cuenta">0</span></div>');
-    zR.appendChild(cuentas);
-    var outCuenta = cuentas.querySelector('#' + id + 'Cuenta');
-    function apagarTodo() {
-      puestos.forEach(function (p) { p.classList.toggle('tr-viva', false); p.classList.toggle('tr-tocada', false); p.classList.toggle('tr-fin', false); });
-      st.tocadas = {};
-      s321Cambiar(outCuenta, '0');
-    }
-    function tocar(k) {
-      if (st.ocupado) return;
-      st.tocadas[k] = !st.tocadas[k];
-      puestos[k - 1].classList.toggle('tr-tocada', !!st.tocadas[k]);
-      s321Cambiar(outCuenta, String(cuantasTocadas()));
-    }
-    function cuantasTocadas() { return Object.keys(st.tocadas).filter(function (k) { return st.tocadas[k]; }).length; }
+    zC.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_cotejo) + '</span>';
+    var dos = el('div', 'co-dos');
+    var colLista = el('div', ''), colPagina = el('div', '');
+    colLista.innerHTML = '<span class="s321-etiqueta">' + escapar(T.rotulo_lista) + '</span>';
+    LISTA.forEach(function (r) {
+      var n = Number(r.objetos) || 0;
+      colLista.appendChild(el('div', 'co-lista-fila', '<span class="co-fila-num">' + escapar(r.n != null ? r.n : '') + '</span><span class="co-lista-quien">' + escapar(r.quien || '') + '</span>' +
+        (n > 0 ? S321.filaDeObjetos(objeto, n) : '<span class="co-fila-texto">' + escapar(r.t != null ? r.t : T.texto_cero) + '</span>')));
+    });
+    colPagina.innerHTML = '<span class="s321-etiqueta">' + escapar(T.rotulo_pagina) + '</span>';
+    var filas = {};
+    PAGINA.forEach(function (r) {
+      var n = (r.objetos == null) ? null : Number(r.objetos) || 0;
+      var dice = n == null ? '<span class="co-fila-texto">' + escapar(r.t != null ? r.t : T.texto_blanco) + '</span>' : (n > 0 ? S321.filaDeObjetos(objeto, n) : '<span class="co-fila-texto">' + escapar(T.texto_cero) + '</span>');
+      var b = s321Boton('co-fila s321-clickable s321-prox-quieto', '<span class="co-fila-num">' + escapar(r.n) + '</span>' + dice, function () { elegir(r); }, { 'aria-pressed': 'false', 'aria-label': T.etiqueta_fila + ' ' + r.n });
+      filas[String(r.n)] = b; colPagina.appendChild(b);
+    });
+    dos.appendChild(colLista); dos.appendChild(colPagina); zC.appendChild(dos);
 
      
-    zC.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_caso) + '</span>';
-    var tarjeta = el('div', 'tr-tarjeta', '');
-    var campos = el('div', 'tr-campos');
-    var campo1 = campoNumero(MODO === 'antes' ? T.etiqueta_antes : MODO === 'hasta_cual' ? T.etiqueta_lugar : MODO === 'dos_cuentas' ? T.etiqueta_cuenta_resta : T.etiqueta_cuantas);
-    var campo2 = MODO === 'antes' ? campoNumero(T.etiqueta_hasta) : null;
-    var formula = MODO === 'dos_cuentas' ? el('span', 'tr-formula', '') : null;
-    if (MODO === 'antes') {
-      campos.appendChild(el('span', 'tr-campo-rotulo', escapar(T.etiqueta_antes))); campos.appendChild(campo1);
-      campos.appendChild(el('span', 'tr-campo-rotulo', escapar(T.etiqueta_hasta))); campos.appendChild(campo2);
-    } else if (MODO === 'dos_cuentas') {
-      campos.appendChild(el('span', 'tr-campo-rotulo', escapar(T.etiqueta_contando) + ': ' + escapar(T.msg_toca)));
-      campos.appendChild(el('span', 'tr-campo-rotulo', escapar(T.etiqueta_cuenta_resta))); campos.appendChild(formula); campos.appendChild(campo1);
-    } else {
-      campos.appendChild(el('span', 'tr-campo-rotulo', escapar(campo1.getAttribute('aria-label')))); campos.appendChild(campo1);
-    }
-    var boton = s321Boton('s321-btn s321-btn-principal s321-clickable', escapar(T.boton_comprobar), function () { comprobar(); });
-    campos.appendChild(boton);
-    zC.appendChild(tarjeta); zC.appendChild(campos);
-    campo1.addEventListener('keydown', function (e) { if (e.key === 'Enter') { if (campo2) campo2.focus(); else comprobar(); } });
-    if (campo2) campo2.addEventListener('keydown', function (e) { if (e.key === 'Enter') comprobar(); });
+    zS.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_sello) + '</span>';
+    var sello = s321Boton('s321-btn s321-btn-principal s321-clickable co-sello-btn', T.boton_sello, function () { sellar(); });
+    zS.appendChild(sello);
 
      
-    zG.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_registro) + '</span>' +
-      '<table class="s321-tabla sv-tabla"><thead><tr><th>' + escapar(COL[0]) + '</th><th>' + escapar(COL[1]) + '</th><th class="s321-num">' + escapar(COL[2]) + '</th><th class="s321-num">' + escapar(COL[3]) + '</th></tr></thead><tbody>' +
-      CASOS.map(function () { return '<tr class="s321-vacia"><td>—</td><td>—</td><td class="s321-num">—</td><td class="s321-num">—</td></tr>'; }).join('') + '</tbody></table>';
-    var tabla = zG.querySelector('table');
-    function anotar(i, celdas) {
-      var filas = tabla.tBodies[0].rows, f = filas[i];
-      f.className = 's321-viva';
-      f.innerHTML = '<td>' + escapar(celdas[0]) + '</td><td>' + escapar(celdas[1]) + '</td><td class="s321-num">' + escapar(celdas[2]) + '</td><td class="s321-num">' + escapar(celdas[3]) + '</td>';
-      for (var q = 0; q < filas.length; q++) if (q !== i && filas[q].className === 's321-viva') filas[q].className = '';
-    }
+    zR.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_registro) + '</span>' +
+      '<table class="s321-tabla sv-tabla"><thead><tr><th class="s321-num">' + escapar(T.columna_fila) + '</th><th>' + escapar(T.columna_dice) + '</th><th>' + escapar(T.columna_debia) + '</th></tr></thead><tbody>' +
+      ERRORES.map(function () { return '<tr class="s321-vacia"><td class="s321-num">—</td><td>—</td><td>—</td></tr>'; }).join('') + '</tbody></table>';
+    var tabla = zR.querySelector('table');
 
-    function mostrarCaso() {
-      var c = CASOS[st.i];
-      apagarTodo();
-      s321Cambiar(tarjeta, '<p class="tr-texto">' + escapar(c.texto) + '</p>');
-      if (formula) s321Cambiar(formula, escapar(c.a + ' − ' + c.de + ' + 1 ='));
-      campo1.value = ''; campo1.disabled = false; if (campo2) { campo2.value = ''; campo2.disabled = false; }
-      boton.disabled = false; if (MODO !== 'dos_cuentas') campo1.focus();
+    function nombre(r) { return T.etiqueta_fila + ' ' + r.n; }
+    function elegir(r) {
+      var b = filas[String(r.n)];
+      if (b.classList.contains('co-sellada')) return;
+      if (st.elegida && st.elegida.n === r.n) { st.elegida = null; b.setAttribute('aria-pressed', 'false'); return; }
+      if (st.elegida) filas[String(st.elegida.n)].setAttribute('aria-pressed', 'false');
+      st.elegida = r; b.setAttribute('aria-pressed', 'true');
+      s321Burbuja(pantalla, sust(T.msg_fila_elegida, { fila: nombre(r) }), 'aclaracion');
     }
-    function comprobar() {
-      if (st.ocupado) return;
-      var c = CASOS[st.i], r = respuestaDe(c), d1 = numeroDe(campo1), d2 = campo2 ? numeroDe(campo2) : null;
-      if (isNaN(d1) || (campo2 && isNaN(d2))) { s321Fallo(isNaN(d1) ? campo1 : campo2); s321Burbuja(pantalla, T.msg_vacio, 'error'); return; }
-      if (MODO === 'dos_cuentas' && !cuantasTocadas()) { s321Burbuja(pantalla, T.msg_toca, 'aclaracion'); return; }
-      st.ocupado = true; campo1.disabled = true; if (campo2) campo2.disabled = true; boton.disabled = true;
-      var tramo = tramoDe(c), pasos = [], k;
-      if (MODO === 'antes') {
-        for (k = 1; k < c.k; k++) pasos.push({ k: k, cuenta: k });
-        pasos.push({ pausa: true });
-        pasos.push({ k: c.k, cuenta: c.k });
+    function sellar() {
+      if (!st.elegida) { s321Burbuja(pantalla, T.msg_elige, 'aclaracion'); return; }
+      var r = st.elegida, b = filas[String(r.n)];
+      var e = ERRORES.filter(function (x) { return String(x.n) === String(r.n); })[0];
+      if (!e) { s321Fallo(b); s321Burbuja(pantalla, sust(T.msg_cuadra, { fila: nombre(r) }), 'error'); return; }
+      st.elegida = null; b.setAttribute('aria-pressed', 'false'); b.classList.add('co-sellada'); b.disabled = true;
+      var marca = el('span', 'co-sello-marca', escapar(T.texto_sello)); b.appendChild(marca); s321Entrar(marca);
+      var f = tabla.tBodies[0].rows[st.selladas]; f.className = 's321-viva';
+      f.innerHTML = '<td class="s321-num">' + escapar(e.n) + '</td><td>' + escapar(e.dice) + '</td><td>' + escapar(e.debia) + '</td>';
+      for (var k = 0; k < st.selladas; k++) tabla.tBodies[0].rows[k].className = '';
+      st.selladas++;
+      var msg = sust(T.msg_sellada, { fila: nombre(r), dice: e.dice, debia: e.debia, pista: e.pista || '' });
+      if (st.selladas === ERRORES.length) {
+        sello.disabled = true;
+        s321Completar(pantalla, T.msg_completar, tabla);
+        pantalla.dispatchEvent(new CustomEvent('s321:escena', { bubbles: true, detail: { escena: 'cotejo', hecho: true, selladas: st.selladas } }));
       } else {
-        for (k = tramo[0]; k <= tramo[1]; k++) pasos.push({ k: k, cuenta: k - tramo[0] + 1, fin: MODO === 'hasta_cual' && k === respuestaDe(c).lugar });
-      }
-      if (MODO === 'dos_cuentas') { puestos.forEach(function (p) { p.classList.toggle('tr-tocada', false); }); s321Cambiar(outCuenta, '0'); }
-      var j = 0;
-      function paso() {
-        if (j < pasos.length) {
-          var p = pasos[j++];
-          if (!p.pausa) { puestos[p.k - 1].classList.add('tr-viva'); if (p.fin) puestos[p.k - 1].classList.add('tr-fin'); s321Cambiar(outCuenta, String(p.cuenta)); }
-          s321Reloj(pantalla, paso, p.pausa ? 700 : 360); return;
-        }
-        terminar(c, r, d1, d2);
-      }
-      s321Reloj(pantalla, paso, 300);
-    }
-    function terminar(c, r, d1, d2) {
-      var dicho, riel, acierto, celdas;
-      if (MODO === 'antes') {
-        dicho = d1 + ' · ' + d2; riel = r.antes + ' · ' + r.hasta; acierto = d1 === r.antes && d2 === r.hasta;
-        celdas = [nombre(c.k), ordinal(c.k), dicho, riel];
-      } else if (MODO === 'dos_cuentas') {
-        var tocadas = cuantasTocadas(); dicho = tocadas + ' · ' + d1; riel = String(r.cuantas); acierto = tocadas === r.cuantas && d1 === r.cuantas;
-        celdas = [ordinal(c.de), ordinal(c.a), String(tocadas), String(d1)];
-      } else if (MODO === 'hasta_cual') {
-        dicho = ordinal(d1); riel = ordinal(r.lugar); acierto = d1 === r.lugar;
-        celdas = [c.pide === 'desde' ? ordinal(c.hasta) : ordinal(c.desde), String(c.cuantas), dicho, riel];
-      } else {
-        dicho = String(d1); riel = String(r.cuantas); acierto = d1 === r.cuantas;
-        celdas = [ordinal(c.de), ordinal(c.a), dicho, riel];
-      }
-      anotar(st.i, celdas);
-      var msg = sust(acierto ? T.msg_bien : T.msg_mal, { dicho: dicho, riel: riel, pista: c.pista || '' });
-      st.i++;
-      if (st.i < CASOS.length) {
-        s321Burbuja(pantalla, msg, acierto ? 'acierto' : 'error');
-        s321Reloj(pantalla, function () { st.ocupado = false; mostrarCaso(); }, 2200);
-      } else {
-        s321Completar(pantalla, (acierto ? msg + ' ' : '') + T.msg_completar, zR);
-        pantalla.dispatchEvent(new CustomEvent('s321:escena', { bubbles: true, detail: { escena: 'tramo-del-riel', hecho: true, casos: CASOS.length } }));
+        s321Burbuja(pantalla, msg, 'acierto');
       }
     }
-    mostrarCaso();
   };
 
   escena.ayudantes = { el: el, sust: sust };
-  S321_ESCENAS['tramo-del-riel'] = escena;
+  S321_ESCENAS['cotejo'] = escena;
 })();
 
  
 s321Montadores['p2'] = function (pantalla, lote) {
-  s321Registrar('p2', "dos_cuentas_para_lo_mismo");
-  S321_ESCENAS['tramo-del-riel'](pantalla, lote, {"id": "p2", "casa": "00014", "paso": 2, "total": 5, "nombre": "dos_cuentas_para_lo_mismo", "pieza": "tramo-del-riel", "disposicion": "E", "zonas": {"experimento": "riel", "leyenda": {"casa": "leyenda", "texto": "La resta deja fuera a la primera del tramo: por eso se suma una más.", "objeto": "camisa"}, "control": "caso", "evidencia": "registro"}, "titulo": "dos cuentas para lo mismo", "instruccion": "Escribe cuántas hay contando y con la resta y una más, y comprueba.", "ayuda": ["La tarjeta dice de cuál camisa a cuál va el tramo, con las dos puntas", "En un campo va lo que cuentas camisa por camisa; en el otro, la resta de los lugares y una más", "Pulsa Comprobar: el riel enciende el tramo, lo cuenta y pone las dos cifras juntas"], "datos": {"objeto": "camisa", "n": 9, "nombres": ["Dariel", "Luisa", "Kendry", "Marielys", "Jonathan", "Yeimi", "Brayan", "Sofía", "Enmanuel"], "modo": "dos_cuentas", "columnas": ["de", "a", "contando", "con la cuenta"], "rotulo_riel": "El riel del jueves", "rotulo_caso": "El tramo", "rotulo_registro": "Las dos cuentas", "rotulo_ventana": "ventana", "rotulo_puerta": "puerta", "plantilla_orden": "{{n}}.ª", "etiqueta_cuenta": "encendidas", "etiqueta_contando": "contando", "etiqueta_resta": "con la cuenta", "boton_comprobar": "Comprobar", "msg_vacio": "Escribe las dos cuentas antes de comprobar.", "msg_bien": "Dijiste <b>{{dicho}}</b> y el riel cuenta <b>{{riel}}</b>: lo mismo.", "msg_mal": "Dijiste <b>{{dicho}}</b> y el riel cuenta <b>{{riel}}</b>. {{pista}}", "msg_completar": "Los tres tramos dan lo mismo contando y con la cuenta.", "casos": [{"texto": "De la 3.ª a la 9.ª.", "de": 3, "a": 9, "pista": "Contando, la 3.ª también entra; en la resta, súmala con una más.", "respuesta": {"cuantas": 7}}, {"texto": "Otro tramo: de la 5.ª a la 9.ª.", "de": 5, "a": 9, "pista": "Cuenta desde la 5.ª, contándola, hasta la 9.ª.", "respuesta": {"cuantas": 5}}, {"texto": "Otro tramo: de la 1.ª a la 6.ª.", "de": 1, "a": 6, "pista": "Seis menos uno se queda corta: la 1.ª también va.", "respuesta": {"cuantas": 6}}]}, "limites": {"n": 9, "casos": 4, "renglones": 4}, "emite": ["terminó"], "escucha": []});
+  s321Registrar('p2', "el_cotejo_de_la_tarde");
+  S321_ESCENAS['cotejo'](pantalla, lote, {"id": "p2", "casa": "00014", "paso": 2, "total": 5, "nombre": "el_cotejo_de_la_tarde", "pieza": "cotejo", "disposicion": "E", "zonas": {"experimento": "cotejo", "leyenda": "voz", "control": "sello", "evidencia": "registro"}, "titulo": "el cotejo de la tarde", "instruccion": "Coteja la lista con la página y sella los montones que no cuadran.", "ayuda": ["A la izquierda está la lista del mediodía; a la derecha, la página con los mismos montones ahora", "Toca un montón de la página que no diga lo mismo que la lista y pulsa No cuadra", "El registro anota qué dice ahora y qué decía al mediodía"], "datos": {"objeto": "cuaderno", "rotulo_cotejo": "La lista y la página", "rotulo_lista": "La lista del mediodía", "rotulo_pagina": "La página de ahora", "rotulo_sello": "El sello", "boton_sello": "No cuadra", "texto_sello": "no cuadra", "rotulo_registro": "Lo que no cuadra", "columna_fila": "montón", "columna_dice": "dice", "columna_debia": "decía", "etiqueta_fila": "Montón", "texto_cero": "0", "texto_blanco": "en blanco", "voz": {"quien": "Kenia", "texto": "Yo vendí uno y recibí uno: búscalos."}, "lista": [{"n": 1, "quien": "Montón 1", "objetos": 8}, {"n": 2, "quien": "Montón 2", "objetos": 7}, {"n": 3, "quien": "Montón 3", "objetos": 6}, {"n": 4, "quien": "Montón 4", "objetos": 8}, {"n": 5, "quien": "Montón 5", "objetos": 5}, {"n": 6, "quien": "Montón 6", "objetos": 8}], "pagina": [{"n": 1, "objetos": 8}, {"n": 2, "objetos": 7}, {"n": 3, "objetos": 5}, {"n": 4, "objetos": 8}, {"n": 5, "objetos": 6}, {"n": 6, "objetos": 8}], "errores": [{"n": 3, "dice": "5", "debia": "6", "pista": "El 3 tenía 6 al mediodía y ahora tiene 5: de ahí salió uno."}, {"n": 5, "dice": "6", "debia": "5", "pista": "El 5 tenía 5 al mediodía y ahora tiene 6: ahí llegó uno."}], "msg_elige": "Toca un montón de la página y después el sello.", "msg_fila_elegida": "{{fila}}: si no cuadra con la lista, pulsa No cuadra.", "msg_cuadra": "{{fila}} sí cuadra con la lista: busca otro.", "msg_sellada": "{{pista}}", "msg_completar": "Los dos montones que no cuadraban ya tienen su sello."}, "limites": {"objetos_por_fila": 8}, "emite": ["terminó"], "escucha": []});
   if (window.S321 && S321.aparatosDeCasa) S321.aparatosDeCasa(pantalla);
 };
 </script>
@@ -7385,8 +7296,8 @@ window.S321_ESCENAS = window.S321_ESCENAS || {};
 
  
 s321Montadores['p3'] = function (pantalla, lote) {
-  s321Registrar('p3', "la_regla_del_riel");
-  S321_ESCENAS['regla-que-se-completa'](pantalla, lote, {"id": "p3", "casa": "00014", "paso": 3, "total": 5, "nombre": "la_regla_del_riel", "pieza": "regla-que-se-completa", "disposicion": "G", "zonas": {"experimento": ["regla"], "voz": ["voz"], "control": ["fichas"], "evidencia": ["pruebas"]}, "titulo": "la regla del riel", "instruccion": "Completa la regla con las fichas para que cuadre con las tres pruebas.", "ayuda": ["Toca una ficha y después el hueco donde va; si no va, el hueco tiembla", "Lee las pruebas: la regla tiene que valer para las tres a la vez", "Con los tres huecos llenos, la regla se vuelve regla de oro: cópiala en la zona 3"], "datos": {"rotulo_regla": "La regla del riel", "rotulo_fichas": "Las fichas", "rotulo_pruebas": "Las pruebas de Yarisa", "rotulo_regla_de_oro": "La regla de oro", "texto_hueco": "___", "columnas": ["camisa", "lugar", "lo que se sabe"], "voz": {"quien": "Yarisa", "texto": "Con esta regla lleno la libreta sin contar camisa por camisa."}, "oraciones": [{"inicio": "El número de la última camisa dice", "clave": "cuantas", "fin": "hay en el riel", "pista": "La primera prueba: la última es la 6.ª y en el riel hay 6."}, {"inicio": "Antes de una camisa hay", "clave": "una_menos", "fin": "que su número", "pista": "La segunda prueba: la de Jonathan es la 5.ª y antes hay 4."}, {"inicio": "Los dos lugares de una camisa suman", "clave": "una_mas", "fin": "que las camisas del riel", "pista": "La tercera prueba: 4 + 3 = 7 en un riel de 6."}], "fichas": [{"clave": "cuantas", "t": "cuántas"}, {"clave": "cual", "t": "cuál"}, {"clave": "una_menos", "t": "una menos"}, {"clave": "una_mas", "t": "una más"}, {"clave": "las_mismas", "t": "las mismas"}, {"clave": "el_doble", "t": "el doble"}, {"clave": "la_mitad", "t": "la mitad"}], "pruebas": [{"a": "la última", "b": "6.ª", "c": "hay 6"}, {"a": "la de Jonathan", "b": "5.ª", "c": "antes hay 4"}, {"a": "la de Marielys", "b": "4.ª y 3.ª", "c": "riel de 6: 4 + 3 = 7"}], "msg_elige": "Toca una ficha y después el hueco donde va.", "msg_mal": "Esa ficha va en otro sitio. {{pista}}", "msg_bien": "Queda «{{ficha}}». Sigue con otro hueco.", "msg_completar": "La regla está completa y cuadra con las tres pruebas."}, "limites": {"oraciones": 3, "fichas": 8, "pruebas": 4}, "emite": ["terminó"], "escucha": []});
+  s321Registrar('p3', "la_regla_del_estante");
+  S321_ESCENAS['regla-que-se-completa'](pantalla, lote, {"id": "p3", "casa": "00014", "paso": 3, "total": 5, "nombre": "la_regla_del_estante", "pieza": "regla-que-se-completa", "disposicion": "G", "zonas": {"experimento": ["regla"], "voz": ["voz"], "control": ["fichas"], "evidencia": ["pruebas"]}, "titulo": "la regla del estante", "instruccion": "Completa la regla con las fichas para que valga en las seis pruebas.", "ayuda": ["Toca una ficha y después el hueco donde va; si no va, el hueco tiembla", "La regla tiene que valer para las seis pruebas a la vez", "Con los dos huecos llenos, la regla se vuelve regla de oro"], "datos": {"rotulo_regla": "La regla del estante", "rotulo_fichas": "Las fichas", "rotulo_pruebas": "Las pruebas de la tarde", "rotulo_regla_de_oro": "La regla de oro", "texto_hueco": "___", "voz": {"quien": "Doña Carmen", "texto": "Que valga para las seis pruebas, y la cuelgo."}, "columnas": ["qué pasó", "había", "hay"], "oraciones": [{"inicio": "Si solo los acomodan, la cantidad", "clave": "igual", "fin": "", "pista": "En las pruebas donde solo los acomodaron, ¿cuánto había y cuánto hay?"}, {"inicio": "Si venden o traen alguno, la cantidad", "clave": "cambia", "fin": "", "pista": "En las pruebas con una venta o una llegada, ¿en cuánto cambió?"}], "fichas": [{"clave": "igual", "t": "sigue igual"}, {"clave": "cambia", "t": "cambia por lo vendido y lo traído"}, {"clave": "otra_vez", "t": "se cuenta otra vez"}, {"clave": "grande", "t": "se ve más grande"}, {"clave": "sube", "t": "sube siempre"}, {"clave": "huella", "t": "es la huella"}], "pruebas": [{"a": "los apilan", "b": "8", "c": "8"}, {"a": "en rueda", "b": "8", "c": "8"}, {"a": "los riegan", "b": "8", "c": "8"}, {"a": "vende uno", "b": "8", "c": "7"}, {"a": "llega uno", "b": "7", "c": "8"}, {"a": "vende y riega", "b": "9", "c": "8"}], "msg_elige": "Toca una ficha y después el hueco donde va.", "msg_mal": "Esa ficha no va ahí. {{pista}}", "msg_bien": "Queda «{{ficha}}». Sigue con el otro hueco.", "msg_completar": "La regla está completa y vale para las seis pruebas."}, "limites": {"oraciones": 3, "fichas": 8}, "emite": ["terminó"], "escucha": []});
   if (window.S321 && S321.aparatosDeCasa) S321.aparatosDeCasa(pantalla);
 };
 </script>
@@ -7402,189 +7313,132 @@ window.S321_ESCENAS = window.S321_ESCENAS || {};
     if (html !== undefined) e.innerHTML = html;
     return e;
   }
+
+  
+
   function sust(plantilla, valores) {
-    return String(plantilla).replace(/\{\{(\w+)\}\}/g, function (m, k) { return (valores[k] != null) ? valores[k] : ''; });
+    return String(plantilla).replace(/\{\{(\w+)\}\}/g, function (m, k) {
+      return (valores[k] != null) ? valores[k] : '';
+    });
   }
-  function escapar(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
-  function ordinal(k) { return k + '.º'; }
+
    
-  function campoNumero(etiqueta) {
-    var c = document.createElement('input');
-    c.type = 'text'; c.inputMode = 'numeric'; c.className = 's321-campo sv-campo'; c.maxLength = 3; c.placeholder = '?';
-    c.autocomplete = 'off'; c.setAttribute('autocorrect', 'off'); c.setAttribute('autocapitalize', 'off'); c.spellcheck = false;
-    c.setAttribute('aria-label', etiqueta);
-    return c;
+  function objetoSvg(objeto, estado, cls) {
+    var d = (window.S321 && S321.objetos && S321.objetos[objeto]) || null;
+    var trazo = d ? d.svg : '';
+    return '<svg class="sv-silla ' + (cls || '') + '" viewBox="0 0 40 40" aria-hidden="true">' +
+           '<g class="dn-obj dn-obj-' + objeto + ' dn-unidad-' + (estado || 'llena') + '">' + trazo + '</g></svg>';
   }
-  function numeroDe(campo) { var m = String(campo.value).match(/\d+/); return m ? parseInt(m[0], 10) : NaN; }
    
-  function cabe(dc, dl, n, lugar) {
-    if ((dc === -1 && dl === -1) || (dc === 0 && dl === -1)) return lugar >= 2;
-    if ((dc === -1 && dl === 0) || (dc === 0 && dl === 1)) return n > lugar;
-    if (dc === 0 && dl === 0) return n >= lugar + 2;
-    return true;
+  function objetoBoton(pctX, pctY, objeto, estado, etiqueta, i) {
+    var a = el('span', 's321-ancla-c');
+    a.style.left = pctX + '%'; a.style.top = pctY + '%';
+    var b = s321Boton('sv-silla-btn s321-clickable s321-prox-quieto', objetoSvg(objeto, estado),
+                       null, { 'aria-label': etiqueta, 'data-i': i });
+    a.appendChild(b);
+    return a;
   }
 
   var escena = function (pantalla, lote, d) {
     var id = pantalla.id;
-    var dt = d.datos || {};
-    var objeto = dt.objeto || 'ficha';
-    var LIBRES = (dt.pruebas_libres != null) ? dt.pruebas_libres : 2;
-    var MUDANZAS = dt.mudanzas || [], VUELTAS = dt.vueltas || [];
-    var T = {
-      rotulo_fila: dt.rotulo_fila || 'La fila', rotulo_mudanzas: dt.rotulo_mudanzas || 'Las mudanzas',
-      rotulo_pregunta: dt.rotulo_pregunta || 'La fila pregunta', rotulo_registro: dt.rotulo_registro || 'El registro',
-      etiqueta_hay: dt.etiqueta_hay || 'hay', etiqueta_lugar: dt.etiqueta_lugar || 'el marcado va de',
-      boton_comprobar: dt.boton_comprobar || 'Comprobar',
-      etiqueta_cuantos: dt.etiqueta_cuantos || 'cuántos habrá', etiqueta_lugar_pregunta: dt.etiqueta_lugar_pregunta || 'en qué lugar quedará el marcado',
-      columna_mudanza: dt.columna_mudanza || 'mudanza', columna_cuantos: dt.columna_cuantos || 'cuántos', columna_lugar: dt.columna_lugar || 'lugar', columna_predije: dt.columna_predije || 'predije',
-      msg_pregunta: dt.msg_pregunta || 'Hay {{n}} y el marcado va de {{lugar}}. Si {{mudanza}}, ¿cuántos habrá y en qué lugar quedará?',
-      msg_prediccion_invalida: dt.msg_prediccion_invalida || 'Escribe los dos números: cuántos habrá y en qué lugar quedará el marcado.',
-      msg_mudanza: dt.msg_mudanza || '{{mudanza}}: hay {{quedan}} y el marcado va de {{lugar}}.',
-      msg_dos_pruebas: dt.msg_dos_pruebas || 'Ahora la fila te pregunta antes de moverse.',
-      msg_compara: dt.msg_compara || 'Dijiste <b>{{dicho}}</b> · hay <b>{{quedan}}</b> y el marcado va de <b>{{lugar}}</b>.',
-      msg_cierre: dt.msg_cierre || 'Cuántos cambió solo cuando entró o salió alguien; el lugar, solo con lo que pasó delante del marcado.'
-    };
-    var st = s321Estado[id];
-    st.n = (dt.n_inicial != null) ? dt.n_inicial : 4; st.lugar = dt.marcado || 1; st.pruebas = 0; st.fase = 'libre'; st.v = 0;
-    var zF = lote.querySelector('#' + id + 'Fila'), zM = lote.querySelector('#' + id + 'Mudanzas'), zQ = lote.querySelector('#' + id + 'Pregunta'), zR = lote.querySelector('#' + id + 'Registro');
+    var dt = d.datos;
+    var st = s321Estado[id]; st.pruebas = [];
+    var objeto = dt.objeto || 'silla';
+    var N = dt.n || 13, COLS = 15, FILAS = 6, W = COLS * 40, H = FILAS * 40, PUERTA = W - 120;    
+    st.dentro = N;
+    var zPiso = lote.querySelector('#' + id + 'Piso'), zAnotar = lote.querySelector('#' + id + 'Anotar'), zLib = lote.querySelector('#' + id + 'Libreta');
 
      
-    function htmlPuesto(marcado) {
-      return '<span class="fm-marca">' + (marcado ? '▲' : '') + '</span>' +
-        '<svg class="fm-obj" viewBox="0 0 40 40" aria-hidden="true" focusable="false">' + S321.objetoEn(objeto, marcado ? 'contada' : 'llena', 20, 20, 36) + '</svg>';
-    }
-    function puestoNuevo(marcado) { return el('div', 'fm-puesto' + (marcado ? ' fm-marcado' : ''), htmlPuesto(marcado)); }
-    function htmlPuestos(n, lugar) {
-      var s = '';
-      for (var k = 1; k <= n; k++) s += '<div class="fm-puesto' + (k === lugar ? ' fm-marcado' : '') + '">' + htmlPuesto(k === lugar) + '</div>';
-      return s;
-    }
-    zF.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_fila) + '</span>';
-    var fila = el('div', 'fm-fila', '<div class="fm-frente" aria-hidden="true"></div>');
-    var puestos = el('div', 'fm-puestos', htmlPuestos(st.n, st.lugar));
-    fila.appendChild(puestos); zF.appendChild(fila);
-    var cifras = el('div', 'fm-cifras',
-      '<div class="fm-cifra"><span class="s321-rotulo">' + escapar(T.etiqueta_hay) + '</span><span class="s321-cifra-veredicto" id="' + id + 'Hay">' + st.n + '</span></div>' +
-      '<div class="fm-cifra"><span class="s321-rotulo">' + escapar(T.etiqueta_lugar) + '</span><span class="s321-cifra-veredicto" id="' + id + 'Lugar">' + escapar(ordinal(st.lugar)) + '</span></div>');
-    zF.appendChild(cifras);
-    var cHay = cifras.querySelector('#' + id + 'Hay'), cLugar = cifras.querySelector('#' + id + 'Lugar');
-    function pintarCifras() { s321Cambiar(cHay, String(st.n)); s321Cambiar(cLugar, escapar(ordinal(st.lugar))); }
-    function reponer(n, lugar) { st.n = n; st.lugar = lugar; s321Cambiar(puestos, htmlPuestos(n, lugar)); pintarCifras(); }
-    function lista() { return Array.prototype.slice.call(puestos.querySelectorAll('.fm-puesto')); }
-    function marcadoEl() { return puestos.querySelector('.fm-marcado'); }
+    var mesa = el('div', 's321-piso sv-piso-mesa');
+    mesa.style.cssText = 'width:100%;aspect-ratio:' + W + '/' + H + ';touch-action:none;user-select:none';
+    var pasillo = '<rect x="' + PUERTA + '" y="0" width="' + (W - PUERTA) + '" height="' + H + '" style="fill:var(--su-fondo-hondo)" opacity=".7"/>';
+    mesa.innerHTML = S321.pisoSvg(COLS, FILAS, pasillo + S321.puertaSvg(PUERTA + 6, H, 100), 'sv-piso-svg')
+      .replace('<svg ', '<svg style="position:absolute;inset:0;width:100%;height:100%" ') +
+      '<span class="sv-puerta-txt" style="left:' + ((PUERTA + 60) / W * 100) + '%;bottom:' + (12 / H * 100) + '%">' + (dt.rotulo_pasillo || 'PASILLO') + '</span>' +
+      '<span class="sv-puerta-txt" style="left:' + ((PUERTA + 4) / W * 100) + '%;bottom:' + ((1 - (H / 2 - 56) / H) * 100) + '%">' + (dt.rotulo_puerta || 'PUERTA') + '</span>';
+    
 
-     
-    function mover(dc, dl) {
-      var p = lista(), m = marcadoEl();
-      if (dc === 1 && dl === 1) { puestos.insertBefore(puestoNuevo(false), m); }
-      else if (dc === 1 && dl === 0) { puestos.appendChild(puestoNuevo(false)); }
-      else if (dc === -1 && dl === -1) { s321Salir(p[0], { quitar: true }); }
-      else if (dc === -1 && dl === 0) { s321Salir(p[p.length - 1], { quitar: true }); }
-      else if (dc === 0 && dl === -1) { s321Salir(p[0], { quitar: true }); puestos.appendChild(puestoNuevo(false)); }
-      else if (dc === 0 && dl === 1) { s321Salir(p[p.length - 1], { quitar: true }); puestos.insertBefore(puestoNuevo(false), m); }
-      else if (dc === 0 && dl === 0 && p.length >= 2) { s321Salir(p[p.length - 2], { quitar: true }); puestos.appendChild(puestoNuevo(false)); }
-      st.n += dc; st.lugar += dl;
-      pintarCifras();
-    }
-
-     
-    zM.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_mudanzas) + '</span>';
-    var filaM = el('div', 'fm-mudanzas');
-    var botones = MUDANZAS.map(function (mud) {
-      var b = s321Boton('s321-btn s321-clickable', escapar(mud.t), function () { mudanza(mud, null); }, { 'aria-label': mud.t });
-      filaM.appendChild(b); return b;
+    var r = s321Dispersar(N, { ancho: PUERTA - 40, alto: H, tam: 46, semilla: dt.semilla != null ? dt.semilla : 909 });
+    r.puntos.forEach(function (q, i) {
+      var etiqueta = sust(dt.etiqueta_objeto || 'Objeto {{n}}: arrástralo', { n: i + 1 });
+      mesa.appendChild(objetoBoton(q.x / W * 100, q.y / H * 100, objeto, 'llena', etiqueta, i));
     });
-    zM.appendChild(filaM);
-    function apagarLasQueNoCaben() { MUDANZAS.forEach(function (mud, i) { botones[i].disabled = !cabe(mud.d_cuantos, mud.d_lugar, st.n, st.lugar); }); }
-    apagarLasQueNoCaben();
+    zPiso.appendChild(el('span', 's321-rotulo', dt.rotulo_piso || 'El piso y la puerta'));
+    zPiso.appendChild(mesa);
 
      
-    zQ.innerHTML = '<span class="s321-etiqueta">' + escapar(T.rotulo_pregunta) + '</span>';
-    var pregunta = el('p', '', '');
-    var campos = el('div', 'fm-campos');
-    var campoC = campoNumero(T.etiqueta_cuantos), campoL = campoNumero(T.etiqueta_lugar_pregunta);
-    campos.appendChild(el('span', 'fm-campo-rotulo', escapar(T.etiqueta_cuantos))); campos.appendChild(campoC);
-    campos.appendChild(el('span', 'fm-campo-rotulo', escapar(T.etiqueta_lugar_pregunta))); campos.appendChild(campoL);
-    var comprobar = s321Boton('s321-btn s321-clickable', T.boton_comprobar, function () { comprobarVuelta(); });
-    campos.appendChild(comprobar);
-    zQ.appendChild(pregunta); zQ.appendChild(campos);
-    campoC.addEventListener('keydown', function (e) { if (e.key === 'Enter') campoL.focus(); });
-    campoL.addEventListener('keydown', function (e) { if (e.key === 'Enter') comprobarVuelta(); });
+    var contador = el('p', 's321-marcador', sust(dt.plantilla_contador || 'adentro: {{dentro}} · fuera: {{fuera}}',
+      { dentro: '<b id="' + id + 'Cuenta">' + N + '</b>', fuera: '<b id="' + id + 'Fuera">0</b>' }));
+    zAnotar.appendChild(el('span', 's321-rotulo', dt.rotulo_anotar || 'La cuenta ahora'));
+    zAnotar.appendChild(contador);
+    var cuentaEl = contador.querySelector('#' + id + 'Cuenta'), fueraEl = contador.querySelector('#' + id + 'Fuera');
 
      
-    var RENGLONES = Math.max(1, LIBRES + VUELTAS.length);
-    zR.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_registro) + '</span>' +
-      '<table class="s321-tabla sv-tabla"><thead><tr><th>' + escapar(T.columna_mudanza) + '</th><th class="s321-num">' + escapar(T.columna_cuantos) + '</th><th class="s321-num">' + escapar(T.columna_lugar) + '</th><th class="s321-num">' + escapar(T.columna_predije) + '</th></tr></thead><tbody>' +
-      Array.apply(null, Array(RENGLONES)).map(function () { return '<tr class="s321-vacia"><td>—</td><td class="s321-num">—</td><td class="s321-num">—</td><td class="s321-num">—</td></tr>'; }).join('') + '</tbody></table>';
-    var tabla = zR.querySelector('table');
-
-    function anotar(texto, quedan, lugar, dicho) {
-      var filas = tabla.tBodies[0].rows;
-      var i = st.pruebas < filas.length ? st.pruebas : filas.length - 1;
-      if (st.pruebas >= filas.length) { for (var j = 1; j < filas.length; j++) filas[j - 1].innerHTML = filas[j].innerHTML; }
-      var f = filas[i]; f.className = 's321-viva';
-      f.innerHTML = '<td>' + escapar(texto) + '</td><td class="s321-num">' + quedan + '</td><td class="s321-num">' + escapar(ordinal(lugar)) + '</td><td class="s321-num">' + (dicho == null ? '—' : escapar(dicho)) + '</td>';
-      for (var q = 0; q < filas.length; q++) if (q !== i && filas[q].className === 's321-viva') filas[q].className = '';
-      st.pruebas++;
+    var vivo = null;
+    mesa.addEventListener('pointerdown', function (e) {
+      var b = e.target.closest('.sv-silla-btn'); if (!b) return;
+      vivo = { btn: b, ancla: b.parentElement, movio: false };
+      b.classList.add('sv-arrastrando'); b.setPointerCapture(e.pointerId);
+      e.preventDefault();
+    });
+    mesa.addEventListener('pointermove', function (e) {
+      if (!vivo) return;
+      var rm = mesa.getBoundingClientRect();
+      var px = Math.max(3, Math.min(97, (e.clientX - rm.left) / rm.width * 100));
+      var py = Math.max(8, Math.min(92, (e.clientY - rm.top) / rm.height * 100));
+      vivo.ancla.style.left = px + '%'; vivo.ancla.style.top = py + '%'; vivo.movio = true;
+    });
+    function soltar() {
+      if (!vivo) return;
+      var b = vivo.btn; b.classList.remove('sv-arrastrando');
+      var px = parseFloat(vivo.ancla.style.left);
+      var fuera = px > PUERTA / W * 100;
+      b.classList.toggle('sv-contada', fuera);
+      b.querySelector('.dn-obj').setAttribute('class', 'dn-obj dn-obj-' + objeto + ' dn-unidad-' + (fuera ? 'contada' : 'llena'));
+      recontar();
+      if (!vivo.movio) s321Burbuja(pantalla, dt.msg_arrastrar || 'Arrástralo: por el piso, o por la puerta hacia el pasillo.', 'aclaracion');
+      vivo = null;
+    }
+    mesa.addEventListener('pointerup', soltar);
+    mesa.addEventListener('pointercancel', soltar);
+    function recontar() {
+      var dentro = 0;
+      mesa.querySelectorAll('.s321-ancla-c').forEach(function (a) { if (parseFloat(a.style.left) <= PUERTA / W * 100) dentro++; });
+      st.dentro = dentro; cuentaEl.textContent = dentro; fueraEl.textContent = N - dentro;
     }
 
-    function mudanza(mud, dicho) {
-      if (!cabe(mud.d_cuantos, mud.d_lugar, st.n, st.lugar)) return null;
-      mover(mud.d_cuantos, mud.d_lugar);
-      apagarLasQueNoCaben();
-      anotar(mud.t, st.n, st.lugar, dicho);
-      if (dicho == null) {
-        var msg = sust(T.msg_mudanza, { mudanza: mud.t, quedan: st.n, lugar: ordinal(st.lugar) });
-        if (st.fase === 'libre' && st.pruebas >= LIBRES && VUELTAS.length) {
-          st.fase = 'vuelta';
-          s321Burbuja(pantalla, T.msg_dos_pruebas, 'aclaracion');
-          s321Reloj(pantalla, preguntar, 1400);
-        } else if (st.fase === 'libre' && !VUELTAS.length && st.pruebas >= LIBRES) {
-          s321Completar(pantalla, msg, cifras);
-        } else {
-          s321Burbuja(pantalla, msg, 'aclaracion');
-        }
+     
+    zLib.innerHTML = '<span class="s321-rotulo">' + (dt.rotulo_libreta || 'La libreta de pruebas') + '</span>' +
+      '<table class="s321-tabla sv-tabla" style="width:auto;min-width:calc(360px * var(--s321-escala))"><thead><tr><th>' + (dt.columna_prueba || 'prueba') + '</th><th class="s321-num">' +
+      (dt.columna_dentro || 'adentro') + '</th><th class="s321-num">' + (dt.columna_fuera || 'fuera') + '</th></tr></thead><tbody>' +
+      [1, 2, 3].map(function (k) { return '<tr class="s321-vacia"><td>' + k + '</td><td class="s321-num">—</td><td class="s321-num">—</td></tr>'; }).join('') + '</tbody></table>';
+    var tabla = zLib.querySelector('table');
+    var anotar = s321Boton('s321-btn s321-btn-principal s321-clickable', dt.boton_anotar || 'Anotar prueba', function () {
+      if (st.pruebas.length >= 3) st.pruebas.shift();
+      st.pruebas.push(st.dentro);
+      for (var k = 0; k < 3; k++) {
+        var f = tabla.rows[1 + k];
+        if (k < st.pruebas.length) { f.classList.remove('s321-vacia'); f.cells[1].textContent = st.pruebas[k]; f.cells[2].textContent = N - st.pruebas[k]; }
       }
-      return { quedan: st.n, lugar: st.lugar };
-    }
-    function mudanzaDe(clave) { return MUDANZAS.filter(function (m) { return m.clave === clave; })[0]; }
-    function preguntar() {
-      var v = VUELTAS[st.v], mud = mudanzaDe(v.mud) || MUDANZAS[0];
-      if (v.n != null || v.marcado != null) reponer(v.n != null ? v.n : st.n, v.marcado != null ? v.marcado : st.lugar);
-      botones.forEach(function (b) { b.disabled = true; });
-      pregunta.innerHTML = '<b>' + escapar(v.frase) + '.</b> ' + sust(T.msg_pregunta, { n: st.n, lugar: ordinal(st.lugar), mudanza: mud.t });
-      s321Salir(zM); s321Entrar(zQ);    
-      campoC.value = ''; campoL.value = ''; campoC.disabled = false; campoL.disabled = false; comprobar.disabled = false; campoC.focus();
-    }
-    function comprobarVuelta() {
-      var v = VUELTAS[st.v], mud = mudanzaDe(v.mud) || MUDANZAS[0];
-      var dichoC = numeroDe(campoC), dichoL = numeroDe(campoL);
-      if (isNaN(dichoC) || isNaN(dichoL)) { s321Fallo(isNaN(dichoC) ? campoC : campoL); s321Burbuja(pantalla, T.msg_prediccion_invalida, 'error'); return; }
-      campoC.disabled = true; campoL.disabled = true; comprobar.disabled = true;
-      var dicho = dichoC + ' · ' + ordinal(dichoL);
-      var r = mudanza(mud, dicho);
-      var acierto = r && r.quedan === dichoC && r.lugar === dichoL;
-      var msg = sust(T.msg_compara, { dicho: dicho, quedan: r ? r.quedan : '', lugar: r ? ordinal(r.lugar) : '' });
-      st.v++;
-      if (st.v < VUELTAS.length) {
-        s321Burbuja(pantalla, msg, acierto ? 'acierto' : 'error');
-        s321Reloj(pantalla, preguntar, 2200);
-      } else {
-        s321Completar(pantalla, msg, cifras);
-        pregunta.innerHTML = escapar(T.msg_cierre);
-        pantalla.dispatchEvent(new CustomEvent('s321:escena', { bubbles: true, detail: { escena: 'fila-que-se-mueve', hecho: true, quedan: st.n, lugar: st.lugar } }));
+      var distintas = st.pruebas.some(function (v) { return v !== st.pruebas[0]; });
+      if (st.pruebas.length === 3 && distintas) {
+        s321Completar(pantalla, dt.msg_completar || 'Moviendo no cambia el número; por la puerta sí. Tres pruebas anotadas.', anotar);
+        pantalla.dispatchEvent(new CustomEvent('s321:escena', { bubbles: true, detail: { escena: 'mesa-de-ensayo', hecho: true, pruebas: st.pruebas.slice() } }));
       }
-    }
+      else if (st.pruebas.length === 3) s321Burbuja(pantalla, dt.msg_iguales || 'Tres pruebas iguales. Saca uno por la puerta y anota otra vez.', 'aclaracion');
+      else s321Burbuja(pantalla, sust(dt.plantilla_anotado || 'Anotado: {{dentro}} adentro. Mueve más y anota otra prueba.', { dentro: st.dentro }), 'aclaracion');
+    });
+    zAnotar.appendChild(anotar);
   };
 
-  escena.ayudantes = { el: el, sust: sust };
-  S321_ESCENAS['fila-que-se-mueve'] = escena;
+  escena.ayudantes = { el: el, objetoSvg: objetoSvg, objetoBoton: objetoBoton };
+  S321_ESCENAS['mesa-de-ensayo'] = escena;
 })();
 
  
 s321Montadores['p4'] = function (pantalla, lote) {
-  s321Registrar('p4', "la_camisa_que_se_descuelga");
-  S321_ESCENAS['fila-que-se-mueve'](pantalla, lote, {"id": "p4", "casa": "00014", "paso": 4, "total": 5, "nombre": "la_camisa_que_se_descuelga", "pieza": "fila-que-se-mueve", "disposicion": "B", "zonas": {"experimento": "fila", "control": ["mudanzas", "pregunta"], "evidencia": "registro", "voz": {"casa": "voz", "quien": "Papo", "texto": "Me llevo una y las demás que se arreglen."}, "leyenda": {"casa": "leyenda", "texto": "Si se va una, las de su derecha corren un gancho.", "objeto": "camisa"}}, "titulo": "la camisa que se descuelga", "instruccion": "Elige qué pasa en el riel y descubre qué cambia: cuántas o el lugar.", "ayuda": ["Pulsa lo que pasa: el riel se mueve y debajo se lee cuántas hay y de qué va Sofía", "Lo que no cabe en el riel de ahora se apaga solo", "Tras una prueba el riel te pregunta antes: escribe los dos números y pulsa Comprobar"], "datos": {"objeto": "camisa", "n_inicial": 9, "marcado": 8, "pruebas_libres": 1, "rotulo_fila": "El riel del jueves", "rotulo_mudanzas": "Lo que pasa", "rotulo_pregunta": "El riel pregunta", "rotulo_registro": "El registro", "etiqueta_hay": "camisas", "etiqueta_lugar": "Sofía va de", "boton_comprobar": "Comprobar", "etiqueta_cuantos": "cuántas habrá", "etiqueta_lugar_pregunta": "Sofía quedará de", "columna_mudanza": "lo que pasa", "columna_cuantos": "cuántas", "columna_lugar": "Sofía", "columna_predije": "predije", "msg_pregunta": "Hay {{n}} y Sofía va de {{lugar}}. Si {{mudanza}}: ¿cuántas, y de qué queda?", "msg_prediccion_invalida": "Escribe los dos números: cuántas habrá y de qué quedará la de Sofía.", "msg_mudanza": "Hecho: {{mudanza}}. Hay {{quedan}} y la de Sofía va de {{lugar}}.", "msg_dos_pruebas": "Una prueba. Ahora el riel te pregunta a ti antes de moverse.", "msg_compara": "Dijiste <b>{{dicho}}</b> · hay <b>{{quedan}}</b>; Sofía, de <b>{{lugar}}</b>.", "msg_cierre": "Cuántas cambia si cuelgan o descuelgan; el lugar, solo con lo de delante.", "mudanzas": [{"clave": "llama_al_que_sigue", "t": "se va una de delante de Sofía", "d_cuantos": -1, "d_lugar": -1}, {"clave": "se_va_la_ultima", "t": "se va la última", "d_cuantos": -1, "d_lugar": 0}, {"clave": "llega_al_final", "t": "cuelgan una al final", "d_cuantos": 1, "d_lugar": 0}, {"clave": "se_cuela_delante", "t": "cuelgan una delante de Sofía", "d_cuantos": 1, "d_lugar": 1}, {"clave": "atras_cambian", "t": "cambian dos de atrás", "d_cuantos": 0, "d_lugar": 0}, {"clave": "delante_al_final", "t": "una de delante pasa al final", "d_cuantos": 0, "d_lugar": -1}], "vueltas": [{"n": 9, "marcado": 8, "mud": "llama_al_que_sigue", "frase": "Otra vez las nueve del jueves, con Sofía de 8.ª"}, {"mud": "llega_al_final", "frase": "Y seguido, con lo que quedó"}]}, "limites": {"n_maximo": 12, "mudanzas": 6, "vueltas": 4, "renglones": 6}, "emite": ["terminó"], "escucha": []});
+  s321Registrar('p4', "la_mesa_de_la_tarde");
+  S321_ESCENAS['mesa-de-ensayo'](pantalla, lote, {"id": "p4", "casa": "00014", "paso": 4, "total": 5, "nombre": "la_mesa_de_la_tarde", "pieza": "mesa-de-ensayo", "disposicion": "D", "zonas": {"experimento": "piso", "control": "anotar", "evidencia": "libreta", "leyenda": "leyenda", "voz": "voz"}, "titulo": "la mesa de la tarde", "instruccion": "Arrastra los cuadernos, una cosa cada vez, y anota cada prueba.", "ayuda": ["Primero solo acomódalos; después saca uno por la puerta; después mete uno; al final, acomoda y saca uno", "Antes de anotar, di qué número espera la regla; el contador dice cuántos hay en el mostrador", "Pulsa Anotar prueba después de cada cosa que hagas"], "datos": {"objeto": "cuaderno", "n": 9, "voz": {"quien": "Doña Carmen", "texto": "Una cosa cada vez, y me dices qué movió el contador."}, "rotulo_piso": "El mostrador y la puerta", "rotulo_libreta": "La libreta de la tarde", "columna_dentro": "en el mostrador", "etiqueta_objeto": "Cuaderno {{n}}: arrástralo", "plantilla_contador": "en el mostrador: {{dentro}} · fuera: {{fuera}}", "plantilla_anotado": "Anotado: {{dentro}} en el mostrador. Haz otra cosa y anota otra prueba.", "msg_arrastrar": "Arrástralo: por el mostrador, o por la puerta hacia la caja.", "msg_completar": "La libreta guarda tus pruebas, cada una con lo que marcó el contador.", "msg_iguales": "Tres pruebas con el mismo número. Saca uno por la puerta y anota otra vez.", "leyenda": "Por la puerta salen y entran cuadernos."}, "limites": {"n": 21}, "emite": ["terminó"], "escucha": []});
   if (window.S321 && S321.aparatosDeCasa) S321.aparatosDeCasa(pantalla);
 };
 </script>
@@ -7603,173 +7457,112 @@ window.S321_ESCENAS = window.S321_ESCENAS || {};
   function sust(plantilla, valores) {
     return String(plantilla).replace(/\{\{(\w+)\}\}/g, function (m, k) { return (valores[k] != null) ? valores[k] : ''; });
   }
-  function escapar(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
-  function campoNumero(etiqueta) {
-    var c = document.createElement('input');
-    c.type = 'text'; c.inputMode = 'numeric'; c.className = 's321-campo sv-campo'; c.maxLength = 2; c.placeholder = '?';
-    c.autocomplete = 'off'; c.setAttribute('autocorrect', 'off'); c.setAttribute('autocapitalize', 'off'); c.spellcheck = false;
-    c.setAttribute('aria-label', etiqueta);
-    return c;
+  function enterEs(campo, fn) {
+    campo.addEventListener('keydown', function (e) { if (e.key === 'Enter') fn(); });
   }
-  function campoTexto(etiqueta) {
-    var c = document.createElement('input');
-    c.type = 'text'; c.className = 's321-campo sv-campo'; c.maxLength = 24; c.placeholder = etiqueta;
-    c.autocomplete = 'off'; c.setAttribute('autocorrect', 'off'); c.spellcheck = false;
-    c.setAttribute('aria-label', etiqueta);
-    return c;
+   
+  function aplicar(cuenta, d) {
+    if (d === 'todos' || d === 'vaciar') return 0;
+    return cuenta + (Number(d) || 0);
   }
-  function numeroDe(campo) { var m = String(campo.value).match(/\d+/); return m ? parseInt(m[0], 10) : NaN; }
 
   var escena = function (pantalla, lote, d) {
     var id = pantalla.id;
-    var dt = d.datos || {};
-    var objeto = dt.objeto || 'ficha', N = parseInt(dt.n, 10) || 0, NOMBRES = dt.nombres || [], RENGLONES = dt.renglones || [];
-    var FIRMA = dt.firma !== false;
-    var T = {
-      rotulo_riel: dt.rotulo_riel || 'El riel', rotulo_libreta: dt.rotulo_libreta || 'La libreta', rotulo_cuadre: dt.rotulo_cuadre || 'Lo escrito',
-      rotulo_ventana: dt.rotulo_ventana || 'ventana', rotulo_puerta: dt.rotulo_puerta || 'puerta', plantilla_orden: dt.plantilla_orden || '{{n}}.ª',
-      etiqueta_campo: dt.etiqueta_campo || 'el número', boton_anotar: dt.boton_anotar || 'Anotar',
-      etiqueta_firma: dt.etiqueta_firma || 'Tu nombre', boton_firmar: dt.boton_firmar || 'Firmar', texto_firmado: dt.texto_firmado || 'Firmado:',
-      msg_vacio: dt.msg_vacio || 'Escribe el número del renglón antes de anotar.',
-      msg_mal: dt.msg_mal || 'Ese número no cuadra con el riel. {{pista}}',
-      msg_bien: dt.msg_bien || '{{texto}} {{numero}}. Anotado.',
-      msg_firma: dt.msg_firma || 'La libreta está cuadrada: ahora firma con tu nombre.',
-      msg_firma_vacia: dt.msg_firma_vacia || 'Escribe tu nombre para firmar.',
-      msg_completar: dt.msg_completar || 'La libreta cuadra con el riel y lleva firma.'
-    };
-    var st = s321Estado[id]; st.i = 0; st.ocupado = false; st.fuera = {};
-    var zR = lote.querySelector('#' + id + 'Riel'), zL = lote.querySelector('#' + id + 'Libreta'), zC = lote.querySelector('#' + id + 'Cuadre');
-
-    function ordinal(k) { return sust(T.plantilla_orden, { n: k }); }
-    function llevadas() {
-      var s = {};
-      RENGLONES.forEach(function (r) { if (r.tipo === 'tramo') for (var k = Number(r.de); k <= Number(r.a); k++) s[k] = true; });
-      return s;
-    }
-    var FUERA = llevadas();
-    function cuantasFuera() { return Object.keys(FUERA).length; }
-    function respuestaDe(r) {
-      if (r.tipo === 'hay') return N;
-      if (r.tipo === 'tramo') return Number(r.a) - Number(r.de) + 1;
-      if (r.tipo === 'quedan') return N - cuantasFuera();
-      if (r.tipo === 'lugar') { var k = Number(r.pieza), antes = 0; for (var x = 1; x < k; x++) if (FUERA[x]) antes++; return k - antes; }
-      return N;
-    }
-    function textoNumero(r, v) { return r.tipo === 'lugar' ? ordinal(v) : String(v); }
+    var dt = d.datos;
+    var objeto = dt.objeto || 'ficha';
+    var st = s321Estado[id]; st.pos = 0; st.cuenta = (dt.cuenta_inicial != null) ? dt.cuenta_inicial : 9; st.forma = 'fila'; st.esperando = false;
+    var tab = lote.querySelector('#' + id + 'Tablero'), pisoZ = lote.querySelector('#' + id + 'Piso');
+    var turno = lote.querySelector('#' + id + 'Turno'), reg = lote.querySelector('#' + id + 'Registro');
+    var CASILLAS = dt.casillas || [];
 
      
-    zR.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_riel) + '</span>';
-    zR.appendChild(el('div', 'lc-puntas', '<span class="lc-punta">' + escapar(T.rotulo_ventana) + '</span><span class="lc-punta">' + escapar(T.rotulo_puerta) + '</span>'));
-    var pista = el('div', 'lc-pista');
-    var puestos = {};
-    for (var k = 1; k <= N; k++) {
-      var p = el('div', 'lc-puesto', '<span class="lc-lugar">' + escapar(ordinal(k)) + '</span>' +
-        '<svg class="lc-obj" viewBox="0 0 40 40" aria-hidden="true" focusable="false">' + S321.objetoEn(objeto, 'llena', 20, 20, 36) + '</svg>' +
-        '<span class="lc-nombre">' + escapar(NOMBRES[k - 1] || '') + '</span>');
-      pista.appendChild(p); puestos[k] = p;
-    }
-    zR.appendChild(pista);
-    function apagar() { Object.keys(puestos).forEach(function (k) { puestos[k].classList.toggle('lc-viva', false); }); }
-    function encender(lista) { apagar(); lista.forEach(function (k) { if (puestos[k]) puestos[k].classList.add('lc-viva'); }); }
-    function descolgar() {
-      if (st.descolgado) return;
-      st.descolgado = true;
-      var lugar = 0;
-      for (var k = 1; k <= N; k++) {
-        if (FUERA[k]) { s321Salir(puestos[k], { quitar: true }); continue; }
-        lugar++;
-        if (lugar !== k) s321Cambiar(puestos[k].querySelector('.lc-lugar'), escapar(ordinal(lugar)));
-      }
-    }
-    function mostrar(r) {
-      var lista = [], k;
-      if (r.tipo === 'hay') for (k = 1; k <= N; k++) lista.push(k);
-      else if (r.tipo === 'tramo') for (k = Number(r.de); k <= Number(r.a); k++) lista.push(k);
-      else if (r.tipo === 'quedan' || r.tipo === 'cuadre') for (k = 1; k <= N; k++) if (!FUERA[k]) lista.push(k);
-      else if (r.tipo === 'lugar') { descolgar(); lista.push(Number(r.pieza)); }
-      encender(lista);
-      if (r.tipo === 'lugar' && puestos[Number(r.pieza)]) puestos[Number(r.pieza)].classList.add('lc-marcada');
-    }
+    var html = '<span class="s321-rotulo">' + sust(dt.rotulo_tablero || 'El tablero · se empieza con {{cuenta_inicial}} en fila', { cuenta_inicial: st.cuenta }) + '</span><div class="sv-casillas">';
+    CASILLAS.forEach(function (c, i) { html += '<div class="sv-casilla" data-n="' + (i + 1) + '" id="' + id + 'C' + (i + 1) + '">' + c.t + '<span class="sv-cuenta-casilla" aria-live="polite">&nbsp;</span></div>'; });
+    tab.innerHTML = html + '</div>';
+    var ficha = el('span', 'sv-ficha-tablero'); ficha.setAttribute('aria-label', dt.etiqueta_ficha || 'La ficha');
 
      
-    zL.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_libreta) + '</span>';
-    var lista = el('div', 'lc-renglones');
-    var filas = RENGLONES.map(function (r, i) {
-      var f = el('div', 'lc-renglon');
-      f.appendChild(el('p', 'lc-renglon-texto', escapar(r.texto)));
-      var campo = campoNumero(T.etiqueta_campo); campo.disabled = true;
-      var boton = s321Boton('s321-btn s321-clickable', escapar(T.boton_anotar), function () { anotar(i); }); boton.disabled = true;
-      f.appendChild(campo); f.appendChild(boton);
-      campo.addEventListener('keydown', function (e) { if (e.key === 'Enter') anotar(i); });
-      lista.appendChild(f);
-      return { f: f, campo: campo, boton: boton };
-    });
-    zL.appendChild(lista);
+    var COLS = 13, FILAS = 4;
+    pisoZ.innerHTML = '<span class="s321-rotulo">' + (dt.rotulo_piso || 'El piso ahora') + '</span><div class="s321-piso" id="' + id + 'ElPiso" style="width:100%;aspect-ratio:' + COLS + '/' + FILAS + '"></div>' +
+      '<p class="s321-marcador">' + (dt.etiqueta_cuenta || 'en el piso') + ': <b id="' + id + 'Cuenta">' + st.cuenta + '</b></p>';
+    var piso = pisoZ.querySelector('#' + id + 'ElPiso'), cuentaEl = pisoZ.querySelector('#' + id + 'Cuenta');
+    function pintarPiso() {
+      piso.innerHTML = S321.pisoConForma(objeto, st.cuenta, st.forma, COLS, FILAS, { semilla: 200 + st.pos }).svg;
+      cuentaEl.textContent = st.cuenta;
+    }
+    pintarPiso();
 
      
-    zC.innerHTML = '<span class="s321-rotulo">' + escapar(T.rotulo_cuadre) + '</span>';
-    var cifras = el('div', 'lc-cifras', RENGLONES.map(function (r, i) {
-      return '<div class="lc-cifra"><span class="s321-rotulo">' + escapar(r.corto || String(i + 1)) + '</span><span class="s321-cifra-veredicto" id="' + id + 'C' + i + '">?</span></div>';
-    }).join(''));
-    zC.appendChild(cifras);
-    var firma = el('div', 'lc-firma');
-    var campoFirma = campoTexto(T.etiqueta_firma); campoFirma.disabled = true;
-    var botonFirmar = s321Boton('s321-btn s321-btn-principal s321-clickable', escapar(T.boton_firmar), function () { firmar(); }); botonFirmar.disabled = true;
-    var firmado = el('p', 'lc-firmado', '');
-    if (FIRMA) { firma.appendChild(campoFirma); firma.appendChild(botonFirmar); zL.appendChild(firma); zC.appendChild(firmado); }
-    campoFirma.addEventListener('keydown', function (e) { if (e.key === 'Enter') firmar(); });
+    turno.innerHTML = '<span class="s321-rotulo">' + (dt.rotulo_turno || 'Tu turno') + '</span>';
+    var filaAvanzar = el('div', 's321-fila-inicio');
+    var avanzar = s321Boton('s321-btn s321-btn-principal s321-clickable', dt.boton_avanzar || 'Avanzar la ficha', function () { avanzarFicha(); }, { 'aria-label': dt.boton_avanzar || 'Avanzar la ficha' });
+    var pregunta = el('p', 's321-dato', dt.msg_arranque || 'Avanza la ficha a la primera casilla.');
+    pregunta.style.minHeight = '2.9em';
+    filaAvanzar.appendChild(avanzar); filaAvanzar.appendChild(pregunta);
+    var filaCampo = el('div', 's321-fila-inicio');
+    var campo = document.createElement('input');
+    campo.type = 'text'; campo.inputMode = 'numeric'; campo.className = 's321-campo sv-campo'; campo.maxLength = 2; campo.placeholder = '?';
+    campo.setAttribute('aria-label', dt.etiqueta_campo || 'Cuántos hay ahora'); campo.disabled = true;
+    var comprobar = s321Boton('s321-btn s321-btn-principal s321-clickable', dt.boton_comprobar || 'Comprobar', function () { comprobarCuenta(); });
+    comprobar.disabled = true;
+    enterEs(campo, comprobarCuenta);
+    filaCampo.appendChild(campo); filaCampo.appendChild(comprobar);
+    turno.appendChild(filaAvanzar); turno.appendChild(filaCampo);
 
-    function activar(i) {
-      filas.forEach(function (x, j) { x.f.classList.toggle('lc-activo', j === i); });
-      if (i < filas.length) { filas[i].campo.disabled = false; filas[i].boton.disabled = false; filas[i].campo.focus(); }
+     
+    reg.innerHTML = '<span class="s321-rotulo">' + (dt.rotulo_registro || 'El camino de la cuenta') + '</span>';
+    var camino = el('div', 'sv-camino');
+    camino.appendChild(el('span', 'sv-camino-paso sv-inicio sv-escrita', String(st.cuenta)));
+    var pasos = CASILLAS.map(function () { var p = el('span', 'sv-camino-paso', '?'); camino.appendChild(p); return p; });
+    reg.appendChild(camino);
+    var tira = el('p', 's321-marcador', (dt.etiqueta_resueltas || 'casillas resueltas') + ': <b>0</b>');
+    reg.appendChild(tira);
+    var resueltas = 0;
+
+    function avanzarFicha() {
+      if (st.esperando) { s321Burbuja(pantalla, dt.msg_espera || 'Primero escribe cuántos hay en esta casilla.', 'aclaracion'); return; }
+      if (st.pos >= CASILLAS.length) return;
+      var anterior = tab.querySelector('#' + id + 'C' + st.pos);
+      if (anterior) { anterior.classList.remove('sv-aqui'); anterior.classList.add('sv-pasada'); }
+      st.pos++;
+      var c = CASILLAS[st.pos - 1], casilla = tab.querySelector('#' + id + 'C' + st.pos);
+      casilla.classList.add('sv-aqui'); casilla.appendChild(ficha);
+      st.forma = c.forma || 'fila';
+      st.esperando = true; avanzar.disabled = true;
+      pregunta.innerHTML = sust(dt.plantilla_pregunta || 'Casilla {{n}}: <b>{{mudanza}}</b>. {{sufijo}}',
+        { n: st.pos, mudanza: c.t.replace(/\s*·\s*META\s*$/i, ''), sufijo: dt.msg_pregunta_sufijo || '¿Cuántos hay ahora?' });
+      campo.disabled = false; campo.value = ''; comprobar.disabled = false; campo.focus();
     }
-    function anotar(i) {
-      if (st.ocupado || i !== st.i) return;
-      var r = RENGLONES[i], fila = filas[i], dicho = numeroDe(fila.campo), v = respuestaDe(r);
-      if (isNaN(dicho)) { s321Fallo(fila.campo); s321Burbuja(pantalla, T.msg_vacio, 'error'); return; }
-      mostrar(r);
-      if (dicho !== v) { s321Fallo(fila.campo); s321Burbuja(pantalla, sust(T.msg_mal, { pista: r.pista || '', dicho: textoNumero(r, dicho) }), 'error'); return; }
-      st.ocupado = true;
-      fila.campo.disabled = true; fila.boton.disabled = true;
-      fila.f.classList.add('lc-hecho'); fila.f.classList.toggle('lc-activo', false);
-      s321Salir(fila.boton); s321Salir(fila.campo);
-      fila.f.appendChild(el('span', 'lc-renglon-num', escapar(textoNumero(r, v))));
-      s321Cambiar(cifras.querySelector('#' + id + 'C' + i), escapar(textoNumero(r, v)));
-      st.i++;
-      var msg = sust(T.msg_bien, { texto: r.corto || r.texto, numero: textoNumero(r, v) });
-      if (st.i < RENGLONES.length) {
-        s321Burbuja(pantalla, msg, 'acierto');
-        s321Reloj(pantalla, function () { st.ocupado = false; activar(st.i); }, 900);
-      } else if (FIRMA) {
-        s321Burbuja(pantalla, T.msg_firma, 'acierto');
-        st.ocupado = false; campoFirma.disabled = false; botonFirmar.disabled = false; campoFirma.focus();
+    function comprobarCuenta() {
+      if (!st.esperando) return;
+      var c = CASILLAS[st.pos - 1], v = parseInt(String(campo.value).trim(), 10);
+      if (isNaN(v) || v < 0) { s321Fallo(campo); s321Burbuja(pantalla, dt.msg_numero_invalido || 'Escribe un número: cuántos quedan.', 'error'); return; }
+      var correcta = aplicar(st.cuenta, c.d);
+      if (v !== correcta) { s321Fallo(campo); s321Burbuja(pantalla, c.pista + ' ' + sust(dt.msg_habia || 'Había {{habia}}.', { habia: st.cuenta }), 'error'); return; }
+      st.cuenta = correcta;
+      pintarPiso();
+      var casilla = tab.querySelector('#' + id + 'C' + st.pos);
+      casilla.querySelector('.sv-cuenta-casilla').textContent = String(correcta);
+      pasos[st.pos - 1].textContent = String(correcta); pasos[st.pos - 1].classList.add('sv-escrita');
+      resueltas++; tira.querySelector('b').textContent = resueltas;
+      st.esperando = false; campo.disabled = true; comprobar.disabled = true;
+      if (st.pos === CASILLAS.length) {
+        s321Completar(pantalla, sust(dt.msg_meta || 'Llegaste a la meta con la cuenta al día: {{correcta}}.', { correcta: correcta }), casilla);
       } else {
-        terminar();
+        avanzar.disabled = false;
+        s321Burbuja(pantalla, c.pista + ' ' + sust(dt.msg_sigue || 'Ahora hay {{correcta}}. Avanza otra vez.', { correcta: correcta }), 'acierto');
       }
     }
-    function firmar() {
-      if (st.i < RENGLONES.length) return;
-      var nombre = String(campoFirma.value || '').trim();
-      if (!nombre) { s321Fallo(campoFirma); s321Burbuja(pantalla, T.msg_firma_vacia, 'error'); return; }
-      campoFirma.disabled = true; botonFirmar.disabled = true;
-      s321Cambiar(firmado, escapar(T.texto_firmado + ' ' + nombre));
-      terminar();
-    }
-    function terminar() {
-      s321Completar(pantalla, T.msg_completar, cifras);
-      pantalla.dispatchEvent(new CustomEvent('s321:escena', { bubbles: true, detail: { escena: 'libreta-que-se-cuadra', hecho: true, renglones: RENGLONES.length } }));
-    }
-    activar(0);
   };
 
-  escena.ayudantes = { el: el, sust: sust };
-  S321_ESCENAS['libreta-que-se-cuadra'] = escena;
+  escena.ayudantes = { el: el, sust: sust, aplicar: aplicar };
+  S321_ESCENAS['tablero-tirar-y-contar'] = escena;
 })();
 
  
 s321Montadores['p5'] = function (pantalla, lote) {
-  s321Registrar('p5', "la_libreta_del_jueves");
-  S321_ESCENAS['libreta-que-se-cuadra'](pantalla, lote, {"id": "p5", "casa": "00014", "paso": 5, "total": 5, "nombre": "la_libreta_del_jueves", "pieza": "libreta-que-se-cuadra", "disposicion": "G", "zonas": {"experimento": ["riel"], "voz": [{"casa": "voz", "quien": "Yarisa", "texto": "Esta libreta la escribo yo, y tiene que cuadrar con el riel."}], "control": ["libreta"], "evidencia": ["cuadre"]}, "titulo": "la libreta del jueves", "instruccion": "Escribe el número de cada renglón, anótalo y firma la libreta.", "ayuda": ["Cada renglón trae los lugares y le falta la cantidad: escríbela y pulsa Anotar", "El riel enciende lo que el renglón nombra; si no cuadra, te orienta y lo vuelves a intentar", "Con todos los renglones escritos, escribe tu nombre, pulsa Firmar y pasa a la zona 5"], "datos": {"objeto": "camisa", "n": 9, "nombres": ["Dariel", "Luisa", "Kendry", "Marielys", "Jonathan", "Yeimi", "Brayan", "Sofía", "Enmanuel"], "firma": true, "rotulo_riel": "El riel del jueves", "rotulo_libreta": "La libreta de pedidos", "rotulo_cuadre": "Lo escrito", "rotulo_ventana": "ventana", "rotulo_puerta": "puerta", "plantilla_orden": "{{n}}.ª", "etiqueta_campo": "el número", "boton_anotar": "Anotar", "etiqueta_firma": "Tu nombre", "boton_firmar": "Firmar", "texto_firmado": "Firmado:", "msg_vacio": "Escribe el número del renglón antes de anotar.", "msg_mal": "Ese número descuadra la libreta. {{pista}}", "msg_bien": "{{texto}}: {{numero}}. Anotado.", "msg_firma": "La libreta está cuadrada: ahora firma con tu nombre.", "msg_firma_vacia": "Escribe tu nombre para firmar.", "msg_completar": "La libreta cuadra con el riel y lleva firma.", "renglones": [{"tipo": "hay", "texto": "Listas: la última es la 9.ª, así que hay", "corto": "hay", "pista": "La última lleva el número de todas.", "respuesta": 9}, {"tipo": "tramo", "de": 1, "a": 5, "texto": "Papo se lleva de la 1.ª a la 5.ª: se lleva", "corto": "se lleva", "pista": "Cuenta las dos puntas: la primera también se va.", "respuesta": 5}, {"tipo": "quedan", "texto": "Quedan en el riel, de la 6.ª a la 9.ª", "corto": "quedan", "pista": "Nueve menos las que se lleva Papo.", "respuesta": 4}, {"tipo": "cuadre", "texto": "Cuadre: se lleva más quedan son", "corto": "cuadre", "pista": "Suma las que se lleva y las que quedan: vuelve a dar el riel entero.", "respuesta": 9}]}, "limites": {"n": 9, "renglones": 4}, "emite": ["terminó"], "escucha": []});
+  s321Registrar('p5', "el_tablero_de_la_tarde");
+  S321_ESCENAS['tablero-tirar-y-contar'](pantalla, lote, {"id": "p5", "casa": "00014", "paso": 5, "total": 5, "nombre": "el_tablero_de_la_tarde", "pieza": "tablero-tirar-y-contar", "disposicion": "G", "zonas": {"experimento": ["tablero"], "voz": ["piso"], "control": ["turno"], "evidencia": ["registro"]}, "titulo": "el tablero de la tarde", "instruccion": "Avanza la ficha y escribe cuántos cuadernos hay después de cada casilla.", "ayuda": ["Pulsa Avanzar la ficha: cae en la casilla siguiente, con lo que anotó Kenia", "Escribe cuántos cuadernos hay después de esa casilla y pulsa Comprobar (o Enter)", "Usa la regla de la tarjeta; el piso de abajo solo sirve para comprobar"], "datos": {"objeto": "cuaderno", "cuenta_inicial": 8, "casillas": [{"t": "Riega", "d": 0, "forma": "regadas", "pista": "Los riega: ninguno entra ni sale."}, {"t": "Vende 1", "d": -1, "forma": "regadas", "pista": "Vende 1: sale un cuaderno."}, {"t": "Apila", "d": 0, "forma": "torre", "pista": "Los apila: ninguno entra ni sale."}, {"t": "Trae 2", "d": 2, "forma": "torre", "pista": "Trae 2: entran dos cuadernos."}, {"t": "Rueda", "d": 0, "forma": "rueda", "pista": "En rueda: ninguno entra ni sale."}, {"t": "Vende 3", "d": -3, "forma": "rueda", "pista": "Vende 3: salen tres cuadernos."}, {"t": "Trae 1", "d": 1, "forma": "rueda", "pista": "Trae 1: entra un cuaderno."}, {"t": "En fila", "d": 0, "forma": "fila", "pista": "En fila son los mismos: la meta."}], "rotulo_tablero": "Empieza con {{cuenta_inicial}}", "rotulo_piso": "El piso ahora", "rotulo_turno": "Tu turno", "etiqueta_cuenta": "cuadernos en el mostrador", "etiqueta_campo": "Cuántos cuadernos hay ahora", "msg_espera": "Primero escribe cuántos cuadernos hay en esta casilla.", "msg_pregunta_sufijo": "¿Cuántos cuadernos hay ahora?", "msg_numero_invalido": "Escribe un número: cuántos cuadernos quedan.", "msg_meta": "Llegaste a la meta con la cuenta al día: {{correcta}} cuadernos en fila.", "boton_avanzar": "Avanzar la ficha"}, "limites": {"cuenta_maxima": 52}, "emite": [], "escucha": []});
   if (window.S321 && S321.aparatosDeCasa) S321.aparatosDeCasa(pantalla);
 };
 </script>

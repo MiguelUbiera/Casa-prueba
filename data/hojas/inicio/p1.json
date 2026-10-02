@@ -5,97 +5,59 @@
     "nivel": "explorar",
     "lo_que_pide": "Explora. Se encuentra con el problema de la historia y lo tantea con lo que ya sabía hacer. Al final ve la idea nueva funcionar en una máquina y dice qué va a salir antes de verlo.",
     "al_salir": "Sale sabiendo qué parte del problema resuelve con lo que ya sabía y qué parte no. Ya vio la idea nueva en acción, pero todavía no sabe cuándo ni por qué pasa.",
-    "arista": "Una misma camisa tiene dos lugares, uno por punta: la de Marielys es la 4.ª desde la ventana y Papo la cuenta desde la puerta.",
+    "arista": "La cantidad es un solo número, el mismo se mire la torre o la fila: dos números para los mismos cuadernos es que un ojo o una cuenta falló.",
     "acto": "comparar",
+    "escena": "Tres viñetas de los ocho cuadernos de don Rafa, que se tocan en orden: a las nueve, Yariel los pone en torre sobre el mostrador y don Rafa dice «ahí no hay ocho»; a las nueve y cuarto, Kenia los pone en fila y don Rafa dice «ahora sobran»; a las nueve y media, don Rafa los cuenta uno a uno: ocho. Con cada viñeta se enciende una parte del esquema: si alguien vendió o trajo cuadernos, la cantidad cambió; si solo los acomodaron, «?». El estudiante compara los tres dichos y decide que son los mismos ocho cuadernos con dos huellas distintas. Habla doña Carmen: quiere saber cuántos hay sin contarlos cada vez que Yariel los acomoda. Se instala la palabra «cantidad»: cuántos hay, un solo número para el montón entero. La leyenda es la palabra con su nota. Los aparatos, en orden: las tres viñetas, el esquema, la voz, la palabra.",
     "pieza": "vinetas-esquema-voz",
     "esquemas": [],
     "numeros": {
-      "objeto": "camisa",
+      "objeto": "cuaderno",
       "vinetas": 3
     },
-    "maestro_pregunta": "¿Desde dónde contó Yarisa y desde dónde contó Papo?",
-    "registro": "El esquema con el «?» (desde la ventana → la 4.ª; desde la puerta → ?); se vuelve a mirar en el inicio 3, que lo contesta, y en el inicio 9.",
+    "disposicion": "F",
+    "maestro_pregunta": "¿Qué cambió entre la torre y la fila, y qué no cambió?",
+    "registro": "El esquema con el «?» encendido en la rama del acomodo; se vuelve a mirar en el inicio 6, cuando se decide quién tiene razón, y en el final del inicio.",
     "impreso": "no"
   },
   "id": "p1",
   "casa": "00014",
   "paso": 1,
   "total": 10,
-  "nombre": "la_camisa_de_marielys",
+  "nombre": "los_ocho_de_don_rafa",
   "pieza": "vinetas-esquema-voz",
   "disposicion": "F",
-  "zonas": {
-    "experimento": "vinetas",
-    "evidencia": "esquema",
-    "voz": "voz",
-    "leyenda": "palabra"
-  },
-  "titulo": "la camisa de marielys",
-  "instruccion": "Toca las tres viñetas del martes, en orden.",
+  "zonas": { "experimento": "vinetas", "evidencia": "esquema", "voz": "voz", "leyenda": "palabra" },
+  "titulo": "los ocho de don Rafa",
+  "instruccion": "Toca las tres viñetas de don Rafa, en orden.",
   "ayuda": [
-    "Toca la viñeta del riel, después la de Papo y después la de Yarisa",
+    "Toca la viñeta de las nueve, después la de las nueve y cuarto y después la de las nueve y media",
     "Con cada viñeta se enciende una parte del esquema",
-    "La última deja el signo de pregunta encendido: esa es la duda del riel"
+    "La última deja el signo de pregunta encendido: ¿qué le pasa a la cantidad si solo los acomodan?"
   ],
   "datos": {
-    "palabra": "lugar",
-    "palabra_nota": "El número de una camisa contado desde una punta",
-    "objeto": "camisa",
-    "piso": {
-      "cols": 6,
-      "filas": 4,
-      "semilla": 7
-    },
+    "palabra": "cantidad",
+    "palabra_nota": "Cuántos hay: un número para todo el montón",
+    "objeto": "cuaderno",
+    "piso": { "cols": 6, "filas": 4, "semilla": 3 },
     "vinetas": [
-      {
-        "dia": "El martes",
-        "texto": "Seis camisas cuelgan del riel, desde la ventana.",
-        "forma": "fila",
-        "n": 6,
-        "burbuja": "Yarisa las cuenta con el dedo desde la ventana."
-      },
-      {
-        "dia": "Papo, en la puerta",
-        "texto": "Papo: «Me llevo la de Marielys, la cuarta».",
-        "forma": "fila",
-        "n": 2,
-        "burbuja": "Papo cuenta desde la puerta y descuelga la cuarta."
-      },
-      {
-        "dia": "Yarisa, con la libreta",
-        "texto": "Yarisa: «Esa que agarraste es la de Kendry».",
-        "forma": "fila",
-        "n": 1,
-        "burbuja": "Desde la ventana, la de Marielys es la cuarta."
-      }
+      { "dia": "A las nueve", "texto": "Yariel los apila. Don Rafa: «Ahí no hay ocho».", "forma": "torre", "n": 8,
+        "burbuja": "En torre, a don Rafa le parecen pocos." },
+      { "dia": "A las nueve y cuarto", "texto": "Kenia los alinea. Don Rafa: «Sobran».", "forma": "fila", "n": 8,
+        "burbuja": "En fila, a don Rafa le parecen muchos." },
+      { "dia": "A las nueve y media", "texto": "Don Rafa los cuenta uno a uno: ocho.", "forma": "fila", "n": 8,
+        "burbuja": "Pocos, muchos, ocho: tres dichos para los mismos cuadernos." }
     ],
-    "respuesta": "las viñetas se tocan en el orden en que están: 1, 2, 3; desde la puerta, la de Marielys es la 3.ª",
+    "respuesta": "las viñetas se tocan en el orden en que están: 1, 2, 3; la burbuja de la última es la de completar",
     "esquema": {
-      "rotulo": "El esquema de la camisa",
-      "aria": "La camisa de Marielys: si se cuenta desde la ventana, la 4.ª; si se cuenta desde la puerta, signo de pregunta",
-      "raiz": "La camisa de Marielys",
-      "arriba": {
-        "si": "se cuenta desde la ventana",
-        "entonces": "la 4.ª"
-      },
-      "abajo": {
-        "si": "se cuenta desde la puerta",
-        "entonces": "?"
-      }
+      "rotulo": "El esquema del mostrador",
+      "aria": "Los cuadernos de don Rafa: si alguien vendió o trajo, la cantidad cambió; si solo los acomodaron, signo de pregunta",
+      "raiz": "Los cuadernos de don Rafa",
+      "arriba": { "si": "alguien vendió o trajo cuadernos", "entonces": "la cantidad cambió" },
+      "abajo": { "si": "solo los acomodaron", "entonces": "?" }
     },
-    "voz": {
-      "quien": "Yarisa",
-      "texto": "Es la misma camisa y Papo le da otro número. ¿Cuál está bien?"
-    }
+    "voz": { "quien": "Doña Carmen", "texto": "Yo quiero saber cuántos hay sin contarlos cada vez." }
   },
-  "limites": {
-    "vinetas": 3,
-    "objetos_fila": 24,
-    "objetos_torre": 19,
-    "esquema_raiz": 30,
-    "esquema_si": 35,
-    "esquema_entonces": 23
-  },
-  "emite": ["terminó"],
+  "limites": { "vinetas": 3, "objetos_fila": 24, "objetos_torre": 19, "esquema_raiz": 30, "esquema_si": 35, "esquema_entonces": 23 },
+  "emite": [ "terminó" ],
   "escucha": []
 }

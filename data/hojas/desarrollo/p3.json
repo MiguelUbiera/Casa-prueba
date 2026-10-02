@@ -5,67 +5,75 @@
     "nivel": "verificar",
     "lo_que_pide": "Verifica. Usa una máquina que pregunta antes de actuar: predice, comprueba y cambia una sola cosa cada vez, y todo queda anotado. Con las pruebas delante ve lo que se repite y escribe la regla con sus palabras.",
     "al_salir": "Sale con la regla escrita por él, las pruebas que la sostienen a la vista y la pregunta del inicio contestada.",
-    "arista": "La regla dicha para todos los rieles: el número de la última dice cuántas hay; antes de una camisa hay una menos que su número; los dos lugares de una camisa suman una más que las camisas.",
+    "arista": "La regla, dicha para todos los casos: si solo los acomodan, la cantidad sigue igual; si venden o traen, cambia por lo vendido y lo traído.",
     "acto": "generalizar",
+    "escena": "La regla de la tarjeta del estante, con dos oraciones y un hueco cada una: «Si solo los acomodan, la cantidad ___» y «Si venden o traen alguno, la cantidad ___». Seis fichas para elegir: sigue igual; cambia por lo vendido y lo traído; se cuenta otra vez; se ve más grande; sube siempre; es la huella. A la vista, seis pruebas del registro de la tarde (qué pasó · había · hay). El estudiante toca una ficha y el hueco donde va; si no va, el hueco tiembla; con los dos huecos llenos la regla se vuelve regla de oro. Decide con las pruebas delante, y la regla la escriben ellos, no la voz adulta. En el sitio de la voz va la leyenda: la regla tiene que valer para las seis pruebas. La zona 3 del imprimible: la regla escrita a mano. Los aparatos, en orden: la regla con sus huecos, las fichas, las pruebas, la leyenda, la cinta.",
     "pieza": "regla-que-se-completa",
     "esquemas": [],
     "numeros": {
-      "oraciones": 3,
-      "fichas": 7,
-      "pruebas": 3
+      "oraciones": 2,
+      "fichas": 6,
+      "pruebas": 6
     },
-    "maestro_pregunta": "¿Qué fichas sobraron, y en cuál hueco intentaron ponerlas?",
-    "registro": "La regla completa como regla de oro; se vuelve a mirar en la pantalla final del desarrollo y en el cierre 5 y 6, y la zona 3 del imprimible la copia a mano.",
+    "disposicion": "G",
+    "maestro_pregunta": "Lee la regla con la prueba del 7 y la del 8: ¿vale para las dos?",
+    "registro": "La regla de oro con sus dos huecos llenos; se vuelve a mirar en el desarrollo 4 y 5, en el cierre 5 como esquema a la vista y en el cierre 8, en la tarjeta.",
     "impreso": "sí"
   },
   "id": "p3",
   "casa": "00014",
   "paso": 3,
   "total": 5,
-  "nombre": "la_regla_del_riel",
+  "nombre": "la_regla_del_estante",
   "pieza": "regla-que-se-completa",
   "disposicion": "G",
-  "zonas": {"experimento": "regla", "voz": "voz", "control": "fichas", "evidencia": "pruebas"},
-  "titulo": "la regla del riel",
-  "instruccion": "Completa la regla con las fichas para que cuadre con las tres pruebas.",
+  "zonas": {
+    "experimento": "regla",
+    "voz": "voz",
+    "control": "fichas",
+    "evidencia": "pruebas"
+  },
+  "titulo": "la regla del estante",
+  "instruccion": "Completa la regla con las fichas para que valga en las seis pruebas.",
   "ayuda": [
     "Toca una ficha y después el hueco donde va; si no va, el hueco tiembla",
-    "Lee las pruebas: la regla tiene que valer para las tres a la vez",
-    "Con los tres huecos llenos, la regla se vuelve regla de oro: cópiala en la zona 3"
+    "La regla tiene que valer para las seis pruebas a la vez",
+    "Con los dos huecos llenos, la regla se vuelve regla de oro"
   ],
   "datos": {
-    "rotulo_regla": "La regla del riel",
+    "rotulo_regla": "La regla del estante",
     "rotulo_fichas": "Las fichas",
-    "rotulo_pruebas": "Las pruebas de Yarisa",
+    "rotulo_pruebas": "Las pruebas de la tarde",
     "rotulo_regla_de_oro": "La regla de oro",
     "texto_hueco": "___",
-    "columnas": ["camisa", "lugar", "lo que se sabe"],
-    "voz": {"quien": "Yarisa", "texto": "Con esta regla lleno la libreta sin contar camisa por camisa."},
+    "voz": { "quien": "Doña Carmen", "texto": "Que valga para las seis pruebas, y la cuelgo." },
+    "columnas": [ "qué pasó", "había", "hay" ],
     "oraciones": [
-      {"inicio": "El número de la última camisa dice", "clave": "cuantas", "fin": "hay en el riel", "pista": "La primera prueba: la última es la 6.ª y en el riel hay 6."},
-      {"inicio": "Antes de una camisa hay", "clave": "una_menos", "fin": "que su número", "pista": "La segunda prueba: la de Jonathan es la 5.ª y antes hay 4."},
-      {"inicio": "Los dos lugares de una camisa suman", "clave": "una_mas", "fin": "que las camisas del riel", "pista": "La tercera prueba: 4 + 3 = 7 en un riel de 6."}
+      { "inicio": "Si solo los acomodan, la cantidad", "clave": "igual", "fin": "", "pista": "En las pruebas donde solo los acomodaron, ¿cuánto había y cuánto hay?" },
+      { "inicio": "Si venden o traen alguno, la cantidad", "clave": "cambia", "fin": "", "pista": "En las pruebas con una venta o una llegada, ¿en cuánto cambió?" }
     ],
     "fichas": [
-      {"clave": "cuantas", "t": "cuántas"},
-      {"clave": "cual", "t": "cuál"},
-      {"clave": "una_menos", "t": "una menos"},
-      {"clave": "una_mas", "t": "una más"},
-      {"clave": "las_mismas", "t": "las mismas"},
-      {"clave": "el_doble", "t": "el doble"},
-      {"clave": "la_mitad", "t": "la mitad"}
+      { "clave": "igual", "t": "sigue igual" },
+      { "clave": "cambia", "t": "cambia por lo vendido y lo traído" },
+      { "clave": "otra_vez", "t": "se cuenta otra vez" },
+      { "clave": "grande", "t": "se ve más grande" },
+      { "clave": "sube", "t": "sube siempre" },
+      { "clave": "huella", "t": "es la huella" }
     ],
     "pruebas": [
-      {"a": "la última", "b": "6.ª", "c": "hay 6"},
-      {"a": "la de Jonathan", "b": "5.ª", "c": "antes hay 4"},
-      {"a": "la de Marielys", "b": "4.ª y 3.ª", "c": "riel de 6: 4 + 3 = 7"}
+      { "a": "los apilan", "b": "8", "c": "8" },
+      { "a": "en rueda", "b": "8", "c": "8" },
+      { "a": "los riegan", "b": "8", "c": "8" },
+      { "a": "vende uno", "b": "8", "c": "7" },
+      { "a": "llega uno", "b": "7", "c": "8" },
+      { "a": "vende y riega", "b": "9", "c": "8" }
     ],
     "msg_elige": "Toca una ficha y después el hueco donde va.",
-    "msg_mal": "Esa ficha va en otro sitio. {{pista}}",
-    "msg_bien": "Queda «{{ficha}}». Sigue con otro hueco.",
-    "msg_completar": "La regla está completa y cuadra con las tres pruebas."
+    "msg_mal": "Esa ficha no va ahí. {{pista}}",
+    "msg_bien": "Queda «{{ficha}}». Sigue con el otro hueco.",
+    "msg_completar": "La regla está completa y vale para las seis pruebas."
   },
-  "limites": {"oraciones": 3, "fichas": 8, "pruebas": 4},
-  "emite": ["terminó"],
+  "limites": { "oraciones": 3, "fichas": 8 },
+  "emite": [ "terminó" ],
   "escucha": []
 }

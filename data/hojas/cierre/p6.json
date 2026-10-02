@@ -5,67 +5,113 @@
     "nivel": "justificar",
     "lo_que_pide": "Justifica. Resuelve él mismo el problema de la historia y sostiene cada decisión con la regla y con algo que se puede señalar. Termina entregando un producto con nombre que lleva su porqué.",
     "al_salir": "Sale con el problema resuelto por él y una respuesta que otro puede revisar y que se sostiene sola.",
-    "arista": "De los dos lugares a la cantidad: suman una más que las camisas, así que la 5.ª desde la ventana y 4.ª desde la puerta están en un riel de ocho.",
+    "arista": "Del resultado a lo que lo produjo: de 12 a 5 solo se llega con lo que salió y lo que entró, por muchos acomodos que haya.",
     "acto": "calcular",
-    "pieza": "riel-tapado",
+    "escena": "La escalera del miércoles, del revés: la cuenta arranca en 12, la caja de la mañana, y al cerrar hay 5 en el estante; el banco trae lo que Kenia escribió: vende 3, vende 1, se llevó 8, llegó 1, llegaron 4, los apiló, los regó. El estudiante arma el camino que lleva de 12 a 5 tocando mudanzas del banco; la cuenta se recalcula con cada una y, cuando marca 5, anota el camino; el registro guarda los caminos: todas las ventas y llegadas, con o sin los acomodos. Decide qué mudanzas son obligatorias para llegar y cuáles sobran. Habla Kenia desde el sitio de la leyenda: «con mi cuadernito se llega, sin contar el estante». Los aparatos, en orden: la cuenta con la escalera, el banco, el registro de caminos, la voz.",
+    "pieza": "escalera-de-mudanzas",
     "esquemas": [],
     "numeros": {
-      "objeto": "camisa",
-      "modo": "dos_puntas",
-      "casos": 3
+      "inicio": 12,
+      "meta": 5,
+      "mud": 7
     },
-    "maestro_pregunta": "Cinco y cuatro suman nueve y hay ocho: ¿cuál camisa se contó dos veces?",
-    "registro": "El registro de tres renglones (dijeron · dije · el riel); se vuelve a mirar en la pantalla final del cierre.",
+    "disposicion": "E",
+    "maestro_pregunta": "¿Hay algún camino de 12 a 5 que deje fuera una venta o una llegada?",
+    "registro": "Los caminos de 12 a 5; se vuelven a mirar en el cierre 8, donde la tarjeta dice lo que entró y lo que salió.",
     "impreso": "no"
   },
   "id": "p6",
   "casa": "00014",
   "paso": 6,
   "total": 8,
-  "nombre": "cuantas_hay_sin_contar",
-  "pieza": "riel-tapado",
-  "disposicion": "D",
+  "nombre": "la_escalera_del_miercoles",
+  "pieza": "escalera-de-mudanzas",
+  "disposicion": "E",
   "zonas": {
-    "experimento": "riel",
-    "control": "dato",
+    "experimento": "escalera",
+    "control": "banco",
     "evidencia": "registro",
-    "leyenda": {"casa": "leyenda", "texto": "Los dos lugares suman una más que las camisas.", "objeto": "camisa"},
-    "voz": {"casa": "voz", "quien": "Doña Minerva", "texto": "Si me dan los dos lugares de una camisa, no necesito ver el riel."}
+    "leyenda": "voz"
   },
-  "titulo": "cuántas hay sin contar",
-  "instruccion": "Lee los dos lugares, escribe cuántas camisas hay y pulsa Destapar.",
+  "titulo": "la escalera del miércoles",
+  "instruccion": "Toca mudanzas del banco hasta que la cuenta marque 5.",
   "ayuda": [
-    "La tarjeta dice el lugar de una camisa desde la ventana y desde la puerta",
-    "Escribe cuántas camisas hay en el riel antes de destapar",
-    "Pulsa Destapar: el riel se cuenta desde las dos puntas hasta esa camisa y después entero"
+    "La cuenta arranca en 12, la caja de la mañana, y al cerrar hay 5 en el estante",
+    "Toca una mudanza del banco: sube a la escalera y la cuenta se recalcula; tócala otra vez para quitarla",
+    "Cuando la cuenta marque 5 pulsa Anotar el camino; el registro guarda cada camino distinto"
   ],
   "datos": {
-    "objeto": "camisa",
-    "modo": "dos_puntas",
-    "rotulo_riel": "El riel del taller",
-    "rotulo_dato": "Lo que dijeron",
-    "rotulo_registro": "El registro",
-    "rotulo_ventana": "ventana",
-    "rotulo_puerta": "puerta",
-    "texto_tela": "tapado con una tela",
-    "plantilla_orden": "{{n}}.ª",
-    "etiqueta_cuenta": "el riel dice",
-    "etiqueta_campo": "tu número",
-    "boton_destapar": "Destapar",
-    "columna_dijeron": "dijeron",
-    "columna_dije": "dije",
-    "columna_riel": "el riel",
-    "msg_vacio": "Escribe el número antes de destapar.",
-    "msg_bien": "Dijiste <b>{{dicho}}</b> y el riel dice <b>{{riel}}</b>: lo mismo.",
-    "msg_mal": "Dijiste <b>{{dicho}}</b> y el riel dice <b>{{riel}}</b>. {{pista}}",
-    "msg_completar": "Los tres rieles quedaron destapados y anotados.",
-    "casos": [
-      {"dato": "Viernes, Mateo: 5.ª desde la ventana y 4.ª desde la puerta.", "pregunta": "¿Cuántas camisas hay en el riel?", "resumen": "Mateo: 5.ª y 4.ª", "n": 8, "ventana": 5, "puerta": 4, "pide": "cuantas", "pista": "Cinco y cuatro cuentan dos veces la de Mateo."},
-      {"dato": "El jueves, la de Luisa era la 2.ª desde la ventana y la 8.ª desde la puerta.", "pregunta": "¿Cuántas camisas había en el riel?", "resumen": "Luisa: 2.ª y 8.ª", "n": 9, "ventana": 2, "puerta": 8, "pide": "cuantas", "pista": "Dos y ocho cuentan dos veces la de Luisa."},
-      {"dato": "El martes, la de Marielys era la 4.ª desde la ventana y la 3.ª desde la puerta.", "pregunta": "¿Cuántas camisas había en el riel?", "resumen": "Marielys: 4.ª y 3.ª", "n": 6, "ventana": 4, "puerta": 3, "pide": "cuantas", "pista": "Cuatro y tres cuentan dos veces la de Marielys."}
-    ]
+    "inicio": 12,
+    "meta": 5,
+    "mud": [
+      {
+        "t": "-3",
+        "ic": [
+          "puerta",
+          "-3"
+        ],
+        "v": -3
+      },
+      {
+        "t": "-1",
+        "ic": [
+          "puerta",
+          "-1"
+        ],
+        "v": -1
+      },
+      {
+        "t": "-8",
+        "ic": [
+          "puerta",
+          "-8"
+        ],
+        "v": -8
+      },
+      {
+        "t": "+1",
+        "ic": [
+          "puerta",
+          "+1"
+        ],
+        "v": 1
+      },
+      {
+        "t": "+4",
+        "ic": [
+          "puerta",
+          "+4"
+        ],
+        "v": 4
+      },
+      {
+        "t": "apila",
+        "ic": [
+          "torre"
+        ],
+        "v": 0
+      },
+      {
+        "t": "riega",
+        "ic": [
+          "regadas"
+        ],
+        "v": 0
+      }
+    ],
+    "voz": {
+      "quien": "Kenia",
+      "texto": "Con mi cuadernito se llega sin contar."
+    },
+    "rotulo_cuenta": "La cuenta y la escalera",
+    "rotulo_banco": "El banco de mudanzas",
+    "rotulo_registro": "Los caminos encontrados",
+    "destino_rotulo": "al cerrar hay",
+    "etiqueta_origen": "cuenta corriente"
   },
-  "limites": {"n": 9, "casos": 4, "renglones": 4},
-  "emite": ["terminó"],
+  "limites": {
+    "camino_texto_max": 50
+  },
+  "emite": [],
   "escucha": []
 }

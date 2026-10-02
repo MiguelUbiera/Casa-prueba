@@ -1,10 +1,11 @@
 {
+  "_": "Hoja de muestra de la entrada (casa/disposiciones/entrada.html). Se escribe encima de cada valor, con mayúscula al empezar; la ceja y la imagen se dejan como están. El botón es un verbo y el sitio o la cosa de la historia, de dos a cuatro palabras («Entrar al multiuso»), sin Empezar, Comenzar, Continuar ni Siguiente: el montador rechaza el que no cumple (R-15).",
   "etapa": "Construcción guiada",
-  "titulo": "El riel que crece",
-  "frase1": "Jueves: doña Minerva cuelga las tres que faltaban y Papo descuelga.",
-  "frase2": "Prueba el riel de dos puntas y escribe la regla del riel.",
-  "boton_entrada": "Colgar las camisas",
+  "titulo": "Las pruebas del mostrador",
+  "frase1": "Por la tarde, doña Carmen pone a prueba acomodos, ventas y llegadas.",
+  "frase2": "La regla la escriben ustedes en la tarjeta del estante.",
+  "boton_entrada": "Pasar al mostrador",
   "imagen": "portada-desarrollo.webp",
-  "imagen_alt": "Doña Minerva cuelga una camisa nueva al final del riel, ahora más largo, mientras Yarisa anota en la libreta.",
-  "imagen_leyenda": "Doña Minerva cuelga las que faltaban; Yarisa anota."
+  "imagen_alt": "Kenia detrás del mostrador con el cuadernito de ventas abierto",
+  "imagen_leyenda": "Kenia anota en el cuadernito cada venta y cada llegada"
 }
